@@ -1,0 +1,4787 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Form 2 Science Chapter 5 - Water Exam Notes</title>
+  <style>
+    :root{
+      --bg:#f4f7fb;
+      --card:#ffffff;
+      --text:#172033;
+      --muted:#5c667a;
+      --line:#dfe5ef;
+      --accent:#2563eb;
+      --accent-soft:#eaf1ff;
+      --warning:#fff7df;
+      --success:#eaf8ef;
+      --danger:#fff0f0;
+      --shadow:0 12px 30px rgba(28, 48, 84, .10);
+    }
+
+    *{box-sizing:border-box}
+
+    body{
+      margin:0;
+      background:linear-gradient(180deg,#eef4ff 0%,var(--bg) 38%,#ffffff 100%);
+      color:var(--text);
+      font-family:Arial,"Noto Sans SC","Microsoft YaHei",sans-serif;
+      line-height:1.65;
+    }
+
+    .page{
+      width:min(1100px,92%);
+      margin:0 auto;
+      padding:36px 0 60px;
+    }
+
+    .hero{
+      background:linear-gradient(135deg,#1d4ed8,#3b82f6);
+      color:white;
+      padding:34px;
+      border-radius:24px;
+      box-shadow:var(--shadow);
+      margin-bottom:24px;
+    }
+
+    .hero .tag{
+      display:inline-block;
+      background:rgba(255,255,255,.18);
+      border:1px solid rgba(255,255,255,.35);
+      padding:6px 12px;
+      border-radius:999px;
+      font-size:.86rem;
+      font-weight:700;
+      letter-spacing:.04em;
+      margin-bottom:12px;
+    }
+
+    .hero h1{
+      margin:0;
+      font-size:clamp(2rem,4vw,3.4rem);
+      line-height:1.1;
+    }
+
+    .hero p{
+      margin:14px 0 0;
+      max-width:800px;
+      font-size:1.05rem;
+      opacity:.95;
+    }
+
+    .exam-focus{
+      display:grid;
+      grid-template-columns:repeat(3,1fr);
+      gap:14px;
+      margin-top:22px;
+    }
+
+    .focus-box{
+      background:rgba(255,255,255,.14);
+      border:1px solid rgba(255,255,255,.25);
+      border-radius:16px;
+      padding:14px;
+    }
+
+    .focus-box strong{
+      display:block;
+      font-size:1.5rem;
+    }
+
+    .section{
+      background:var(--card);
+      border:1px solid var(--line);
+      border-radius:22px;
+      padding:26px;
+      box-shadow:var(--shadow);
+      margin:22px 0;
+    }
+
+    .section h2{
+      margin:0 0 8px;
+      font-size:1.7rem;
+    }
+
+    .section-intro{
+      color:var(--muted);
+      margin:0 0 20px;
+    }
+
+    .note-grid{
+      display:grid;
+      grid-template-columns:repeat(2,1fr);
+      gap:16px;
+    }
+
+    .note-card{
+      border:1px solid var(--line);
+      border-radius:18px;
+      padding:20px;
+      background:#fff;
+    }
+
+    .note-card.full{
+      grid-column:1 / -1;
+    }
+
+    .number{
+      display:inline-flex;
+      width:34px;
+      height:34px;
+      align-items:center;
+      justify-content:center;
+      border-radius:50%;
+      background:var(--accent);
+      color:white;
+      font-weight:800;
+      margin-right:8px;
+    }
+
+    .note-card h3{
+      display:flex;
+      align-items:center;
+      margin:0 0 12px;
+      font-size:1.15rem;
+    }
+
+    .english{
+      font-size:1.05rem;
+      font-weight:700;
+      margin:8px 0 4px;
+    }
+
+    .chinese{
+      color:var(--muted);
+      background:var(--accent-soft);
+      border-left:4px solid var(--accent);
+      border-radius:10px;
+      padding:10px 12px;
+      margin:8px 0 0;
+    }
+
+    .must-memorise{
+      background:var(--warning);
+      border:1px solid #f0d991;
+      border-radius:14px;
+      padding:14px;
+      margin-top:12px;
+    }
+
+    .must-memorise strong{
+      color:#805d00;
+    }
+
+    .big-answer{
+      font-size:2.3rem;
+      font-weight:900;
+      color:var(--accent);
+      margin:4px 0;
+    }
+
+    .state-flow{
+      display:grid;
+      grid-template-columns:1fr auto 1fr auto 1fr;
+      align-items:center;
+      gap:10px;
+      margin:18px 0;
+    }
+
+    .state{
+      text-align:center;
+      padding:18px 10px;
+      border-radius:16px;
+      border:2px solid var(--line);
+      font-weight:800;
+      background:#fff;
+    }
+
+    .state span{
+      display:block;
+      color:var(--muted);
+      font-weight:500;
+      font-size:.9rem;
+    }
+
+    .arrow{
+      text-align:center;
+      color:var(--accent);
+      font-weight:800;
+      font-size:.95rem;
+    }
+
+    .arrow b{
+      display:block;
+      font-size:1.6rem;
+      line-height:1;
+    }
+
+    table{
+      width:100%;
+      border-collapse:collapse;
+      margin-top:14px;
+      overflow:hidden;
+      border-radius:14px;
+    }
+
+    th,td{
+      border:1px solid var(--line);
+      padding:12px;
+      text-align:left;
+      vertical-align:top;
+    }
+
+    th{
+      background:var(--accent-soft);
+    }
+
+    .memory-line{
+      background:var(--success);
+      border:1px solid #b9e3c8;
+      border-radius:16px;
+      padding:16px;
+      font-weight:700;
+      text-align:center;
+      margin-top:16px;
+    }
+
+    .question-box{
+      background:#f8fafc;
+      border:1px dashed #9aa8bd;
+      border-radius:16px;
+      padding:16px;
+      margin:12px 0;
+    }
+
+    .question-box .answer{
+      color:var(--accent);
+      font-weight:800;
+    }
+
+    .checklist{
+      display:grid;
+      grid-template-columns:repeat(2,1fr);
+      gap:12px;
+      margin-top:16px;
+    }
+
+    .check-item{
+      padding:14px;
+      border-radius:14px;
+      background:#f8fafc;
+      border:1px solid var(--line);
+    }
+
+    .check-item::before{
+      content:"□";
+      font-weight:900;
+      margin-right:8px;
+      color:var(--accent);
+    }
+
+    .footer{
+      text-align:center;
+      color:var(--muted);
+      margin-top:28px;
+      font-size:.9rem;
+    }
+
+    @media (max-width:800px){
+      .exam-focus,.note-grid,.checklist{
+        grid-template-columns:1fr;
+      }
+
+      .note-card.full{
+        grid-column:auto;
+      }
+
+      .state-flow{
+        grid-template-columns:1fr;
+      }
+
+      .arrow b{
+        transform:rotate(90deg);
+      }
+
+      .hero,.section{
+        padding:20px;
+        border-radius:18px;
+      }
+    }
+
+    @media print{
+      body{background:white}
+      .page{width:100%;padding:0}
+      .hero,.section{box-shadow:none;break-inside:avoid}
+      .section{margin:12px 0}
+    }
+  </style>
+
+<style>
+  .chapter-menu{
+    background:#ffffff;
+    border:1px solid var(--line);
+    border-radius:22px;
+    padding:22px;
+    box-shadow:var(--shadow);
+    margin:22px 0;
+  }
+
+  .chapter-menu h2{
+    margin:0 0 6px;
+  }
+
+  .chapter-menu p{
+    margin:0 0 16px;
+    color:var(--muted);
+  }
+
+  .chapter-buttons{
+    display:grid;
+    grid-template-columns:repeat(3,1fr);
+    gap:12px;
+  }
+
+  .chapter-open-btn{
+    border:1px solid var(--line);
+    border-radius:16px;
+    background:#f8fafc;
+    color:var(--text);
+    padding:16px;
+    text-align:left;
+    cursor:pointer;
+    transition:.2s ease;
+    font:inherit;
+  }
+
+  .chapter-open-btn:hover{
+    transform:translateY(-2px);
+    border-color:#93b4ff;
+    background:#eef4ff;
+  }
+
+  .chapter-open-btn.active{
+    border-color:var(--accent);
+    background:var(--accent-soft);
+  }
+
+  .chapter-open-btn strong{
+    display:block;
+    color:var(--accent);
+    font-size:1.06rem;
+    margin-bottom:4px;
+  }
+
+  .chapter-open-btn span{
+    display:block;
+    color:var(--muted);
+    font-size:.9rem;
+  }
+
+  .chapter-group{
+    display:none;
+    margin:20px 0;
+    padding:0;
+  }
+
+  .chapter-group.open{
+    display:block;
+    animation:chapterFade .25s ease;
+  }
+
+  .chapter-group-header{
+    position:sticky;
+    top:8px;
+    z-index:20;
+    display:flex;
+    align-items:center;
+    justify-content:space-between;
+    gap:14px;
+    margin:0 0 14px;
+    padding:14px 16px;
+    border-radius:16px;
+    background:linear-gradient(135deg,#1d4ed8,#3b82f6);
+    color:#fff;
+    box-shadow:0 10px 24px rgba(37,99,235,.22);
+  }
+
+  .chapter-group-header h2{
+    margin:0;
+    font-size:1.18rem;
+  }
+
+  .chapter-close-btn{
+    border:1px solid rgba(255,255,255,.45);
+    background:rgba(255,255,255,.15);
+    color:white;
+    border-radius:10px;
+    padding:8px 12px;
+    cursor:pointer;
+    font-weight:800;
+  }
+
+  @keyframes chapterFade{
+    from{opacity:0;transform:translateY(8px)}
+    to{opacity:1;transform:translateY(0)}
+  }
+
+  @media(max-width:800px){
+    .chapter-buttons{
+      grid-template-columns:1fr;
+    }
+
+    .chapter-group-header{
+      position:static;
+    }
+  }
+
+  @media print{
+    .chapter-menu,.chapter-group-header{
+      display:none !important;
+    }
+
+    .chapter-group{
+      display:block !important;
+    }
+  }
+</style>
+
+</head>
+<body>
+  <main class="page">
+
+    <section class="hero">
+      <div class="tag">FORM 2 SCIENCE • CHAPTER 5</div>
+      <h1>Water: Exam-Focused Notes</h1>
+      <p>
+        English is the main examination language. Chinese explanations are included only to help students understand the scientific meaning.
+      </p>
+
+      <div class="exam-focus">
+        <div class="focus-box">
+          <strong>15</strong>
+          Key English terms
+        </div>
+        <div class="focus-box">
+          <strong>0°C</strong>
+          Melting / freezing point
+        </div>
+        <div class="focus-box">
+          <strong>100°C</strong>
+          Boiling point
+        </div>
+      </div>
+    </section>
+
+
+<section class="chapter-menu" id="chapter-part-menu">
+  <h2>Chapter 5 Learning Sections</h2>
+  <p>Click a part to open it. Click the same part again to close it.</p>
+
+  <div class="chapter-buttons">
+    <button class="chapter-open-btn" data-part="1" onclick="toggleChapterPart(1)">
+      <strong>Part 1</strong>
+      <span>Water and Changes of State</span>
+    </button>
+
+    <button class="chapter-open-btn" data-part="2" onclick="toggleChapterPart(2)">
+      <strong>Part 2</strong>
+      <span>Solution and Rate of Dissolving</span>
+    </button>
+
+    <button class="chapter-open-btn" data-part="3" onclick="toggleChapterPart(3)">
+      <strong>Part 3</strong>
+      <span>Electrolysis of Water</span>
+    </button>
+
+    <button class="chapter-open-btn" data-part="4" onclick="toggleChapterPart(4)">
+      <strong>Part 4</strong>
+      <span>Water Treatment</span>
+    </button>
+
+    <button class="chapter-open-btn" data-part="5" onclick="toggleChapterPart(5)">
+      <strong>Part 5</strong>
+      <span>Water Supply System</span>
+    </button>
+
+    <button class="chapter-open-btn" data-part="6" onclick="toggleChapterPart(6)">
+      <strong>Part 6</strong>
+      <span>Water Pollution and Sustainability</span>
+    </button>
+  </div>
+</section>
+
+
+    <section class="section">
+      <h2>1. Three States of Water</h2>
+      <p class="section-intro">Students must identify each state correctly in English.</p>
+
+      <div class="note-grid">
+        <article class="note-card">
+          <h3><span class="number">1</span>Solid</h3>
+          <p class="english">Ice is water in the solid state.</p>
+          <p class="chinese">冰是水的固体状态。</p>
+        </article>
+
+        <article class="note-card">
+          <h3><span class="number">2</span>Liquid</h3>
+          <p class="english">Water at room temperature is a liquid.</p>
+          <p class="chinese">室温下的水是液体。</p>
+        </article>
+
+        <article class="note-card full">
+          <h3><span class="number">3</span>Gas</h3>
+          <p class="english">Water vapour is water in the gaseous state.</p>
+          <p class="chinese">水蒸气是水的气体状态。</p>
+          <div class="must-memorise">
+            <strong>Exam wording:</strong> Water exists in three states: solid, liquid and gas.
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <section class="section">
+      <h2>2. Important Temperatures</h2>
+      <p class="section-intro">These values must be memorised exactly.</p>
+
+      <div class="note-grid">
+        <article class="note-card">
+          <h3><span class="number">1</span>Melting Point</h3>
+          <div class="big-answer">0°C</div>
+          <p class="english">Ice melts at 0°C.</p>
+          <p class="chinese">冰在 0°C 熔化。</p>
+        </article>
+
+        <article class="note-card">
+          <h3><span class="number">2</span>Freezing Point</h3>
+          <div class="big-answer">0°C</div>
+          <p class="english">Water freezes at 0°C.</p>
+          <p class="chinese">水在 0°C 凝固。</p>
+        </article>
+
+        <article class="note-card full">
+          <h3><span class="number">3</span>Boiling Point</h3>
+          <div class="big-answer">100°C</div>
+          <p class="english">Water boils at 100°C under normal atmospheric pressure.</p>
+          <p class="chinese">在正常大气压下，水在 100°C 沸腾。</p>
+        </article>
+      </div>
+
+      <div class="memory-line">
+        0°C = melting point and freezing point • 100°C = boiling point
+      </div>
+    </section>
+
+    <section class="section">
+      <h2>3. Changes in the State of Water</h2>
+      <p class="section-intro">The English process names are compulsory.</p>
+
+      <div class="state-flow">
+        <div class="state">Solid<span>Ice 冰</span></div>
+        <div class="arrow">Melting<b>→</b><span>熔化</span></div>
+        <div class="state">Liquid<span>Water 水</span></div>
+        <div class="arrow">Boiling<b>→</b><span>沸腾</span></div>
+        <div class="state">Gas<span>Water vapour 水蒸气</span></div>
+      </div>
+
+      <div class="state-flow">
+        <div class="state">Gas<span>Water vapour 水蒸气</span></div>
+        <div class="arrow">Condensation<b>→</b><span>凝结</span></div>
+        <div class="state">Liquid<span>Water 水</span></div>
+        <div class="arrow">Freezing<b>→</b><span>凝固</span></div>
+        <div class="state">Solid<span>Ice 冰</span></div>
+      </div>
+
+      <table>
+        <thead>
+          <tr>
+            <th>Process</th>
+            <th>Change of State</th>
+            <th>华语辅助</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td><strong>Melting</strong></td>
+            <td>Solid → Liquid</td>
+            <td>固体变液体</td>
+          </tr>
+          <tr>
+            <td><strong>Freezing</strong></td>
+            <td>Liquid → Solid</td>
+            <td>液体变固体</td>
+          </tr>
+          <tr>
+            <td><strong>Boiling</strong></td>
+            <td>Liquid → Gas</td>
+            <td>液体变气体</td>
+          </tr>
+          <tr>
+            <td><strong>Condensation</strong></td>
+            <td>Gas → Liquid</td>
+            <td>气体变液体</td>
+          </tr>
+        </tbody>
+      </table>
+    </section>
+
+    <section class="section">
+      <h2>4. Evaporation and Boiling</h2>
+      <p class="section-intro">This comparison is a common examination question.</p>
+
+      <table>
+        <thead>
+          <tr>
+            <th>Evaporation</th>
+            <th>Boiling</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>Occurs at any temperature.</td>
+            <td>Occurs at the boiling point.</td>
+          </tr>
+          <tr>
+            <td>Occurs only at the surface of the liquid.</td>
+            <td>Occurs throughout the liquid.</td>
+          </tr>
+          <tr>
+            <td>Usually occurs slowly.</td>
+            <td>Occurs rapidly.</td>
+          </tr>
+          <tr>
+            <td>可在任何温度发生，只在液体表面进行。</td>
+            <td>在沸点发生，并在整个液体中进行。</td>
+          </tr>
+        </tbody>
+      </table>
+
+      <div class="must-memorise">
+        <strong>Do not write:</strong> Evaporation only happens at 100°C.<br>
+        <strong>Correct:</strong> Evaporation can occur at any temperature.
+      </div>
+    </section>
+
+    <section class="section">
+      <h2>5. Water Cycle</h2>
+      <p class="section-intro">Students must know the process names and the correct sequence.</p>
+
+      <div class="state-flow">
+        <div class="state">Evaporation<span>蒸发</span></div>
+        <div class="arrow"><b>→</b></div>
+        <div class="state">Condensation<span>凝结</span></div>
+        <div class="arrow"><b>→</b></div>
+        <div class="state">Precipitation<span>降水</span></div>
+      </div>
+
+      <div class="memory-line">
+        Evaporation → Condensation → Precipitation → Collection
+      </div>
+    </section>
+
+    <section class="section">
+      <h2>6. Must-Memorise Vocabulary</h2>
+      <p class="section-intro">English first. Chinese is only for support.</p>
+
+      <table>
+        <thead>
+          <tr>
+            <th>English Term</th>
+            <th>华语辅助</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr><td>Water</td><td>水</td></tr>
+          <tr><td>Ice</td><td>冰</td></tr>
+          <tr><td>Water vapour</td><td>水蒸气</td></tr>
+          <tr><td>Solid</td><td>固体</td></tr>
+          <tr><td>Liquid</td><td>液体</td></tr>
+          <tr><td>Gas</td><td>气体</td></tr>
+          <tr><td>Melting</td><td>熔化</td></tr>
+          <tr><td>Freezing</td><td>凝固</td></tr>
+          <tr><td>Boiling</td><td>沸腾</td></tr>
+          <tr><td>Evaporation</td><td>蒸发</td></tr>
+          <tr><td>Condensation</td><td>凝结</td></tr>
+          <tr><td>Melting point</td><td>熔点</td></tr>
+          <tr><td>Freezing point</td><td>凝固点</td></tr>
+          <tr><td>Boiling point</td><td>沸点</td></tr>
+          <tr><td>Precipitation</td><td>降水</td></tr>
+        </tbody>
+      </table>
+    </section>
+
+    <section class="section">
+      <h2>7. Common Exam Questions</h2>
+
+      <div class="question-box">
+        <strong>Question:</strong> At what temperature does water boil?<br>
+        <span class="answer">Answer: Water boils at 100°C.</span>
+      </div>
+
+      <div class="question-box">
+        <strong>Question:</strong> What process changes ice into water?<br>
+        <span class="answer">Answer: Melting.</span>
+      </div>
+
+      <div class="question-box">
+        <strong>Question:</strong> What process changes water vapour into liquid water?<br>
+        <span class="answer">Answer: Condensation.</span>
+      </div>
+
+      <div class="question-box">
+        <strong>Question:</strong> State one difference between evaporation and boiling.<br>
+        <span class="answer">Answer: Evaporation occurs at any temperature, whereas boiling occurs at the boiling point.</span>
+      </div>
+    </section>
+
+    <section class="section">
+      <h2>8. Exam Readiness Checklist</h2>
+      <div class="checklist">
+        <div class="check-item">I can name the three states of water in English.</div>
+        <div class="check-item">I remember 0°C and 100°C.</div>
+        <div class="check-item">I can label all four state-change processes.</div>
+        <div class="check-item">I can compare evaporation and boiling.</div>
+        <div class="check-item">I can arrange the water cycle correctly.</div>
+        <div class="check-item">I can answer using complete English sentences.</div>
+      </div>
+    </section>
+
+    
+
+
+
+<section class="section" id="smart-revision">
+  <h2>9. Smart Revision System</h2>
+  <p class="section-intro">
+    Complete all questions. Wrong answers will receive detailed English and Chinese explanations, memory tricks and correction guidance.
+  </p>
+
+  <div class="quiz-dashboard">
+    <div class="quiz-stat">
+      <span id="progressText">0 / 15</span>
+      <small>Questions answered</small>
+    </div>
+    <div class="quiz-stat">
+      <span id="scoreText">0%</span>
+      <small>Current score</small>
+    </div>
+    <div class="quiz-stat">
+      <span id="masteryText">Not assessed</span>
+      <small>Mastery level</small>
+    </div>
+  </div>
+
+  <div id="quizContainer"></div>
+
+  <div class="quiz-actions">
+    <button class="quiz-btn primary" onclick="submitSmartQuiz()">Check All Answers</button>
+    <button class="quiz-btn" onclick="retryWrongQuestions()">Retry Wrong Questions</button>
+    <button class="quiz-btn" onclick="resetSmartQuiz()">Reset Quiz</button>
+  </div>
+
+  <div id="overallResult" class="overall-result" hidden></div>
+</section>
+
+<style>
+  .quiz-dashboard{
+    display:grid;
+    grid-template-columns:repeat(3,1fr);
+    gap:14px;
+    margin:18px 0 24px;
+  }
+
+  .quiz-stat{
+    background:#f8fafc;
+    border:1px solid var(--line);
+    border-radius:16px;
+    padding:16px;
+    text-align:center;
+  }
+
+  .quiz-stat span{
+    display:block;
+    font-size:1.6rem;
+    font-weight:900;
+    color:var(--accent);
+  }
+
+  .quiz-stat small{
+    color:var(--muted);
+  }
+
+  .quiz-question{
+    border:1px solid var(--line);
+    border-radius:18px;
+    padding:20px;
+    margin:16px 0;
+    background:#fff;
+  }
+
+  .quiz-question.correct{
+    border-color:#62b57a;
+    background:#f1fbf4;
+  }
+
+  .quiz-question.wrong{
+    border-color:#dc6f6f;
+    background:#fff7f7;
+  }
+
+  .q-label{
+    display:flex;
+    justify-content:space-between;
+    gap:12px;
+    align-items:flex-start;
+    margin-bottom:12px;
+  }
+
+  .q-number{
+    font-weight:900;
+    color:var(--accent);
+  }
+
+  .q-level{
+    font-size:.78rem;
+    padding:4px 9px;
+    border-radius:999px;
+    background:var(--accent-soft);
+    color:var(--accent);
+    font-weight:800;
+  }
+
+  .q-text{
+    font-size:1.05rem;
+    font-weight:700;
+    margin:8px 0 14px;
+  }
+
+  .option{
+    display:block;
+    border:1px solid var(--line);
+    border-radius:12px;
+    padding:10px 12px;
+    margin:8px 0;
+    cursor:pointer;
+    background:#fff;
+  }
+
+  .option:hover{
+    background:#f8fafc;
+  }
+
+  .quiz-input{
+    width:100%;
+    max-width:520px;
+    padding:12px 14px;
+    border:1px solid var(--line);
+    border-radius:12px;
+    font-size:1rem;
+  }
+
+  .feedback{
+    margin-top:16px;
+    padding:16px;
+    border-radius:14px;
+    line-height:1.65;
+  }
+
+  .feedback.correct-box{
+    background:#eaf8ef;
+    border:1px solid #b7dfc2;
+  }
+
+  .feedback.wrong-box{
+    background:#fff0f0;
+    border:1px solid #efbcbc;
+  }
+
+  .feedback h4{
+    margin:0 0 8px;
+  }
+
+  .memory-trick{
+    margin-top:10px;
+    background:#fff8df;
+    border-left:4px solid #e6b93f;
+    padding:10px 12px;
+    border-radius:10px;
+    font-weight:700;
+  }
+
+  .quiz-actions{
+    display:flex;
+    flex-wrap:wrap;
+    gap:12px;
+    margin-top:22px;
+  }
+
+  .quiz-btn{
+    padding:12px 18px;
+    border:none;
+    border-radius:12px;
+    background:#e9eef7;
+    color:var(--text);
+    font-weight:800;
+    cursor:pointer;
+  }
+
+  .quiz-btn.primary{
+    background:var(--accent);
+    color:white;
+  }
+
+  .overall-result{
+    margin-top:20px;
+    padding:20px;
+    border-radius:16px;
+    border:1px solid var(--line);
+    background:#f8fafc;
+  }
+
+  .mastery-grid{
+    display:grid;
+    grid-template-columns:repeat(2,1fr);
+    gap:10px;
+    margin-top:14px;
+  }
+
+  .mastery-item{
+    border:1px solid var(--line);
+    border-radius:12px;
+    padding:12px;
+    background:white;
+  }
+
+  @media (max-width:800px){
+    .quiz-dashboard,.mastery-grid{
+      grid-template-columns:1fr;
+    }
+  }
+</style>
+
+<script>
+const smartQuestions = [
+  {
+    id:1, level:"Easy", topic:"Three states",
+    type:"mcq",
+    question:"Water exists in how many states?",
+    options:["Two","Three","Four","Five"],
+    answer:1,
+    explanationEn:"Water exists as solid, liquid and gas. Ice is solid, water is liquid and water vapour is gas.",
+    explanationZh:"水有三种状态：固体、液体和气体。冰是固体，水是液体，水蒸气是气体。",
+    trick:"Three states = Solid, Liquid, Gas."
+  },
+  {
+    id:2, level:"Easy", topic:"Three states",
+    type:"mcq",
+    question:"What is the state of ice?",
+    options:["Solid","Liquid","Gas","Water vapour"],
+    answer:0,
+    explanationEn:"Ice has a fixed shape and is water in the solid state.",
+    explanationZh:"冰有固定形状，所以它是水的固体状态。",
+    trick:"Ice = Solid."
+  },
+  {
+    id:3, level:"Easy", topic:"Temperature",
+    type:"mcq",
+    question:"What is the melting point of ice?",
+    options:["0°C","50°C","100°C","-100°C"],
+    answer:0,
+    explanationEn:"Ice melts at 0°C under normal conditions.",
+    explanationZh:"在正常情况下，冰在 0°C 熔化。",
+    trick:"0°C melts ice."
+  },
+  {
+    id:4, level:"Easy", topic:"Temperature",
+    type:"mcq",
+    question:"What is the boiling point of water?",
+    options:["0°C","25°C","80°C","100°C"],
+    answer:3,
+    explanationEn:"Water boils at 100°C under normal atmospheric pressure.",
+    explanationZh:"在正常大气压下，水在 100°C 沸腾。",
+    trick:"0 freezes, 100 boils. 0 冻，100 滚。"
+  },
+  {
+    id:5, level:"Medium", topic:"State changes",
+    type:"text",
+    question:"Ice changes into liquid water. Name the process.",
+    answerText:["melting"],
+    explanationEn:"Ice is a solid. A change from solid to liquid is called melting.",
+    explanationZh:"冰是固体。固体变成液体的过程叫作熔化。",
+    trick:"Solid → Liquid = Melting."
+  },
+  {
+    id:6, level:"Medium", topic:"State changes",
+    type:"text",
+    question:"Water vapour changes into liquid water. Name the process.",
+    answerText:["condensation"],
+    explanationEn:"Water vapour is a gas. A change from gas to liquid is called condensation.",
+    explanationZh:"水蒸气是气体。气体变成液体的过程叫作凝结。",
+    trick:"Gas comes back to water = Condensation."
+  },
+  {
+    id:7, level:"Medium", topic:"State changes",
+    type:"mcq",
+    question:"Which change of state occurs during freezing?",
+    options:["Solid to liquid","Liquid to solid","Liquid to gas","Gas to liquid"],
+    answer:1,
+    explanationEn:"Freezing occurs when a liquid loses heat and becomes a solid.",
+    explanationZh:"凝固发生在液体失去热量并变成固体时。",
+    trick:"Freezing = Liquid → Solid."
+  },
+  {
+    id:8, level:"Medium", topic:"Evaporation",
+    type:"mcq",
+    question:"Which statement about evaporation is correct?",
+    options:[
+      "It occurs only at 100°C.",
+      "It occurs throughout the liquid.",
+      "It can occur at any temperature.",
+      "It is always faster than boiling."
+    ],
+    answer:2,
+    explanationEn:"Evaporation can occur at any temperature and only takes place at the surface of a liquid.",
+    explanationZh:"蒸发可以在任何温度发生，而且只在液体表面进行。",
+    trick:"Evaporation = Any temperature + Surface."
+  },
+  {
+    id:9, level:"Medium", topic:"Boiling vs evaporation",
+    type:"mcq",
+    question:"Which process occurs throughout the whole liquid?",
+    options:["Evaporation","Boiling","Condensation","Freezing"],
+    answer:1,
+    explanationEn:"Boiling occurs throughout the liquid, while evaporation occurs only at the surface.",
+    explanationZh:"沸腾发生在整个液体中，而蒸发只发生在液体表面。",
+    trick:"Boiling = Whole liquid. Evaporation = Surface only."
+  },
+  {
+    id:10, level:"Hard", topic:"Application",
+    type:"mcq",
+    question:"Wet clothes dry on a cloudy day even though the temperature is below 100°C. Which process explains this?",
+    options:["Boiling","Freezing","Evaporation","Condensation"],
+    answer:2,
+    explanationEn:"The water in the clothes changes slowly into water vapour at the surface. Evaporation does not require 100°C.",
+    explanationZh:"衣服里的水在表面慢慢变成水蒸气。蒸发不需要达到 100°C。",
+    trick:"Below 100°C can still evaporate."
+  },
+  {
+    id:11, level:"Hard", topic:"Application",
+    type:"mcq",
+    question:"Water droplets form on the outside of a cold glass. What causes the droplets?",
+    options:[
+      "Water leaks through the glass.",
+      "Water vapour in the air condenses.",
+      "The glass melts.",
+      "The water boils."
+    ],
+    answer:1,
+    explanationEn:"Water vapour in the surrounding air loses heat when it touches the cold glass and changes into liquid water.",
+    explanationZh:"空气中的水蒸气接触冷玻璃后失去热量，并变成液态水。",
+    trick:"Cold surface + water droplets = Condensation."
+  },
+  {
+    id:12, level:"Hard", topic:"Water cycle",
+    type:"mcq",
+    question:"Which sequence is correct in the water cycle?",
+    options:[
+      "Condensation → Evaporation → Collection → Precipitation",
+      "Evaporation → Condensation → Precipitation → Collection",
+      "Collection → Precipitation → Evaporation → Condensation",
+      "Precipitation → Collection → Condensation → Evaporation"
+    ],
+    answer:1,
+    explanationEn:"Water first evaporates, then condenses into clouds, falls as precipitation and finally collects.",
+    explanationZh:"水先蒸发，再凝结成云，接着以降水形式落下，最后汇集。",
+    trick:"E-C-P-C: Evaporation, Condensation, Precipitation, Collection."
+  },
+  {
+    id:13, level:"Hard", topic:"Reasoning",
+    type:"mcq",
+    question:"At 60°C, which statement is correct?",
+    options:[
+      "Water is boiling.",
+      "Evaporation cannot occur.",
+      "Evaporation can occur but boiling normally does not.",
+      "Water must freeze."
+    ],
+    answer:2,
+    explanationEn:"Evaporation can occur at any temperature. Under normal pressure, boiling occurs at 100°C, not 60°C.",
+    explanationZh:"蒸发可以在任何温度发生。在正常大气压下，水在 100°C 沸腾，不是在 60°C。",
+    trick:"Any temperature = Evaporation; 100°C = Boiling."
+  },
+  {
+    id:14, level:"Hard", topic:"Vocabulary",
+    type:"text",
+    question:"Complete the sentence: Gas changes into liquid by __________.",
+    answerText:["condensation"],
+    explanationEn:"The scientific term for gas changing into liquid is condensation.",
+    explanationZh:"气体变成液体的科学名词是凝结。",
+    trick:"Gas → Liquid = Condensation."
+  },
+  {
+    id:15, level:"Hard", topic:"Comparison",
+    type:"mcq",
+    question:"Which comparison is correct?",
+    options:[
+      "Evaporation: whole liquid; Boiling: surface only",
+      "Evaporation: any temperature; Boiling: boiling point",
+      "Evaporation: fast; Boiling: always slow",
+      "Evaporation: gas to liquid; Boiling: liquid to solid"
+    ],
+    answer:1,
+    explanationEn:"Evaporation can happen at any temperature, whereas boiling happens at the boiling point.",
+    explanationZh:"蒸发可以在任何温度发生，而沸腾发生在沸点。",
+    trick:"Evaporation = any temperature; Boiling = boiling point."
+  }
+];
+
+let activeQuestions = [...smartQuestions];
+let lastWrongIds = [];
+
+function renderSmartQuiz(){
+  const container = document.getElementById("quizContainer");
+  container.innerHTML = "";
+
+  activeQuestions.forEach((q, index) => {
+    const card = document.createElement("div");
+    card.className = "quiz-question";
+    card.id = "question-" + q.id;
+
+    let inputHtml = "";
+    if(q.type === "mcq"){
+      inputHtml = q.options.map((opt, i) => `
+        <label class="option">
+          <input type="radio" name="q${q.id}" value="${i}" onchange="updateProgress()"> ${opt}
+        </label>
+      `).join("");
+    } else {
+      inputHtml = `<input class="quiz-input" id="input-${q.id}" type="text" placeholder="Type your answer in English" oninput="updateProgress()">`;
+    }
+
+    card.innerHTML = `
+      <div class="q-label">
+        <span class="q-number">Question ${index + 1}</span>
+        <span class="q-level">${q.level}</span>
+      </div>
+      <div class="q-text">${q.question}</div>
+      ${inputHtml}
+      <div id="feedback-${q.id}"></div>
+    `;
+    container.appendChild(card);
+  });
+
+  updateProgress();
+}
+
+function getAnswer(q){
+  if(q.type === "mcq"){
+    const selected = document.querySelector(`input[name="q${q.id}"]:checked`);
+    return selected ? Number(selected.value) : null;
+  }
+  const input = document.getElementById("input-" + q.id);
+  return input ? input.value.trim().toLowerCase() : "";
+}
+
+function isCorrect(q, answer){
+  if(q.type === "mcq") return answer === q.answer;
+  return q.answerText.includes(answer);
+}
+
+function updateProgress(){
+  let answered = 0;
+  activeQuestions.forEach(q => {
+    const ans = getAnswer(q);
+    if((q.type === "mcq" && ans !== null) || (q.type === "text" && ans !== "")){
+      answered++;
+    }
+  });
+  document.getElementById("progressText").textContent = `${answered} / ${activeQuestions.length}`;
+}
+
+function submitSmartQuiz(){
+  let correct = 0;
+  let wrongIds = [];
+  const topicScores = {};
+
+  activeQuestions.forEach(q => {
+    const answer = getAnswer(q);
+    const ok = isCorrect(q, answer);
+    const card = document.getElementById("question-" + q.id);
+    const feedback = document.getElementById("feedback-" + q.id);
+
+    if(!topicScores[q.topic]) topicScores[q.topic] = {correct:0,total:0};
+    topicScores[q.topic].total++;
+
+    if(ok){
+      correct++;
+      topicScores[q.topic].correct++;
+      card.className = "quiz-question correct";
+      feedback.innerHTML = `
+        <div class="feedback correct-box">
+          <h4>Correct</h4>
+          <strong>English:</strong> ${q.explanationEn}<br>
+          <strong>华语：</strong>${q.explanationZh}
+          <div class="memory-trick">Memory Trick 口诀：${q.trick}</div>
+        </div>
+      `;
+    } else {
+      wrongIds.push(q.id);
+      card.className = "quiz-question wrong";
+      feedback.innerHTML = `
+        <div class="feedback wrong-box">
+          <h4>Incorrect — Learn This Again</h4>
+          <strong>Why? 原因：</strong><br>
+          <strong>English:</strong> ${q.explanationEn}<br>
+          <strong>华语：</strong>${q.explanationZh}
+          <div class="memory-trick">Memory Trick 口诀：${q.trick}</div>
+        </div>
+      `;
+    }
+  });
+
+  lastWrongIds = wrongIds;
+  const percent = Math.round(correct / activeQuestions.length * 100);
+  document.getElementById("scoreText").textContent = percent + "%";
+
+  let mastery = "Needs Support";
+  if(percent >= 90) mastery = "Mastered";
+  else if(percent >= 75) mastery = "Almost Mastered";
+  else if(percent >= 60) mastery = "Developing";
+  document.getElementById("masteryText").textContent = mastery;
+
+  const result = document.getElementById("overallResult");
+  result.hidden = false;
+
+  let topicHtml = Object.entries(topicScores).map(([topic,data]) => {
+    const p = Math.round(data.correct/data.total*100);
+    return `<div class="mastery-item"><strong>${topic}</strong><br>${data.correct}/${data.total} correct (${p}%)</div>`;
+  }).join("");
+
+  let advice = "";
+  if(percent >= 90){
+    advice = "Excellent. The student has mastered this section and may continue to the next part.";
+  }else if(percent >= 75){
+    advice = "Good progress. Retry the wrong questions before moving on.";
+  }else{
+    advice = "Do not continue yet. Review the explanations and retry all wrong questions.";
+  }
+
+  result.innerHTML = `
+    <h3>Final Result: ${correct} / ${activeQuestions.length} (${percent}%)</h3>
+    <p><strong>Teacher's Advice:</strong> ${advice}</p>
+    <div class="mastery-grid">${topicHtml}</div>
+  `;
+
+  result.scrollIntoView({behavior:"smooth", block:"center"});
+}
+
+function retryWrongQuestions(){
+  if(lastWrongIds.length === 0){
+    alert("Please check all answers first, or there are no wrong questions.");
+    return;
+  }
+  activeQuestions = smartQuestions.filter(q => lastWrongIds.includes(q.id));
+  lastWrongIds = [];
+  document.getElementById("overallResult").hidden = true;
+  document.getElementById("scoreText").textContent = "0%";
+  document.getElementById("masteryText").textContent = "Retry mode";
+  renderSmartQuiz();
+  document.getElementById("smart-revision").scrollIntoView({behavior:"smooth"});
+}
+
+function resetSmartQuiz(){
+  activeQuestions = [...smartQuestions];
+  lastWrongIds = [];
+  document.getElementById("overallResult").hidden = true;
+  document.getElementById("scoreText").textContent = "0%";
+  document.getElementById("masteryText").textContent = "Not assessed";
+  renderSmartQuiz();
+}
+
+document.addEventListener("DOMContentLoaded", renderSmartQuiz);
+</script>
+
+
+<section class="section" id="part2-solution-notes">
+  <h2>Part 2: Solution</h2>
+  <p class="section-intro">
+    English is the main examination language. Chinese explanations are included only to support understanding.
+  </p>
+
+  <div class="note-grid">
+    <article class="note-card">
+      <h3><span class="number">1</span>Solute</h3>
+      <p class="english">A solute is a substance that dissolves in a solvent.</p>
+      <p class="chinese">溶质是溶解在溶剂中的物质。</p>
+      <div class="must-memorise"><strong>Example:</strong> Sugar in sugar solution.</div>
+    </article>
+
+    <article class="note-card">
+      <h3><span class="number">2</span>Solvent</h3>
+      <p class="english">A solvent is a liquid that dissolves a solute.</p>
+      <p class="chinese">溶剂是用来溶解溶质的液体。</p>
+      <div class="must-memorise"><strong>Example:</strong> Water in sugar solution.</div>
+    </article>
+
+    <article class="note-card full">
+      <h3><span class="number">3</span>Solution</h3>
+      <p class="english">A solution is a uniform mixture formed when a solute dissolves in a solvent.</p>
+      <p class="chinese">溶液是溶质溶解在溶剂中后形成的均匀混合物。</p>
+      <div class="memory-line">Solute + Solvent = Solution</div>
+    </article>
+  </div>
+</section>
+
+<section class="section">
+  <h2>2. Soluble and Insoluble Substances</h2>
+  <table>
+    <thead>
+      <tr>
+        <th>Term</th>
+        <th>Meaning</th>
+        <th>华语辅助</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><strong>Soluble</strong></td>
+        <td>A substance that can dissolve in a solvent.</td>
+        <td>可以溶解在溶剂中的物质。</td>
+      </tr>
+      <tr>
+        <td><strong>Insoluble</strong></td>
+        <td>A substance that cannot dissolve in a solvent.</td>
+        <td>不能溶解在溶剂中的物质。</td>
+      </tr>
+    </tbody>
+  </table>
+
+  <div class="must-memorise">
+    <strong>Memory Trick:</strong> Soluble = can dissolve. Insoluble = cannot dissolve.
+  </div>
+</section>
+
+<section class="section">
+  <h2>3. Dilute, Concentrated and Saturated Solutions</h2>
+
+  <div class="note-grid">
+    <article class="note-card">
+      <h3>Dilute Solution</h3>
+      <p class="english">Contains a small amount of solute compared to the amount of solvent.</p>
+      <p class="chinese">相对于溶剂，含有较少量的溶质。</p>
+    </article>
+
+    <article class="note-card">
+      <h3>Concentrated Solution</h3>
+      <p class="english">Contains a large amount of solute compared to the amount of solvent.</p>
+      <p class="chinese">相对于溶剂，含有较大量的溶质。</p>
+    </article>
+
+    <article class="note-card full">
+      <h3>Saturated Solution</h3>
+      <p class="english">A solution that cannot dissolve any more solute at a particular temperature.</p>
+      <p class="chinese">在特定温度下，已经不能再溶解更多溶质的溶液。</p>
+      <div class="must-memorise">
+        <strong>Exam clue:</strong> Extra solute remains undissolved at the bottom.
+      </div>
+    </article>
+  </div>
+
+  <table>
+    <thead>
+      <tr>
+        <th>Dilute</th>
+        <th>Concentrated</th>
+        <th>Saturated</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>Small amount of solute</td>
+        <td>Large amount of solute</td>
+        <td>Cannot dissolve more solute</td>
+      </tr>
+      <tr>
+        <td>较少溶质</td>
+        <td>较多溶质</td>
+        <td>不能再溶解更多溶质</td>
+      </tr>
+    </tbody>
+  </table>
+</section>
+
+<section class="section">
+  <h2>4. Factors Affecting the Rate of Dissolving</h2>
+  <p class="section-intro">These factors affect how fast a solute dissolves, not how much can dissolve.</p>
+
+  <div class="note-grid">
+    <article class="note-card">
+      <h3>Higher Temperature</h3>
+      <p class="english">Solute particles and solvent particles move faster and collide more frequently.</p>
+      <p class="chinese">溶质与溶剂粒子移动得更快，碰撞更频繁，因此溶解速度更快。</p>
+      <div class="memory-line">Hotter → Faster particles → Faster dissolving</div>
+    </article>
+
+    <article class="note-card">
+      <h3>Stirring</h3>
+      <p class="english">Stirring brings fresh solvent into contact with the solute more quickly.</p>
+      <p class="chinese">搅拌让新的溶剂更快接触溶质，因此溶解更快。</p>
+      <div class="memory-line">Stir → More contact → Faster dissolving</div>
+    </article>
+
+    <article class="note-card full">
+      <h3>Smaller Size of Solute</h3>
+      <p class="english">Smaller particles have a larger total surface area exposed to the solvent.</p>
+      <p class="chinese">较小的颗粒拥有更大的总表面积与溶剂接触，因此溶解更快。</p>
+      <div class="memory-line">Smaller size → Larger surface area → Faster dissolving</div>
+    </article>
+  </div>
+
+  <div class="must-memorise">
+    <strong>Do not confuse:</strong> Rate of dissolving means how fast. Solubility means how much can dissolve.
+  </div>
+</section>
+
+<section class="section">
+  <h2>5. Solution, Suspension and Colloid</h2>
+
+  <table>
+    <thead>
+      <tr>
+        <th>Feature</th>
+        <th>Solution</th>
+        <th>Suspension</th>
+        <th>Colloid</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>Appearance</td>
+        <td>Uniform and transparent</td>
+        <td>Cloudy</td>
+        <td>Cloudy but stable</td>
+      </tr>
+      <tr>
+        <td>Particles settle?</td>
+        <td>No</td>
+        <td>Yes</td>
+        <td>No</td>
+      </tr>
+      <tr>
+        <td>Can be separated by filtration?</td>
+        <td>No</td>
+        <td>Yes</td>
+        <td>No</td>
+      </tr>
+      <tr>
+        <td>Example</td>
+        <td>Salt water</td>
+        <td>Muddy water</td>
+        <td>Milk</td>
+      </tr>
+      <tr>
+        <td>华语</td>
+        <td>溶液</td>
+        <td>悬浮液</td>
+        <td>胶体</td>
+      </tr>
+    </tbody>
+  </table>
+
+  <div class="must-memorise">
+    <strong>Memory Trick:</strong><br>
+    Solution = clear and does not settle.<br>
+    Suspension = settles and can be filtered.<br>
+    Colloid = cloudy but does not settle.
+  </div>
+</section>
+
+<section class="section">
+  <h2>6. Water as a Universal Solvent</h2>
+  <p class="english">Water is called a universal solvent because it can dissolve many substances.</p>
+  <p class="chinese">水被称为通用溶剂，因为它能够溶解许多物质。</p>
+
+  <div class="must-memorise">
+    <strong>Important:</strong> Universal does not mean water can dissolve everything.
+  </div>
+
+  <p class="english">Some substances such as oil do not dissolve in water.</p>
+  <p class="chinese">有些物质，例如油，不能溶解在水中。</p>
+</section>
+
+<section class="section" id="part2-smart-revision">
+  <h2>Part 2 Smart Revision Quiz</h2>
+  <p class="section-intro">
+    Complete all questions. Wrong answers will show English and Chinese explanations, memory tricks and correction guidance.
+  </p>
+
+  <div class="quiz-dashboard">
+    <div class="quiz-stat">
+      <span id="p2Progress">0 / 18</span>
+      <small>Questions answered</small>
+    </div>
+    <div class="quiz-stat">
+      <span id="p2Score">0%</span>
+      <small>Current score</small>
+    </div>
+    <div class="quiz-stat">
+      <span id="p2Mastery">Not assessed</span>
+      <small>Mastery level</small>
+    </div>
+  </div>
+
+  <div id="p2QuizContainer"></div>
+
+  <div class="quiz-actions">
+    <button class="quiz-btn primary" onclick="submitPart2Quiz()">Check All Answers</button>
+    <button class="quiz-btn" onclick="retryPart2Wrong()">Retry Wrong Questions</button>
+    <button class="quiz-btn" onclick="resetPart2Quiz()">Reset Quiz</button>
+  </div>
+
+  <div id="p2OverallResult" class="overall-result" hidden></div>
+</section>
+
+<script>
+const part2Questions = [
+  {
+    id:201, level:"Easy", topic:"Basic terms", type:"mcq",
+    question:"Which substance dissolves in a solvent?",
+    options:["Solute","Solution","Suspension","Colloid"], answer:0,
+    explanationEn:"A solute is the substance that dissolves in a solvent.",
+    explanationZh:"溶质是溶解在溶剂中的物质。",
+    trick:"Solute gets dissolved."
+  },
+  {
+    id:202, level:"Easy", topic:"Basic terms", type:"mcq",
+    question:"Which substance dissolves the solute?",
+    options:["Solvent","Solute","Suspension","Colloid"], answer:0,
+    explanationEn:"A solvent is usually a liquid that dissolves a solute.",
+    explanationZh:"溶剂通常是用来溶解溶质的液体。",
+    trick:"Solvent does the dissolving."
+  },
+  {
+    id:203, level:"Easy", topic:"Basic terms", type:"text",
+    question:"Complete the formula: Solute + Solvent = ______.",
+    answerText:["solution"],
+    explanationEn:"A solution is formed when a solute dissolves in a solvent.",
+    explanationZh:"溶质溶解在溶剂中后会形成溶液。",
+    trick:"Solute + Solvent = Solution."
+  },
+  {
+    id:204, level:"Easy", topic:"Soluble", type:"mcq",
+    question:"A substance that can dissolve in water is described as ______.",
+    options:["Insoluble","Soluble","Saturated","Concentrated"], answer:1,
+    explanationEn:"Soluble means able to dissolve in a solvent.",
+    explanationZh:"可溶表示能够溶解在溶剂中。",
+    trick:"Soluble = can dissolve."
+  },
+  {
+    id:205, level:"Medium", topic:"Concentration", type:"mcq",
+    question:"Which solution contains a small amount of solute compared to the solvent?",
+    options:["Dilute solution","Concentrated solution","Saturated solution","Suspension"], answer:0,
+    explanationEn:"A dilute solution contains relatively little solute.",
+    explanationZh:"稀溶液含有相对较少的溶质。",
+    trick:"Dilute = little solute."
+  },
+  {
+    id:206, level:"Medium", topic:"Concentration", type:"mcq",
+    question:"Which statement best describes a saturated solution?",
+    options:[
+      "It contains no solvent.",
+      "It cannot dissolve any more solute at that temperature.",
+      "It always looks cloudy.",
+      "It contains only a small amount of solute."
+    ], answer:1,
+    explanationEn:"A saturated solution has reached the maximum amount of solute that can dissolve at a particular temperature.",
+    explanationZh:"饱和溶液在特定温度下已经达到可溶解溶质的最大量。",
+    trick:"Saturated = no more can dissolve."
+  },
+  {
+    id:207, level:"Medium", topic:"Rate of dissolving", type:"mcq",
+    question:"Why does sugar dissolve faster in hot water?",
+    options:[
+      "Hot water contains less solvent.",
+      "Particles move faster and collide more frequently.",
+      "Sugar changes into a gas.",
+      "The water becomes saturated immediately."
+    ], answer:1,
+    explanationEn:"At a higher temperature, particles move faster and collide more often, so dissolving occurs faster.",
+    explanationZh:"温度较高时，粒子移动更快、碰撞更频繁，因此溶解速度更快。",
+    trick:"Hotter → Faster particles → Faster dissolving."
+  },
+  {
+    id:208, level:"Medium", topic:"Rate of dissolving", type:"mcq",
+    question:"Why does stirring increase the rate of dissolving?",
+    options:[
+      "It increases the size of the solute.",
+      "It brings fresh solvent into contact with the solute.",
+      "It lowers the temperature.",
+      "It changes the solute into a solvent."
+    ], answer:1,
+    explanationEn:"Stirring continuously brings fresh solvent particles into contact with the solute.",
+    explanationZh:"搅拌会不断让新的溶剂粒子接触溶质。",
+    trick:"Stir → More contact → Faster dissolving."
+  },
+  {
+    id:209, level:"Medium", topic:"Rate of dissolving", type:"mcq",
+    question:"Why does powdered sugar dissolve faster than a sugar cube?",
+    options:[
+      "It has a larger total surface area.",
+      "It has a smaller mass.",
+      "It becomes a solvent.",
+      "It lowers the boiling point."
+    ], answer:0,
+    explanationEn:"Smaller particles expose a larger total surface area to the solvent.",
+    explanationZh:"较小颗粒能让更大的总表面积接触溶剂。",
+    trick:"Smaller size → Larger surface area."
+  },
+  {
+    id:210, level:"Hard", topic:"Application", type:"mcq",
+    question:"A student wants salt to dissolve faster. Which set of actions is best?",
+    options:[
+      "Use cold water, do not stir, use large crystals",
+      "Use hot water, stir, use fine salt",
+      "Use cold water, stir slowly, use large crystals",
+      "Use hot water, do not stir, use large crystals"
+    ], answer:1,
+    explanationEn:"Higher temperature, stirring and smaller particle size all increase the rate of dissolving.",
+    explanationZh:"较高温度、搅拌和较小颗粒都会提高溶解速度。",
+    trick:"Hot + Stir + Small = Fast."
+  },
+  {
+    id:211, level:"Medium", topic:"Mixture classification", type:"mcq",
+    question:"Which is an example of a solution?",
+    options:["Muddy water","Milk","Salt water","Flour in water"], answer:2,
+    explanationEn:"Salt water is uniform and the salt particles do not settle.",
+    explanationZh:"盐水是均匀混合物，盐粒不会沉淀。",
+    trick:"Solution = uniform and does not settle."
+  },
+  {
+    id:212, level:"Medium", topic:"Mixture classification", type:"mcq",
+    question:"Which mixture can be separated by filtration?",
+    options:["Salt water","Sugar solution","Muddy water","Milk"], answer:2,
+    explanationEn:"Muddy water is a suspension. Its particles are large enough to be trapped by filter paper.",
+    explanationZh:"泥水是悬浮液，颗粒较大，可以被滤纸隔离。",
+    trick:"Suspension = settles and can be filtered."
+  },
+  {
+    id:213, level:"Medium", topic:"Mixture classification", type:"mcq",
+    question:"Which is an example of a colloid?",
+    options:["Salt water","Milk","Muddy water","Distilled water"], answer:1,
+    explanationEn:"Milk is cloudy but its particles do not settle easily, so it is a colloid.",
+    explanationZh:"牛奶看起来混浊，但粒子不容易沉淀，因此属于胶体。",
+    trick:"Colloid = cloudy but stable."
+  },
+  {
+    id:214, level:"Hard", topic:"Mixture classification", type:"mcq",
+    question:"A mixture is cloudy, its particles settle after some time and it can be filtered. What is it?",
+    options:["Solution","Suspension","Colloid","Solvent"], answer:1,
+    explanationEn:"These are the defining characteristics of a suspension.",
+    explanationZh:"混浊、会沉淀、可过滤，都是悬浮液的特征。",
+    trick:"Settle + Filter = Suspension."
+  },
+  {
+    id:215, level:"Hard", topic:"Universal solvent", type:"mcq",
+    question:"Why is water called a universal solvent?",
+    options:[
+      "It dissolves every substance.",
+      "It can dissolve many substances.",
+      "It is always pure.",
+      "It cannot mix with oil."
+    ], answer:1,
+    explanationEn:"Water is called a universal solvent because it dissolves many substances, but not all substances.",
+    explanationZh:"水被称为通用溶剂，是因为它能溶解许多物质，但并非所有物质。",
+    trick:"Universal = many, not everything."
+  },
+  {
+    id:216, level:"Hard", topic:"Reasoning", type:"mcq",
+    question:"Which statement is correct?",
+    options:[
+      "A concentrated solution is always saturated.",
+      "A dilute solution cannot become concentrated.",
+      "A saturated solution cannot dissolve more solute at that temperature.",
+      "All cloudy mixtures are suspensions."
+    ], answer:2,
+    explanationEn:"Saturated refers to the maximum amount dissolved at a certain temperature. Concentrated and saturated do not mean the same thing.",
+    explanationZh:"饱和表示在特定温度下已经达到最大溶解量。浓溶液和饱和溶液不是同一个概念。",
+    trick:"Concentrated = much solute; Saturated = no more dissolves."
+  },
+  {
+    id:217, level:"Hard", topic:"Reasoning", type:"mcq",
+    question:"Which factor affects the rate of dissolving but not the identity of the solute?",
+    options:["Stirring","Changing salt into sugar","Removing the solvent","Adding mud"], answer:0,
+    explanationEn:"Stirring changes how fast dissolving happens without changing the substance itself.",
+    explanationZh:"搅拌只改变溶解速度，不会改变物质本身。",
+    trick:"Rate = how fast, not what substance."
+  },
+  {
+    id:218, level:"Hard", topic:"Comparison", type:"text",
+    question:"Complete the sentence: A mixture that is cloudy but does not settle easily is a ______.",
+    answerText:["colloid"],
+    explanationEn:"A colloid is cloudy, but its particles remain dispersed and do not settle easily.",
+    explanationZh:"胶体呈混浊状，但粒子保持分散，不容易沉淀。",
+    trick:"Cloudy but stable = Colloid."
+  }
+];
+
+let activePart2Questions = [...part2Questions];
+let lastPart2Wrong = [];
+
+function renderPart2Quiz(){
+  const container = document.getElementById("p2QuizContainer");
+  if(!container) return;
+  container.innerHTML = "";
+
+  activePart2Questions.forEach((q, index) => {
+    const card = document.createElement("div");
+    card.className = "quiz-question";
+    card.id = "p2-question-" + q.id;
+
+    let inputHtml = "";
+    if(q.type === "mcq"){
+      inputHtml = q.options.map((opt, i) => `
+        <label class="option">
+          <input type="radio" name="p2q${q.id}" value="${i}" onchange="updatePart2Progress()"> ${opt}
+        </label>
+      `).join("");
+    } else {
+      inputHtml = `<input class="quiz-input" id="p2-input-${q.id}" type="text" placeholder="Type your answer in English" oninput="updatePart2Progress()">`;
+    }
+
+    card.innerHTML = `
+      <div class="q-label">
+        <span class="q-number">Question ${index + 1}</span>
+        <span class="q-level">${q.level}</span>
+      </div>
+      <div class="q-text">${q.question}</div>
+      ${inputHtml}
+      <div id="p2-feedback-${q.id}"></div>
+    `;
+    container.appendChild(card);
+  });
+
+  updatePart2Progress();
+}
+
+function getPart2Answer(q){
+  if(q.type === "mcq"){
+    const selected = document.querySelector(`input[name="p2q${q.id}"]:checked`);
+    return selected ? Number(selected.value) : null;
+  }
+  const input = document.getElementById("p2-input-" + q.id);
+  return input ? input.value.trim().toLowerCase() : "";
+}
+
+function isPart2Correct(q, answer){
+  if(q.type === "mcq") return answer === q.answer;
+  return q.answerText.includes(answer);
+}
+
+function updatePart2Progress(){
+  let answered = 0;
+  activePart2Questions.forEach(q => {
+    const ans = getPart2Answer(q);
+    if((q.type === "mcq" && ans !== null) || (q.type === "text" && ans !== "")){
+      answered++;
+    }
+  });
+  const el = document.getElementById("p2Progress");
+  if(el) el.textContent = `${answered} / ${activePart2Questions.length}`;
+}
+
+function submitPart2Quiz(){
+  let correct = 0;
+  let wrongIds = [];
+  const topicScores = {};
+
+  activePart2Questions.forEach(q => {
+    const answer = getPart2Answer(q);
+    const ok = isPart2Correct(q, answer);
+    const card = document.getElementById("p2-question-" + q.id);
+    const feedback = document.getElementById("p2-feedback-" + q.id);
+
+    if(!topicScores[q.topic]) topicScores[q.topic] = {correct:0,total:0};
+    topicScores[q.topic].total++;
+
+    if(ok){
+      correct++;
+      topicScores[q.topic].correct++;
+      card.className = "quiz-question correct";
+      feedback.innerHTML = `
+        <div class="feedback correct-box">
+          <h4>Correct</h4>
+          <strong>English:</strong> ${q.explanationEn}<br>
+          <strong>华语：</strong>${q.explanationZh}
+          <div class="memory-trick">Memory Trick 口诀：${q.trick}</div>
+        </div>
+      `;
+    } else {
+      wrongIds.push(q.id);
+      card.className = "quiz-question wrong";
+      feedback.innerHTML = `
+        <div class="feedback wrong-box">
+          <h4>Incorrect — Learn This Again</h4>
+          <strong>Why? 原因：</strong><br>
+          <strong>English:</strong> ${q.explanationEn}<br>
+          <strong>华语：</strong>${q.explanationZh}
+          <div class="memory-trick">Memory Trick 口诀：${q.trick}</div>
+        </div>
+      `;
+    }
+  });
+
+  lastPart2Wrong = wrongIds;
+  const percent = Math.round(correct / activePart2Questions.length * 100);
+  document.getElementById("p2Score").textContent = percent + "%";
+
+  let mastery = "Needs Support";
+  if(percent >= 90) mastery = "Mastered";
+  else if(percent >= 75) mastery = "Almost Mastered";
+  else if(percent >= 60) mastery = "Developing";
+  document.getElementById("p2Mastery").textContent = mastery;
+
+  const result = document.getElementById("p2OverallResult");
+  result.hidden = false;
+
+  const topicHtml = Object.entries(topicScores).map(([topic,data]) => {
+    const p = Math.round(data.correct/data.total*100);
+    return `<div class="mastery-item"><strong>${topic}</strong><br>${data.correct}/${data.total} correct (${p}%)</div>`;
+  }).join("");
+
+  let advice = "";
+  if(percent >= 90){
+    advice = "Excellent. The student has mastered Part 2 and may continue.";
+  }else if(percent >= 75){
+    advice = "Good progress. Retry all wrong questions before continuing.";
+  }else{
+    advice = "Do not continue yet. Review the explanations and retry all wrong questions.";
+  }
+
+  result.innerHTML = `
+    <h3>Part 2 Result: ${correct} / ${activePart2Questions.length} (${percent}%)</h3>
+    <p><strong>Teacher's Advice:</strong> ${advice}</p>
+    <div class="mastery-grid">${topicHtml}</div>
+  `;
+  result.scrollIntoView({behavior:"smooth", block:"center"});
+}
+
+function retryPart2Wrong(){
+  if(lastPart2Wrong.length === 0){
+    alert("Please check all answers first, or there are no wrong questions.");
+    return;
+  }
+  activePart2Questions = part2Questions.filter(q => lastPart2Wrong.includes(q.id));
+  lastPart2Wrong = [];
+  document.getElementById("p2OverallResult").hidden = true;
+  document.getElementById("p2Score").textContent = "0%";
+  document.getElementById("p2Mastery").textContent = "Retry mode";
+  renderPart2Quiz();
+  document.getElementById("part2-smart-revision").scrollIntoView({behavior:"smooth"});
+}
+
+function resetPart2Quiz(){
+  activePart2Questions = [...part2Questions];
+  lastPart2Wrong = [];
+  document.getElementById("p2OverallResult").hidden = true;
+  document.getElementById("p2Score").textContent = "0%";
+  document.getElementById("p2Mastery").textContent = "Not assessed";
+  renderPart2Quiz();
+}
+
+document.addEventListener("DOMContentLoaded", renderPart2Quiz);
+</script>
+
+
+<section class="section" id="part3-electrolysis-notes">
+  <h2>Part 3: Electrolysis of Water</h2>
+  <p class="section-intro">
+    English is the main examination language. Chinese explanations are included only to support understanding.
+  </p>
+
+  <div class="note-grid">
+    <article class="note-card full">
+      <h3><span class="number">1</span>Definition of Electrolysis</h3>
+      <p class="english">Electrolysis is the process of decomposing a compound using electricity.</p>
+      <p class="chinese">电解是利用电流把化合物分解的过程。</p>
+      <div class="memory-line">Electricity breaks a compound apart = Electrolysis</div>
+    </article>
+
+    <article class="note-card">
+      <h3><span class="number">2</span>Products Formed</h3>
+      <p class="english">Water is decomposed into hydrogen gas and oxygen gas.</p>
+      <p class="chinese">水被分解成氢气和氧气。</p>
+      <div class="must-memorise"><strong>Word equation:</strong><br>Water → Hydrogen + Oxygen</div>
+    </article>
+
+    <article class="note-card">
+      <h3><span class="number">3</span>Volume Ratio</h3>
+      <p class="english">The volume ratio of hydrogen to oxygen is 2 : 1.</p>
+      <p class="chinese">氢气与氧气的体积比例是 2 : 1。</p>
+      <div class="must-memorise"><strong>Hydrogen : Oxygen = 2 : 1</strong></div>
+    </article>
+  </div>
+</section>
+
+<section class="section">
+  <h2>2. Electrodes and Gases Produced</h2>
+
+  <table>
+    <thead>
+      <tr>
+        <th>Electrode</th>
+        <th>Other Name</th>
+        <th>Gas Produced</th>
+        <th>华语辅助</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><strong>Negative electrode</strong></td>
+        <td>Cathode</td>
+        <td><strong>Hydrogen</strong></td>
+        <td>负极产生氢气</td>
+      </tr>
+      <tr>
+        <td><strong>Positive electrode</strong></td>
+        <td>Anode</td>
+        <td><strong>Oxygen</strong></td>
+        <td>正极产生氧气</td>
+      </tr>
+    </tbody>
+  </table>
+
+  <div class="must-memorise">
+    <strong>Memory Trick:</strong><br>
+    Negative → Hydrogen<br>
+    Positive → Oxygen
+  </div>
+</section>
+
+<section class="section">
+  <h2>3. Gas Tests</h2>
+
+  <div class="note-grid">
+    <article class="note-card">
+      <h3>Hydrogen Test</h3>
+      <p class="english"><strong>Method:</strong> Place a lighted wooden splint near the gas.</p>
+      <p class="english"><strong>Observation:</strong> A “pop” sound is produced.</p>
+      <p class="english"><strong>Inference:</strong> Hydrogen gas is present.</p>
+      <p class="chinese">方法：把燃烧的木条靠近气体。<br>观察：发出“啪”声。<br>推断：存在氢气。</p>
+      <div class="memory-line">Hydrogen = Lighted splint + “Pop” sound</div>
+    </article>
+
+    <article class="note-card">
+      <h3>Oxygen Test</h3>
+      <p class="english"><strong>Method:</strong> Insert a glowing wooden splint into the gas.</p>
+      <p class="english"><strong>Observation:</strong> The glowing wooden splint relights.</p>
+      <p class="english"><strong>Inference:</strong> Oxygen gas is present.</p>
+      <p class="chinese">方法：把带火星的木条放入气体中。<br>观察：木条重新燃烧。<br>推断：存在氧气。</p>
+      <div class="memory-line">Oxygen = Glowing splint relights</div>
+    </article>
+  </div>
+
+  <div class="must-memorise">
+    <strong>Do not mix them up:</strong><br>
+    Hydrogen gives a “pop” sound.<br>
+    Oxygen relights a glowing wooden splint.
+  </div>
+</section>
+
+<section class="section">
+  <h2>4. Why Dilute Acid Is Added</h2>
+  <p class="english">Pure water is a poor conductor of electricity.</p>
+  <p class="english">A few drops of dilute acid are added to increase the electrical conductivity of water.</p>
+  <p class="chinese">纯水导电能力弱。加入少量稀酸是为了提高水的导电性。</p>
+
+  <div class="memory-line">Dilute acid → Better conductivity → Electrolysis can occur more effectively</div>
+</section>
+
+<section class="section">
+  <h2>5. Observation and Inference</h2>
+
+  <table>
+    <thead>
+      <tr>
+        <th>Observation</th>
+        <th>Inference</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>More gas is collected at the negative electrode.</td>
+        <td>Hydrogen is produced in a larger volume.</td>
+      </tr>
+      <tr>
+        <td>The gas at the negative electrode produces a “pop” sound.</td>
+        <td>The gas is hydrogen.</td>
+      </tr>
+      <tr>
+        <td>The gas at the positive electrode relights a glowing splint.</td>
+        <td>The gas is oxygen.</td>
+      </tr>
+      <tr>
+        <td>The volume of hydrogen is twice the volume of oxygen.</td>
+        <td>Hydrogen and oxygen are produced in a 2 : 1 volume ratio.</td>
+      </tr>
+    </tbody>
+  </table>
+
+  <div class="must-memorise">
+    <strong>Exam Rule:</strong> Observation = what you see, hear or measure. Inference = the scientific explanation.
+  </div>
+</section>
+
+<section class="section">
+  <h2>6. Common Examination Traps</h2>
+  <div class="checklist">
+    <div class="check-item">Do not write oxygen at the negative electrode.</div>
+    <div class="check-item">Do not write the ratio as 1 : 2.</div>
+    <div class="check-item">Do not use a glowing splint for hydrogen.</div>
+    <div class="check-item">Do not write “pop” sound for oxygen.</div>
+    <div class="check-item">Remember that pure water conducts electricity poorly.</div>
+    <div class="check-item">Write observation and inference separately.</div>
+  </div>
+</section>
+
+<section class="section" id="part3-smart-revision">
+  <h2>Part 3 Smart Revision Quiz</h2>
+  <p class="section-intro">
+    Complete all questions. Wrong answers will show English and Chinese explanations, memory tricks and correction guidance.
+  </p>
+
+  <div class="quiz-dashboard">
+    <div class="quiz-stat">
+      <span id="p3Progress">0 / 16</span>
+      <small>Questions answered</small>
+    </div>
+    <div class="quiz-stat">
+      <span id="p3Score">0%</span>
+      <small>Current score</small>
+    </div>
+    <div class="quiz-stat">
+      <span id="p3Mastery">Not assessed</span>
+      <small>Mastery level</small>
+    </div>
+  </div>
+
+  <div id="p3QuizContainer"></div>
+
+  <div class="quiz-actions">
+    <button class="quiz-btn primary" onclick="submitPart3Quiz()">Check All Answers</button>
+    <button class="quiz-btn" onclick="retryPart3Wrong()">Retry Wrong Questions</button>
+    <button class="quiz-btn" onclick="resetPart3Quiz()">Reset Quiz</button>
+  </div>
+
+  <div id="p3OverallResult" class="overall-result" hidden></div>
+</section>
+
+<script>
+const part3Questions = [
+  {
+    id:301, level:"Easy", topic:"Definition", type:"mcq",
+    question:"What is electrolysis?",
+    options:[
+      "The process of heating a compound",
+      "The process of decomposing a compound using electricity",
+      "The process of filtering a mixture",
+      "The process of cooling a liquid"
+    ], answer:1,
+    explanationEn:"Electrolysis uses electricity to decompose a compound into simpler substances.",
+    explanationZh:"电解是利用电流把化合物分解成较简单物质的过程。",
+    trick:"Electricity breaks a compound apart."
+  },
+  {
+    id:302, level:"Easy", topic:"Products", type:"mcq",
+    question:"Which gases are produced during the electrolysis of water?",
+    options:[
+      "Hydrogen and nitrogen",
+      "Oxygen and carbon dioxide",
+      "Hydrogen and oxygen",
+      "Nitrogen and oxygen"
+    ], answer:2,
+    explanationEn:"Water is decomposed into hydrogen gas and oxygen gas.",
+    explanationZh:"水被分解成氢气和氧气。",
+    trick:"Water → Hydrogen + Oxygen."
+  },
+  {
+    id:303, level:"Easy", topic:"Electrodes", type:"mcq",
+    question:"Which gas is produced at the negative electrode?",
+    options:["Oxygen","Hydrogen","Carbon dioxide","Nitrogen"], answer:1,
+    explanationEn:"Hydrogen gas is produced at the negative electrode, also called the cathode.",
+    explanationZh:"氢气在负极，也就是阴极产生。",
+    trick:"Negative → Hydrogen."
+  },
+  {
+    id:304, level:"Easy", topic:"Electrodes", type:"mcq",
+    question:"Which gas is produced at the positive electrode?",
+    options:["Hydrogen","Oxygen","Nitrogen","Water vapour"], answer:1,
+    explanationEn:"Oxygen gas is produced at the positive electrode, also called the anode.",
+    explanationZh:"氧气在正极，也就是阳极产生。",
+    trick:"Positive → Oxygen."
+  },
+  {
+    id:305, level:"Medium", topic:"Ratio", type:"mcq",
+    question:"What is the volume ratio of hydrogen to oxygen?",
+    options:["1 : 1","1 : 2","2 : 1","3 : 1"], answer:2,
+    explanationEn:"Hydrogen is produced in twice the volume of oxygen.",
+    explanationZh:"氢气的体积是氧气的两倍。",
+    trick:"Hydrogen : Oxygen = 2 : 1."
+  },
+  {
+    id:306, level:"Medium", topic:"Ratio", type:"mcq",
+    question:"If 10 cm³ of oxygen is collected, what volume of hydrogen is expected?",
+    options:["5 cm³","10 cm³","20 cm³","30 cm³"], answer:2,
+    explanationEn:"The ratio of hydrogen to oxygen is 2 : 1. Therefore, hydrogen volume is twice the oxygen volume.",
+    explanationZh:"氢气与氧气的比例是 2 : 1，所以氢气体积是氧气的两倍。",
+    trick:"Oxygen × 2 = Hydrogen."
+  },
+  {
+    id:307, level:"Medium", topic:"Gas tests", type:"mcq",
+    question:"Which test identifies hydrogen gas?",
+    options:[
+      "A glowing splint relights",
+      "A lighted splint produces a “pop” sound",
+      "Limewater turns milky",
+      "Blue litmus paper turns red"
+    ], answer:1,
+    explanationEn:"Hydrogen burns rapidly and produces a characteristic “pop” sound when tested with a lighted splint.",
+    explanationZh:"氢气遇到燃烧的木条时会快速燃烧，并发出特有的“啪”声。",
+    trick:"Hydrogen = Lighted splint + Pop."
+  },
+  {
+    id:308, level:"Medium", topic:"Gas tests", type:"mcq",
+    question:"Which test identifies oxygen gas?",
+    options:[
+      "A glowing splint relights",
+      "A lighted splint produces a “pop” sound",
+      "Limewater turns milky",
+      "A red flame is produced"
+    ], answer:0,
+    explanationEn:"Oxygen supports combustion, so it relights a glowing wooden splint.",
+    explanationZh:"氧气支持燃烧，因此会使带火星的木条重新燃烧。",
+    trick:"Oxygen = Glowing splint relights."
+  },
+  {
+    id:309, level:"Medium", topic:"Conductivity", type:"mcq",
+    question:"Why are a few drops of dilute acid added to water?",
+    options:[
+      "To produce more water",
+      "To increase electrical conductivity",
+      "To change oxygen into hydrogen",
+      "To decrease the temperature"
+    ], answer:1,
+    explanationEn:"Pure water conducts electricity poorly. Dilute acid provides ions that improve electrical conductivity.",
+    explanationZh:"纯水导电能力弱。稀酸提供离子，从而提高导电性。",
+    trick:"Dilute acid = Better conductivity."
+  },
+  {
+    id:310, level:"Hard", topic:"Observation", type:"mcq",
+    question:"More gas is collected at the negative electrode. What is the best explanation?",
+    options:[
+      "Oxygen is heavier than hydrogen",
+      "Hydrogen is produced in twice the volume of oxygen",
+      "The positive electrode is blocked",
+      "Water only contains hydrogen"
+    ], answer:1,
+    explanationEn:"Hydrogen and oxygen are produced in a 2 : 1 volume ratio, so more hydrogen is collected.",
+    explanationZh:"氢气和氧气以 2 : 1 的体积比例产生，因此收集到更多氢气。",
+    trick:"More gas at negative electrode = Hydrogen."
+  },
+  {
+    id:311, level:"Hard", topic:"Observation and inference", type:"mcq",
+    question:"A gas produces a “pop” sound with a lighted splint. Which is the correct inference?",
+    options:[
+      "The gas is oxygen",
+      "The gas is hydrogen",
+      "The gas is water vapour",
+      "The gas is nitrogen"
+    ], answer:1,
+    explanationEn:"A “pop” sound is the confirmatory test for hydrogen gas.",
+    explanationZh:"发出“啪”声是检验氢气的确认现象。",
+    trick:"Pop = Hydrogen."
+  },
+  {
+    id:312, level:"Hard", topic:"Observation and inference", type:"mcq",
+    question:"A glowing splint relights in a gas. Which is the correct inference?",
+    options:[
+      "The gas is hydrogen",
+      "The gas is oxygen",
+      "The gas is carbon dioxide",
+      "The gas is nitrogen"
+    ], answer:1,
+    explanationEn:"Oxygen supports combustion and relights a glowing splint.",
+    explanationZh:"氧气支持燃烧，因此能使带火星的木条重新燃烧。",
+    trick:"Relight = Oxygen."
+  },
+  {
+    id:313, level:"Hard", topic:"Vocabulary", type:"text",
+    question:"Complete the sentence: The negative electrode is also called the ______.",
+    answerText:["cathode"],
+    explanationEn:"The negative electrode in electrolysis is called the cathode.",
+    explanationZh:"电解中的负极称为阴极。",
+    trick:"Negative electrode = Cathode."
+  },
+  {
+    id:314, level:"Hard", topic:"Vocabulary", type:"text",
+    question:"Complete the sentence: The positive electrode is also called the ______.",
+    answerText:["anode"],
+    explanationEn:"The positive electrode in electrolysis is called the anode.",
+    explanationZh:"电解中的正极称为阳极。",
+    trick:"Positive electrode = Anode."
+  },
+  {
+    id:315, level:"Hard", topic:"Reasoning", type:"mcq",
+    question:"Which statement is correct?",
+    options:[
+      "Hydrogen relights a glowing splint.",
+      "Oxygen produces a “pop” sound.",
+      "Hydrogen is collected in twice the volume of oxygen.",
+      "Pure water conducts electricity very well."
+    ], answer:2,
+    explanationEn:"Hydrogen is produced in twice the volume of oxygen. The other statements mix up the gas tests or conductivity.",
+    explanationZh:"氢气的体积是氧气的两倍。其他选项混淆了气体检验或导电性。",
+    trick:"H₂ is double; O₂ relights; H₂ pops."
+  },
+  {
+    id:316, level:"Hard", topic:"Experiment", type:"mcq",
+    question:"Which pair is matched correctly?",
+    options:[
+      "Negative electrode — Oxygen",
+      "Positive electrode — Hydrogen",
+      "Hydrogen — Glowing splint relights",
+      "Oxygen — Glowing splint relights"
+    ], answer:3,
+    explanationEn:"Oxygen is identified because it relights a glowing splint.",
+    explanationZh:"氧气能使带火星的木条重新燃烧。",
+    trick:"Oxygen supports burning."
+  }
+];
+
+let activePart3Questions = [...part3Questions];
+let lastPart3Wrong = [];
+
+function renderPart3Quiz(){
+  const container = document.getElementById("p3QuizContainer");
+  if(!container) return;
+  container.innerHTML = "";
+
+  activePart3Questions.forEach((q, index) => {
+    const card = document.createElement("div");
+    card.className = "quiz-question";
+    card.id = "p3-question-" + q.id;
+
+    let inputHtml = "";
+    if(q.type === "mcq"){
+      inputHtml = q.options.map((opt, i) => `
+        <label class="option">
+          <input type="radio" name="p3q${q.id}" value="${i}" onchange="updatePart3Progress()"> ${opt}
+        </label>
+      `).join("");
+    } else {
+      inputHtml = `<input class="quiz-input" id="p3-input-${q.id}" type="text" placeholder="Type your answer in English" oninput="updatePart3Progress()">`;
+    }
+
+    card.innerHTML = `
+      <div class="q-label">
+        <span class="q-number">Question ${index + 1}</span>
+        <span class="q-level">${q.level}</span>
+      </div>
+      <div class="q-text">${q.question}</div>
+      ${inputHtml}
+      <div id="p3-feedback-${q.id}"></div>
+    `;
+    container.appendChild(card);
+  });
+
+  updatePart3Progress();
+}
+
+function getPart3Answer(q){
+  if(q.type === "mcq"){
+    const selected = document.querySelector(`input[name="p3q${q.id}"]:checked`);
+    return selected ? Number(selected.value) : null;
+  }
+  const input = document.getElementById("p3-input-" + q.id);
+  return input ? input.value.trim().toLowerCase() : "";
+}
+
+function isPart3Correct(q, answer){
+  if(q.type === "mcq") return answer === q.answer;
+  return q.answerText.includes(answer);
+}
+
+function updatePart3Progress(){
+  let answered = 0;
+  activePart3Questions.forEach(q => {
+    const ans = getPart3Answer(q);
+    if((q.type === "mcq" && ans !== null) || (q.type === "text" && ans !== "")){
+      answered++;
+    }
+  });
+  const el = document.getElementById("p3Progress");
+  if(el) el.textContent = `${answered} / ${activePart3Questions.length}`;
+}
+
+function submitPart3Quiz(){
+  let correct = 0;
+  let wrongIds = [];
+  const topicScores = {};
+
+  activePart3Questions.forEach(q => {
+    const answer = getPart3Answer(q);
+    const ok = isPart3Correct(q, answer);
+    const card = document.getElementById("p3-question-" + q.id);
+    const feedback = document.getElementById("p3-feedback-" + q.id);
+
+    if(!topicScores[q.topic]) topicScores[q.topic] = {correct:0,total:0};
+    topicScores[q.topic].total++;
+
+    if(ok){
+      correct++;
+      topicScores[q.topic].correct++;
+      card.className = "quiz-question correct";
+      feedback.innerHTML = `
+        <div class="feedback correct-box">
+          <h4>Correct</h4>
+          <strong>English:</strong> ${q.explanationEn}<br>
+          <strong>华语：</strong>${q.explanationZh}
+          <div class="memory-trick">Memory Trick 口诀：${q.trick}</div>
+        </div>
+      `;
+    } else {
+      wrongIds.push(q.id);
+      card.className = "quiz-question wrong";
+      feedback.innerHTML = `
+        <div class="feedback wrong-box">
+          <h4>Incorrect — Learn This Again</h4>
+          <strong>Why? 原因：</strong><br>
+          <strong>English:</strong> ${q.explanationEn}<br>
+          <strong>华语：</strong>${q.explanationZh}
+          <div class="memory-trick">Memory Trick 口诀：${q.trick}</div>
+        </div>
+      `;
+    }
+  });
+
+  lastPart3Wrong = wrongIds;
+  const percent = Math.round(correct / activePart3Questions.length * 100);
+  document.getElementById("p3Score").textContent = percent + "%";
+
+  let mastery = "Needs Support";
+  if(percent >= 90) mastery = "Mastered";
+  else if(percent >= 75) mastery = "Almost Mastered";
+  else if(percent >= 60) mastery = "Developing";
+  document.getElementById("p3Mastery").textContent = mastery;
+
+  const result = document.getElementById("p3OverallResult");
+  result.hidden = false;
+
+  const topicHtml = Object.entries(topicScores).map(([topic,data]) => {
+    const p = Math.round(data.correct/data.total*100);
+    return `<div class="mastery-item"><strong>${topic}</strong><br>${data.correct}/${data.total} correct (${p}%)</div>`;
+  }).join("");
+
+  let advice = "";
+  if(percent >= 90){
+    advice = "Excellent. The student has mastered Part 3 and may continue.";
+  }else if(percent >= 75){
+    advice = "Good progress. Retry all wrong questions before continuing.";
+  }else{
+    advice = "Do not continue yet. Review the gas tests, electrodes and ratio before retrying.";
+  }
+
+  result.innerHTML = `
+    <h3>Part 3 Result: ${correct} / ${activePart3Questions.length} (${percent}%)</h3>
+    <p><strong>Teacher's Advice:</strong> ${advice}</p>
+    <div class="mastery-grid">${topicHtml}</div>
+  `;
+  result.scrollIntoView({behavior:"smooth", block:"center"});
+}
+
+function retryPart3Wrong(){
+  if(lastPart3Wrong.length === 0){
+    alert("Please check all answers first, or there are no wrong questions.");
+    return;
+  }
+  activePart3Questions = part3Questions.filter(q => lastPart3Wrong.includes(q.id));
+  lastPart3Wrong = [];
+  document.getElementById("p3OverallResult").hidden = true;
+  document.getElementById("p3Score").textContent = "0%";
+  document.getElementById("p3Mastery").textContent = "Retry mode";
+  renderPart3Quiz();
+  document.getElementById("part3-smart-revision").scrollIntoView({behavior:"smooth"});
+}
+
+function resetPart3Quiz(){
+  activePart3Questions = [...part3Questions];
+  lastPart3Wrong = [];
+  document.getElementById("p3OverallResult").hidden = true;
+  document.getElementById("p3Score").textContent = "0%";
+  document.getElementById("p3Mastery").textContent = "Not assessed";
+  renderPart3Quiz();
+}
+
+document.addEventListener("DOMContentLoaded", renderPart3Quiz);
+</script>
+
+
+<section class="section" id="part4-water-treatment-notes">
+  <h2>Part 4: Water Purification and Water Treatment</h2>
+  <p class="section-intro">
+    English is the main examination language. Chinese explanations are included only to support understanding.
+  </p>
+
+  <div class="note-grid">
+    <article class="note-card full">
+      <h3><span class="number">1</span>Why Water Must Be Treated</h3>
+      <p class="english">Raw water may contain suspended particles, microorganisms, dissolved substances and unpleasant odours.</p>
+      <p class="chinese">未经处理的水可能含有悬浮颗粒、微生物、溶解物质和异味。</p>
+      <div class="memory-line">Water treatment makes water clean and safer for use.</div>
+    </article>
+  </div>
+</section>
+
+<section class="section">
+  <h2>2. Main Water Treatment Sequence</h2>
+  <p class="section-intro">The correct sequence must be memorised.</p>
+
+  <div class="state-flow">
+    <div class="state">Screening<span>筛除</span></div>
+    <div class="arrow"><b>→</b></div>
+    <div class="state">Coagulation<span>混凝</span></div>
+    <div class="arrow"><b>→</b></div>
+    <div class="state">Sedimentation<span>沉淀</span></div>
+  </div>
+
+  <div class="state-flow">
+    <div class="state">Sedimentation<span>沉淀</span></div>
+    <div class="arrow"><b>→</b></div>
+    <div class="state">Filtration<span>过滤</span></div>
+    <div class="arrow"><b>→</b></div>
+    <div class="state">Chlorination<span>加氯消毒</span></div>
+  </div>
+
+  <div class="must-memorise">
+    <strong>Memory Sequence:</strong><br>
+    Screening → Coagulation → Sedimentation → Filtration → Chlorination
+  </div>
+</section>
+
+<section class="section">
+  <h2>3. Function of Each Treatment Step</h2>
+
+  <table>
+    <thead>
+      <tr>
+        <th>Step</th>
+        <th>Main Function</th>
+        <th>华语辅助</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><strong>Screening</strong></td>
+        <td>Removes large objects such as leaves, branches and rubbish.</td>
+        <td>去除树叶、树枝和垃圾等大型杂物。</td>
+      </tr>
+      <tr>
+        <td><strong>Coagulation</strong></td>
+        <td>Alum is added to make small suspended particles clump together.</td>
+        <td>加入明矾，让细小悬浮颗粒凝聚成较大的颗粒。</td>
+      </tr>
+      <tr>
+        <td><strong>Sedimentation</strong></td>
+        <td>Heavier clumps settle at the bottom of the tank.</td>
+        <td>较重的颗粒沉到水槽底部。</td>
+      </tr>
+      <tr>
+        <td><strong>Filtration</strong></td>
+        <td>Removes remaining suspended particles using layers such as sand and gravel.</td>
+        <td>利用沙和碎石等过滤层去除剩余悬浮颗粒。</td>
+      </tr>
+      <tr>
+        <td><strong>Chlorination</strong></td>
+        <td>Chlorine is added to kill harmful microorganisms.</td>
+        <td>加入氯来杀死有害微生物。</td>
+      </tr>
+    </tbody>
+  </table>
+</section>
+
+<section class="section">
+  <h2>4. Important Materials</h2>
+
+  <div class="note-grid">
+    <article class="note-card">
+      <h3>Alum</h3>
+      <p class="english">Alum causes small suspended particles to clump together into larger particles.</p>
+      <p class="chinese">明矾使细小悬浮颗粒凝聚成较大的颗粒。</p>
+      <div class="memory-line">Alum gathers particles.</div>
+    </article>
+
+    <article class="note-card">
+      <h3>Chlorine</h3>
+      <p class="english">Chlorine kills harmful microorganisms in water.</p>
+      <p class="chinese">氯杀死水中的有害微生物。</p>
+      <div class="memory-line">Chlorine kills microorganisms.</div>
+    </article>
+
+    <article class="note-card">
+      <h3>Sand</h3>
+      <p class="english">Sand traps smaller suspended particles during filtration.</p>
+      <p class="chinese">沙在过滤过程中拦截较小的悬浮颗粒。</p>
+    </article>
+
+    <article class="note-card">
+      <h3>Gravel</h3>
+      <p class="english">Gravel supports the filter layers and traps larger particles.</p>
+      <p class="chinese">碎石支撑过滤层，并拦截较大的颗粒。</p>
+    </article>
+  </div>
+</section>
+
+<section class="section">
+  <h2>5. Alum and Chlorine Comparison</h2>
+
+  <table>
+    <thead>
+      <tr>
+        <th>Substance</th>
+        <th>Function</th>
+        <th>Common Wrong Idea</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><strong>Alum</strong></td>
+        <td>Causes small particles to clump together.</td>
+        <td>Alum does not mainly kill microorganisms.</td>
+      </tr>
+      <tr>
+        <td><strong>Chlorine</strong></td>
+        <td>Kills harmful microorganisms.</td>
+        <td>Chlorine does not remove large rubbish.</td>
+      </tr>
+    </tbody>
+  </table>
+
+  <div class="must-memorise">
+    <strong>Memory Trick:</strong> Alum gathers, chlorine kills.<br>
+    <strong>华语口诀：</strong>明矾聚颗粒，氯杀微生物。
+  </div>
+</section>
+
+<section class="section">
+  <h2>6. Examination Keywords</h2>
+
+  <div class="checklist">
+    <div class="check-item">Large rubbish → Screening</div>
+    <div class="check-item">Small particles clump → Coagulation</div>
+    <div class="check-item">Heavy particles sink → Sedimentation</div>
+    <div class="check-item">Sand and gravel → Filtration</div>
+    <div class="check-item">Kill microorganisms → Chlorination</div>
+    <div class="check-item">Alum → Coagulation</div>
+  </div>
+</section>
+
+<section class="section">
+  <h2>7. Common Examination Traps</h2>
+
+  <div class="must-memorise">
+    <strong>Do not write:</strong><br>
+    Alum kills bacteria.<br>
+    Chlorine makes particles clump together.<br>
+    Filtration kills all microorganisms.<br>
+    Sedimentation removes large branches.<br><br>
+
+    <strong>Correct ideas:</strong><br>
+    Alum gathers particles.<br>
+    Chlorine kills microorganisms.<br>
+    Filtration removes remaining suspended particles.<br>
+    Screening removes large objects.
+  </div>
+</section>
+
+<section class="section" id="part4-smart-revision">
+  <h2>Part 4 Smart Revision Quiz</h2>
+  <p class="section-intro">
+    Complete all questions. Wrong answers will show English and Chinese explanations, memory tricks and correction guidance.
+  </p>
+
+  <div class="quiz-dashboard">
+    <div class="quiz-stat">
+      <span id="p4Progress">0 / 18</span>
+      <small>Questions answered</small>
+    </div>
+    <div class="quiz-stat">
+      <span id="p4Score">0%</span>
+      <small>Current score</small>
+    </div>
+    <div class="quiz-stat">
+      <span id="p4Mastery">Not assessed</span>
+      <small>Mastery level</small>
+    </div>
+  </div>
+
+  <div id="p4QuizContainer"></div>
+
+  <div class="quiz-actions">
+    <button class="quiz-btn primary" onclick="submitPart4Quiz()">Check All Answers</button>
+    <button class="quiz-btn" onclick="retryPart4Wrong()">Retry Wrong Questions</button>
+    <button class="quiz-btn" onclick="resetPart4Quiz()">Reset Quiz</button>
+  </div>
+
+  <div id="p4OverallResult" class="overall-result" hidden></div>
+</section>
+
+<script>
+const part4Questions = [
+  {
+    id:401, level:"Easy", topic:"Purpose", type:"mcq",
+    question:"Why is raw water treated?",
+    options:[
+      "To make it colourful",
+      "To make it clean and safer for use",
+      "To increase its boiling point",
+      "To remove all dissolved substances"
+    ], answer:1,
+    explanationEn:"Raw water may contain particles and microorganisms. Treatment makes it cleaner and safer for use.",
+    explanationZh:"原水可能含有颗粒和微生物。水处理让水更清洁、更安全。",
+    trick:"Treatment = Cleaner and safer water."
+  },
+  {
+    id:402, level:"Easy", topic:"Sequence", type:"mcq",
+    question:"Which process is usually carried out first?",
+    options:["Chlorination","Filtration","Screening","Sedimentation"], answer:2,
+    explanationEn:"Screening is carried out first to remove large objects such as leaves and rubbish.",
+    explanationZh:"筛除通常最先进行，用来去除树叶和垃圾等大型杂物。",
+    trick:"Big rubbish first = Screening."
+  },
+  {
+    id:403, level:"Easy", topic:"Screening", type:"mcq",
+    question:"What does screening remove?",
+    options:[
+      "Microorganisms",
+      "Large objects such as leaves and branches",
+      "Dissolved salts",
+      "Bad odour only"
+    ], answer:1,
+    explanationEn:"Screening removes large solid objects from raw water.",
+    explanationZh:"筛除去除原水中的大型固体杂物。",
+    trick:"Screening = Large rubbish."
+  },
+  {
+    id:404, level:"Easy", topic:"Coagulation", type:"mcq",
+    question:"Which substance is added during coagulation?",
+    options:["Chlorine","Alum","Salt","Oxygen"], answer:1,
+    explanationEn:"Alum is added to make small suspended particles clump together.",
+    explanationZh:"混凝过程中加入明矾，使细小悬浮颗粒凝聚。",
+    trick:"Alum = Coagulation."
+  },
+  {
+    id:405, level:"Medium", topic:"Coagulation", type:"mcq",
+    question:"What is the function of alum?",
+    options:[
+      "To kill microorganisms",
+      "To remove large branches",
+      "To make small particles clump together",
+      "To add oxygen to water"
+    ], answer:2,
+    explanationEn:"Alum causes small suspended particles to join and form larger clumps.",
+    explanationZh:"明矾让细小悬浮颗粒结合成较大的团块。",
+    trick:"Alum gathers particles."
+  },
+  {
+    id:406, level:"Medium", topic:"Sedimentation", type:"mcq",
+    question:"What happens during sedimentation?",
+    options:[
+      "Large rubbish is screened out",
+      "Heavy clumps settle at the bottom",
+      "Microorganisms are killed",
+      "Water is boiled"
+    ], answer:1,
+    explanationEn:"During sedimentation, heavier clumps sink and settle at the bottom of the tank.",
+    explanationZh:"在沉淀过程中，较重的团块会下沉并沉积在水槽底部。",
+    trick:"Heavy particles sink."
+  },
+  {
+    id:407, level:"Medium", topic:"Filtration", type:"mcq",
+    question:"Which materials are commonly used in filtration?",
+    options:["Sand and gravel","Alum and chlorine","Sugar and salt","Oil and alcohol"], answer:0,
+    explanationEn:"Sand and gravel are common filter materials used to remove remaining particles.",
+    explanationZh:"沙和碎石是常见过滤材料，用来去除剩余颗粒。",
+    trick:"Filter layers = Sand + Gravel."
+  },
+  {
+    id:408, level:"Medium", topic:"Chlorination", type:"mcq",
+    question:"What is the main function of chlorine?",
+    options:[
+      "To make particles clump together",
+      "To kill harmful microorganisms",
+      "To remove large rubbish",
+      "To increase the amount of water"
+    ], answer:1,
+    explanationEn:"Chlorine is used to kill harmful microorganisms in treated water.",
+    explanationZh:"氯用于杀死处理后水中的有害微生物。",
+    trick:"Chlorine kills."
+  },
+  {
+    id:409, level:"Medium", topic:"Sequence", type:"mcq",
+    question:"Which sequence is correct?",
+    options:[
+      "Screening → Coagulation → Sedimentation → Filtration → Chlorination",
+      "Chlorination → Screening → Filtration → Sedimentation → Coagulation",
+      "Filtration → Screening → Chlorination → Coagulation → Sedimentation",
+      "Sedimentation → Screening → Coagulation → Chlorination → Filtration"
+    ], answer:0,
+    explanationEn:"The standard sequence is screening, coagulation, sedimentation, filtration and chlorination.",
+    explanationZh:"标准顺序是筛除、混凝、沉淀、过滤和加氯消毒。",
+    trick:"S-C-S-F-C."
+  },
+  {
+    id:410, level:"Hard", topic:"Application", type:"mcq",
+    question:"Small suspended particles remain floating in raw water. Which step helps combine them into larger clumps?",
+    options:["Screening","Coagulation","Filtration","Chlorination"], answer:1,
+    explanationEn:"Coagulation uses alum to combine small suspended particles into larger clumps.",
+    explanationZh:"混凝利用明矾把细小悬浮颗粒结合成较大的团块。",
+    trick:"Small particles join = Coagulation."
+  },
+  {
+    id:411, level:"Hard", topic:"Application", type:"mcq",
+    question:"A treatment step removes the remaining particles by passing water through sand. Which step is this?",
+    options:["Sedimentation","Chlorination","Filtration","Screening"], answer:2,
+    explanationEn:"Passing water through sand is filtration.",
+    explanationZh:"让水通过沙层属于过滤过程。",
+    trick:"Sand layer = Filtration."
+  },
+  {
+    id:412, level:"Hard", topic:"Application", type:"mcq",
+    question:"Which statement about filtration is correct?",
+    options:[
+      "It kills all microorganisms.",
+      "It removes remaining suspended particles.",
+      "It adds alum to water.",
+      "It removes only dissolved salts."
+    ], answer:1,
+    explanationEn:"Filtration removes remaining suspended particles but does not guarantee that all microorganisms are killed.",
+    explanationZh:"过滤去除剩余悬浮颗粒，但不能保证杀死所有微生物。",
+    trick:"Filtration removes particles, not all germs."
+  },
+  {
+    id:413, level:"Hard", topic:"Comparison", type:"mcq",
+    question:"Which pair is matched correctly?",
+    options:[
+      "Alum — kills microorganisms",
+      "Chlorine — causes particles to clump",
+      "Alum — causes particles to clump",
+      "Screening — kills bacteria"
+    ], answer:2,
+    explanationEn:"Alum is used for coagulation, where small particles clump together.",
+    explanationZh:"明矾用于混凝，使细小颗粒凝聚。",
+    trick:"Alum gathers."
+  },
+  {
+    id:414, level:"Hard", topic:"Comparison", type:"mcq",
+    question:"Which pair is matched correctly?",
+    options:[
+      "Chlorine — kills microorganisms",
+      "Sand — kills bacteria",
+      "Gravel — dissolves salts",
+      "Alum — removes branches"
+    ], answer:0,
+    explanationEn:"Chlorine kills harmful microorganisms.",
+    explanationZh:"氯会杀死有害微生物。",
+    trick:"Chlorine kills."
+  },
+  {
+    id:415, level:"Hard", topic:"Vocabulary", type:"text",
+    question:"Complete the sentence: The process in which heavy clumps settle at the bottom is called ______.",
+    answerText:["sedimentation"],
+    explanationEn:"Sedimentation is the process in which heavier particles settle at the bottom.",
+    explanationZh:"沉淀是较重颗粒沉到底部的过程。",
+    trick:"Settle at bottom = Sedimentation."
+  },
+  {
+    id:416, level:"Hard", topic:"Vocabulary", type:"text",
+    question:"Complete the sentence: The process of killing microorganisms using chlorine is called ______.",
+    answerText:["chlorination"],
+    explanationEn:"Chlorination is the process of adding chlorine to kill harmful microorganisms.",
+    explanationZh:"加氯消毒是加入氯来杀死有害微生物的过程。",
+    trick:"Chlorine process = Chlorination."
+  },
+  {
+    id:417, level:"Hard", topic:"Reasoning", type:"mcq",
+    question:"Why is sedimentation carried out after coagulation?",
+    options:[
+      "The clumps formed during coagulation are heavy enough to settle.",
+      "Chlorine must be removed first.",
+      "Large branches need to dissolve.",
+      "The water must boil before filtration."
+    ], answer:0,
+    explanationEn:"Coagulation forms larger clumps. These clumps become heavy and can then settle during sedimentation.",
+    explanationZh:"混凝形成较大的团块，这些团块变重后便能在沉淀过程中下沉。",
+    trick:"Coagulation makes clumps; sedimentation sinks them."
+  },
+  {
+    id:418, level:"Hard", topic:"Reasoning", type:"mcq",
+    question:"Which statement is correct?",
+    options:[
+      "Alum kills harmful microorganisms.",
+      "Chlorine removes large branches.",
+      "Filtration removes remaining suspended particles.",
+      "Screening removes dissolved salts."
+    ], answer:2,
+    explanationEn:"Filtration removes remaining suspended particles using filter layers such as sand and gravel.",
+    explanationZh:"过滤利用沙和碎石等过滤层去除剩余悬浮颗粒。",
+    trick:"Filtration = Remaining particles."
+  }
+];
+
+let activePart4Questions = [...part4Questions];
+let lastPart4Wrong = [];
+
+function renderPart4Quiz(){
+  const container = document.getElementById("p4QuizContainer");
+  if(!container) return;
+  container.innerHTML = "";
+
+  activePart4Questions.forEach((q, index) => {
+    const card = document.createElement("div");
+    card.className = "quiz-question";
+    card.id = "p4-question-" + q.id;
+
+    let inputHtml = "";
+    if(q.type === "mcq"){
+      inputHtml = q.options.map((opt, i) => `
+        <label class="option">
+          <input type="radio" name="p4q${q.id}" value="${i}" onchange="updatePart4Progress()"> ${opt}
+        </label>
+      `).join("");
+    } else {
+      inputHtml = `<input class="quiz-input" id="p4-input-${q.id}" type="text" placeholder="Type your answer in English" oninput="updatePart4Progress()">`;
+    }
+
+    card.innerHTML = `
+      <div class="q-label">
+        <span class="q-number">Question ${index + 1}</span>
+        <span class="q-level">${q.level}</span>
+      </div>
+      <div class="q-text">${q.question}</div>
+      ${inputHtml}
+      <div id="p4-feedback-${q.id}"></div>
+    `;
+    container.appendChild(card);
+  });
+
+  updatePart4Progress();
+}
+
+function getPart4Answer(q){
+  if(q.type === "mcq"){
+    const selected = document.querySelector(`input[name="p4q${q.id}"]:checked`);
+    return selected ? Number(selected.value) : null;
+  }
+  const input = document.getElementById("p4-input-" + q.id);
+  return input ? input.value.trim().toLowerCase() : "";
+}
+
+function isPart4Correct(q, answer){
+  if(q.type === "mcq") return answer === q.answer;
+  return q.answerText.includes(answer);
+}
+
+function updatePart4Progress(){
+  let answered = 0;
+  activePart4Questions.forEach(q => {
+    const ans = getPart4Answer(q);
+    if((q.type === "mcq" && ans !== null) || (q.type === "text" && ans !== "")){
+      answered++;
+    }
+  });
+  const el = document.getElementById("p4Progress");
+  if(el) el.textContent = `${answered} / ${activePart4Questions.length}`;
+}
+
+function submitPart4Quiz(){
+  let correct = 0;
+  let wrongIds = [];
+  const topicScores = {};
+
+  activePart4Questions.forEach(q => {
+    const answer = getPart4Answer(q);
+    const ok = isPart4Correct(q, answer);
+    const card = document.getElementById("p4-question-" + q.id);
+    const feedback = document.getElementById("p4-feedback-" + q.id);
+
+    if(!topicScores[q.topic]) topicScores[q.topic] = {correct:0,total:0};
+    topicScores[q.topic].total++;
+
+    if(ok){
+      correct++;
+      topicScores[q.topic].correct++;
+      card.className = "quiz-question correct";
+      feedback.innerHTML = `
+        <div class="feedback correct-box">
+          <h4>Correct</h4>
+          <strong>English:</strong> ${q.explanationEn}<br>
+          <strong>华语：</strong>${q.explanationZh}
+          <div class="memory-trick">Memory Trick 口诀：${q.trick}</div>
+        </div>
+      `;
+    } else {
+      wrongIds.push(q.id);
+      card.className = "quiz-question wrong";
+      feedback.innerHTML = `
+        <div class="feedback wrong-box">
+          <h4>Incorrect — Learn This Again</h4>
+          <strong>Why? 原因：</strong><br>
+          <strong>English:</strong> ${q.explanationEn}<br>
+          <strong>华语：</strong>${q.explanationZh}
+          <div class="memory-trick">Memory Trick 口诀：${q.trick}</div>
+        </div>
+      `;
+    }
+  });
+
+  lastPart4Wrong = wrongIds;
+  const percent = Math.round(correct / activePart4Questions.length * 100);
+  document.getElementById("p4Score").textContent = percent + "%";
+
+  let mastery = "Needs Support";
+  if(percent >= 90) mastery = "Mastered";
+  else if(percent >= 75) mastery = "Almost Mastered";
+  else if(percent >= 60) mastery = "Developing";
+  document.getElementById("p4Mastery").textContent = mastery;
+
+  const result = document.getElementById("p4OverallResult");
+  result.hidden = false;
+
+  const topicHtml = Object.entries(topicScores).map(([topic,data]) => {
+    const p = Math.round(data.correct/data.total*100);
+    return `<div class="mastery-item"><strong>${topic}</strong><br>${data.correct}/${data.total} correct (${p}%)</div>`;
+  }).join("");
+
+  let advice = "";
+  if(percent >= 90){
+    advice = "Excellent. The student has mastered Part 4 and may continue.";
+  }else if(percent >= 75){
+    advice = "Good progress. Retry all wrong questions before continuing.";
+  }else{
+    advice = "Do not continue yet. Review the treatment sequence and the functions of alum and chlorine.";
+  }
+
+  result.innerHTML = `
+    <h3>Part 4 Result: ${correct} / ${activePart4Questions.length} (${percent}%)</h3>
+    <p><strong>Teacher's Advice:</strong> ${advice}</p>
+    <div class="mastery-grid">${topicHtml}</div>
+  `;
+  result.scrollIntoView({behavior:"smooth", block:"center"});
+}
+
+function retryPart4Wrong(){
+  if(lastPart4Wrong.length === 0){
+    alert("Please check all answers first, or there are no wrong questions.");
+    return;
+  }
+  activePart4Questions = part4Questions.filter(q => lastPart4Wrong.includes(q.id));
+  lastPart4Wrong = [];
+  document.getElementById("p4OverallResult").hidden = true;
+  document.getElementById("p4Score").textContent = "0%";
+  document.getElementById("p4Mastery").textContent = "Retry mode";
+  renderPart4Quiz();
+  document.getElementById("part4-smart-revision").scrollIntoView({behavior:"smooth"});
+}
+
+function resetPart4Quiz(){
+  activePart4Questions = [...part4Questions];
+  lastPart4Wrong = [];
+  document.getElementById("p4OverallResult").hidden = true;
+  document.getElementById("p4Score").textContent = "0%";
+  document.getElementById("p4Mastery").textContent = "Not assessed";
+  renderPart4Quiz();
+}
+
+document.addEventListener("DOMContentLoaded", renderPart4Quiz);
+</script>
+
+
+<section class="section" id="part5-water-supply-notes">
+  <h2>Part 5: Water Supply System</h2>
+  <p class="section-intro">
+    English is the main examination language. Chinese explanations are included only to support understanding.
+  </p>
+
+  <div class="note-grid">
+    <article class="note-card full">
+      <h3><span class="number">1</span>Main Water Supply Flow</h3>
+      <p class="english">Raw water is collected, treated, stored and then distributed to consumers.</p>
+      <p class="chinese">原水先被收集、处理、储存，然后输送给用户。</p>
+      <div class="memory-line">Reservoir → Water Treatment Plant → Storage Tank → Distribution Pipes → Consumers</div>
+    </article>
+  </div>
+</section>
+
+<section class="section">
+  <h2>2. Water Supply System Sequence</h2>
+
+  <div class="state-flow">
+    <div class="state">Reservoir<span>水库</span></div>
+    <div class="arrow"><b>→</b></div>
+    <div class="state">Water Treatment Plant<span>净水厂</span></div>
+    <div class="arrow"><b>→</b></div>
+    <div class="state">Storage Tank<span>储水槽</span></div>
+  </div>
+
+  <div class="state-flow">
+    <div class="state">Storage Tank<span>储水槽</span></div>
+    <div class="arrow"><b>→</b></div>
+    <div class="state">Distribution Pipes<span>输水管</span></div>
+    <div class="arrow"><b>→</b></div>
+    <div class="state">Consumers<span>用户</span></div>
+  </div>
+
+  <div class="must-memorise">
+    <strong>Memory Sequence:</strong><br>
+    Reservoir → Treatment Plant → Storage Tank → Pipes → Consumers
+  </div>
+</section>
+
+<section class="section">
+  <h2>3. Function of Each Part</h2>
+
+  <table>
+    <thead>
+      <tr>
+        <th>Part</th>
+        <th>Main Function</th>
+        <th>华语辅助</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><strong>Reservoir</strong></td>
+        <td>Stores raw water before treatment.</td>
+        <td>储存处理前的原水。</td>
+      </tr>
+      <tr>
+        <td><strong>Water Treatment Plant</strong></td>
+        <td>Treats raw water to make it cleaner and safer for use.</td>
+        <td>处理原水，使水更清洁、更安全。</td>
+      </tr>
+      <tr>
+        <td><strong>Storage Tank</strong></td>
+        <td>Stores treated water before distribution.</td>
+        <td>在输送前储存已经处理好的水。</td>
+      </tr>
+      <tr>
+        <td><strong>Distribution Pipes</strong></td>
+        <td>Carry treated water to consumers.</td>
+        <td>把处理后的水输送给用户。</td>
+      </tr>
+      <tr>
+        <td><strong>Consumers</strong></td>
+        <td>Use the water in houses, schools, hospitals and factories.</td>
+        <td>住家、学校、医院和工厂等使用这些水。</td>
+      </tr>
+    </tbody>
+  </table>
+</section>
+
+<section class="section">
+  <h2>4. Raw Water and Treated Water</h2>
+
+  <div class="note-grid">
+    <article class="note-card">
+      <h3>Raw Water</h3>
+      <p class="english">Raw water is untreated water collected from natural sources.</p>
+      <p class="chinese">原水是从天然水源收集、尚未处理的水。</p>
+      <div class="must-memorise"><strong>Stored in:</strong> Reservoir</div>
+    </article>
+
+    <article class="note-card">
+      <h3>Treated Water</h3>
+      <p class="english">Treated water has passed through the water treatment process.</p>
+      <p class="chinese">处理水是已经经过净水程序的水。</p>
+      <div class="must-memorise"><strong>Stored in:</strong> Storage tank</div>
+    </article>
+  </div>
+
+  <div class="memory-line">Reservoir = Raw water • Storage tank = Treated water</div>
+</section>
+
+<section class="section">
+  <h2>5. Why a Storage Tank Is Important</h2>
+
+  <div class="checklist">
+    <div class="check-item">Stores treated water before distribution.</div>
+    <div class="check-item">Helps maintain a continuous water supply.</div>
+    <div class="check-item">Provides reserve water during short interruptions.</div>
+    <div class="check-item">Helps distribute water to different areas.</div>
+  </div>
+
+  <p class="chinese">
+    储水槽储存处理后的水，帮助维持持续供水，并在短暂中断时提供备用水。
+  </p>
+</section>
+
+<section class="section">
+  <h2>6. Why Reservoir Water Cannot Be Used Directly</h2>
+
+  <p class="english">Reservoir water may contain suspended particles, microorganisms and other impurities.</p>
+  <p class="english">Therefore, it must be treated before being supplied to consumers.</p>
+  <p class="chinese">水库中的水可能含有悬浮颗粒、微生物和其他杂质，因此必须先处理，才能供应给用户。</p>
+
+  <div class="memory-line">Raw water may contain impurities → Treat first → Supply later</div>
+</section>
+
+<section class="section">
+  <h2>7. What Happens During a Water Supply Interruption?</h2>
+
+  <div class="state-flow">
+    <div class="state">Treatment Plant Stops<span>净水厂停止运作</span></div>
+    <div class="arrow"><b>→</b></div>
+    <div class="state">Less Treated Water<span>处理水减少</span></div>
+    <div class="arrow"><b>→</b></div>
+    <div class="state">Storage Tank Empties<span>储水槽逐渐变空</span></div>
+  </div>
+
+  <div class="state-flow">
+    <div class="state">Storage Tank Empties<span>储水槽逐渐变空</span></div>
+    <div class="arrow"><b>→</b></div>
+    <div class="state">Water Supply Drops<span>供水减少</span></div>
+    <div class="arrow"><b>→</b></div>
+    <div class="state">Consumers Affected<span>用户受影响</span></div>
+  </div>
+</section>
+
+<section class="section">
+  <h2>8. Common Examination Traps</h2>
+
+  <div class="must-memorise">
+    <strong>Do not write:</strong><br>
+    Reservoir stores treated water.<br>
+    Storage tank stores raw water.<br>
+    Distribution pipes purify water.<br>
+    Water treatment plant only stores water.<br><br>
+
+    <strong>Correct ideas:</strong><br>
+    Reservoir stores raw water.<br>
+    Storage tank stores treated water.<br>
+    Distribution pipes carry water.<br>
+    Water treatment plant treats raw water.
+  </div>
+</section>
+
+<section class="section" id="part5-smart-revision">
+  <h2>Part 5 Smart Revision Quiz</h2>
+  <p class="section-intro">
+    Complete all questions. Wrong answers will show English and Chinese explanations, memory tricks and correction guidance.
+  </p>
+
+  <div class="quiz-dashboard">
+    <div class="quiz-stat">
+      <span id="p5Progress">0 / 18</span>
+      <small>Questions answered</small>
+    </div>
+    <div class="quiz-stat">
+      <span id="p5Score">0%</span>
+      <small>Current score</small>
+    </div>
+    <div class="quiz-stat">
+      <span id="p5Mastery">Not assessed</span>
+      <small>Mastery level</small>
+    </div>
+  </div>
+
+  <div id="p5QuizContainer"></div>
+
+  <div class="quiz-actions">
+    <button class="quiz-btn primary" onclick="submitPart5Quiz()">Check All Answers</button>
+    <button class="quiz-btn" onclick="retryPart5Wrong()">Retry Wrong Questions</button>
+    <button class="quiz-btn" onclick="resetPart5Quiz()">Reset Quiz</button>
+  </div>
+
+  <div id="p5OverallResult" class="overall-result" hidden></div>
+</section>
+
+<script>
+const part5Questions = [
+  {
+    id:501, level:"Easy", topic:"Sequence", type:"mcq",
+    question:"Where is raw water stored before treatment?",
+    options:["Storage tank","Reservoir","Distribution pipe","Factory"], answer:1,
+    explanationEn:"A reservoir stores raw water before it is sent to the water treatment plant.",
+    explanationZh:"水库储存尚未处理的原水，然后把水送到净水厂。",
+    trick:"Reservoir = Raw water."
+  },
+  {
+    id:502, level:"Easy", topic:"Functions", type:"mcq",
+    question:"What is the function of a water treatment plant?",
+    options:[
+      "To store raw water only",
+      "To treat raw water",
+      "To carry water to houses",
+      "To produce rain"
+    ], answer:1,
+    explanationEn:"A water treatment plant treats raw water to make it cleaner and safer for use.",
+    explanationZh:"净水厂处理原水，使水更清洁、更安全。",
+    trick:"Treatment plant treats."
+  },
+  {
+    id:503, level:"Easy", topic:"Functions", type:"mcq",
+    question:"What is stored in a storage tank?",
+    options:["Raw water","Treated water","Rain clouds","Wastewater"], answer:1,
+    explanationEn:"A storage tank stores treated water before distribution.",
+    explanationZh:"储水槽储存输送前已经处理好的水。",
+    trick:"Storage tank = Treated water."
+  },
+  {
+    id:504, level:"Easy", topic:"Functions", type:"mcq",
+    question:"What is the function of distribution pipes?",
+    options:[
+      "To purify water",
+      "To carry treated water to consumers",
+      "To kill microorganisms",
+      "To store raw water"
+    ], answer:1,
+    explanationEn:"Distribution pipes transport treated water to users.",
+    explanationZh:"输水管把处理后的水输送给用户。",
+    trick:"Pipes carry water."
+  },
+  {
+    id:505, level:"Medium", topic:"Sequence", type:"mcq",
+    question:"Which sequence is correct?",
+    options:[
+      "Reservoir → Treatment Plant → Storage Tank → Pipes → Consumers",
+      "Consumers → Reservoir → Pipes → Treatment Plant → Storage Tank",
+      "Storage Tank → Reservoir → Consumers → Treatment Plant → Pipes",
+      "Pipes → Consumers → Reservoir → Storage Tank → Treatment Plant"
+    ], answer:0,
+    explanationEn:"Raw water moves from the reservoir to the treatment plant, then to the storage tank, through pipes and finally to consumers.",
+    explanationZh:"原水从水库送到净水厂，再进入储水槽，通过输水管，最后到达用户。",
+    trick:"R-T-S-P-C."
+  },
+  {
+    id:506, level:"Medium", topic:"Raw and treated water", type:"mcq",
+    question:"Which statement is correct?",
+    options:[
+      "Reservoirs store treated water.",
+      "Storage tanks store raw water.",
+      "Reservoirs store raw water.",
+      "Distribution pipes treat raw water."
+    ], answer:2,
+    explanationEn:"Reservoirs store raw water collected from natural sources.",
+    explanationZh:"水库储存从天然水源收集的原水。",
+    trick:"Reservoir = Raw."
+  },
+  {
+    id:507, level:"Medium", topic:"Raw and treated water", type:"mcq",
+    question:"Why must reservoir water be treated first?",
+    options:[
+      "It may contain impurities and microorganisms.",
+      "It is always too hot.",
+      "It contains no water.",
+      "It is already perfectly clean."
+    ], answer:0,
+    explanationEn:"Reservoir water may contain particles, microorganisms and other impurities.",
+    explanationZh:"水库水可能含有颗粒、微生物和其他杂质。",
+    trick:"Raw water may contain impurities."
+  },
+  {
+    id:508, level:"Medium", topic:"Storage tank", type:"mcq",
+    question:"Why is a storage tank important?",
+    options:[
+      "It produces rain.",
+      "It stores treated water and helps maintain supply.",
+      "It filters raw water using sand.",
+      "It removes branches."
+    ], answer:1,
+    explanationEn:"A storage tank stores treated water and helps maintain a more continuous water supply.",
+    explanationZh:"储水槽储存处理后的水，并帮助维持较持续的供水。",
+    trick:"Storage tank = Store + Supply."
+  },
+  {
+    id:509, level:"Medium", topic:"Consumers", type:"mcq",
+    question:"Which is an example of a water consumer?",
+    options:["Reservoir","Water pipe","School","Treatment tank"], answer:2,
+    explanationEn:"Schools, homes, hospitals and factories are consumers because they use treated water.",
+    explanationZh:"学校、住家、医院和工厂都是用水者，因为它们使用处理后的水。",
+    trick:"Consumers use water."
+  },
+  {
+    id:510, level:"Hard", topic:"Application", type:"mcq",
+    question:"The water treatment plant stops operating for a long time. What is most likely to happen?",
+    options:[
+      "The reservoir immediately disappears.",
+      "The storage tank may eventually become empty.",
+      "The pipes produce more water.",
+      "Consumers receive more treated water."
+    ], answer:1,
+    explanationEn:"If no treated water enters the storage tank, the stored supply will gradually decrease and may run out.",
+    explanationZh:"如果没有处理水进入储水槽，储存的水会逐渐减少，最终可能用完。",
+    trick:"No treatment → No refill → Tank empties."
+  },
+  {
+    id:511, level:"Hard", topic:"Application", type:"mcq",
+    question:"Which facility provides a reserve of treated water during a short interruption?",
+    options:["Reservoir","Storage tank","Distribution pipe","Consumer"], answer:1,
+    explanationEn:"The storage tank holds treated water that can provide a temporary reserve.",
+    explanationZh:"储水槽储存处理水，可在短暂中断时提供临时备用水。",
+    trick:"Reserve water = Storage tank."
+  },
+  {
+    id:512, level:"Hard", topic:"Application", type:"mcq",
+    question:"A pipe breaks between the storage tank and houses. What is the direct effect?",
+    options:[
+      "Raw water cannot enter the reservoir.",
+      "Treated water cannot reach the houses properly.",
+      "The treatment plant stops removing impurities.",
+      "Rainfall stops."
+    ], answer:1,
+    explanationEn:"Distribution pipes carry treated water from the storage tank to consumers. A broken pipe interrupts delivery.",
+    explanationZh:"输水管把处理水从储水槽送到用户。水管破裂会中断输送。",
+    trick:"Broken pipe = Delivery problem."
+  },
+  {
+    id:513, level:"Hard", topic:"Vocabulary", type:"text",
+    question:"Complete the sentence: Untreated water collected from natural sources is called ______ water.",
+    answerText:["raw"],
+    explanationEn:"Untreated water collected before purification is called raw water.",
+    explanationZh:"净化前从天然水源收集的水称为原水。",
+    trick:"Untreated = Raw."
+  },
+  {
+    id:514, level:"Hard", topic:"Vocabulary", type:"text",
+    question:"Complete the sentence: Water that has passed through treatment is called ______ water.",
+    answerText:["treated"],
+    explanationEn:"Water that has completed the treatment process is called treated water.",
+    explanationZh:"已经完成净水程序的水称为处理水。",
+    trick:"After treatment = Treated."
+  },
+  {
+    id:515, level:"Hard", topic:"Reasoning", type:"mcq",
+    question:"Why are distribution pipes not considered a purification step?",
+    options:[
+      "They only transport treated water.",
+      "They add alum.",
+      "They kill all microorganisms.",
+      "They remove all suspended particles."
+    ], answer:0,
+    explanationEn:"Distribution pipes only transport water. Purification occurs at the treatment plant.",
+    explanationZh:"输水管只负责输送水。净化过程在净水厂进行。",
+    trick:"Pipes transport, plants treat."
+  },
+  {
+    id:516, level:"Hard", topic:"Reasoning", type:"mcq",
+    question:"Which statement best explains the difference between a reservoir and a storage tank?",
+    options:[
+      "Both store only treated water.",
+      "A reservoir stores raw water, while a storage tank stores treated water.",
+      "A reservoir treats water, while a storage tank produces water.",
+      "A storage tank stores raw water, while a reservoir stores treated water."
+    ], answer:1,
+    explanationEn:"The reservoir stores raw water before treatment. The storage tank stores treated water after treatment.",
+    explanationZh:"水库储存处理前的原水，储水槽储存处理后的水。",
+    trick:"Reservoir before treatment; tank after treatment."
+  },
+  {
+    id:517, level:"Hard", topic:"Sequence", type:"mcq",
+    question:"Which component comes immediately after the water treatment plant?",
+    options:["Consumers","Reservoir","Storage tank","Rain cloud"], answer:2,
+    explanationEn:"After treatment, water is stored in a storage tank before distribution.",
+    explanationZh:"水处理后，水会先进入储水槽，再进行输送。",
+    trick:"Treatment Plant → Storage Tank."
+  },
+  {
+    id:518, level:"Hard", topic:"Reasoning", type:"mcq",
+    question:"Which statement is correct?",
+    options:[
+      "A reservoir stores treated water.",
+      "A storage tank treats raw water.",
+      "Distribution pipes carry treated water to consumers.",
+      "Consumers purify the water before it reaches the treatment plant."
+    ], answer:2,
+    explanationEn:"Distribution pipes transport treated water from storage tanks to consumers.",
+    explanationZh:"输水管把处理后的水从储水槽输送给用户。",
+    trick:"Pipes carry treated water."
+  }
+];
+
+let activePart5Questions = [...part5Questions];
+let lastPart5Wrong = [];
+
+function renderPart5Quiz(){
+  const container = document.getElementById("p5QuizContainer");
+  if(!container) return;
+  container.innerHTML = "";
+
+  activePart5Questions.forEach((q, index) => {
+    const card = document.createElement("div");
+    card.className = "quiz-question";
+    card.id = "p5-question-" + q.id;
+
+    let inputHtml = "";
+    if(q.type === "mcq"){
+      inputHtml = q.options.map((opt, i) => `
+        <label class="option">
+          <input type="radio" name="p5q${q.id}" value="${i}" onchange="updatePart5Progress()"> ${opt}
+        </label>
+      `).join("");
+    } else {
+      inputHtml = `<input class="quiz-input" id="p5-input-${q.id}" type="text" placeholder="Type your answer in English" oninput="updatePart5Progress()">`;
+    }
+
+    card.innerHTML = `
+      <div class="q-label">
+        <span class="q-number">Question ${index + 1}</span>
+        <span class="q-level">${q.level}</span>
+      </div>
+      <div class="q-text">${q.question}</div>
+      ${inputHtml}
+      <div id="p5-feedback-${q.id}"></div>
+    `;
+    container.appendChild(card);
+  });
+
+  updatePart5Progress();
+}
+
+function getPart5Answer(q){
+  if(q.type === "mcq"){
+    const selected = document.querySelector(`input[name="p5q${q.id}"]:checked`);
+    return selected ? Number(selected.value) : null;
+  }
+  const input = document.getElementById("p5-input-" + q.id);
+  return input ? input.value.trim().toLowerCase() : "";
+}
+
+function isPart5Correct(q, answer){
+  if(q.type === "mcq") return answer === q.answer;
+  return q.answerText.includes(answer);
+}
+
+function updatePart5Progress(){
+  let answered = 0;
+  activePart5Questions.forEach(q => {
+    const ans = getPart5Answer(q);
+    if((q.type === "mcq" && ans !== null) || (q.type === "text" && ans !== "")){
+      answered++;
+    }
+  });
+  const el = document.getElementById("p5Progress");
+  if(el) el.textContent = `${answered} / ${activePart5Questions.length}`;
+}
+
+function submitPart5Quiz(){
+  let correct = 0;
+  let wrongIds = [];
+  const topicScores = {};
+
+  activePart5Questions.forEach(q => {
+    const answer = getPart5Answer(q);
+    const ok = isPart5Correct(q, answer);
+    const card = document.getElementById("p5-question-" + q.id);
+    const feedback = document.getElementById("p5-feedback-" + q.id);
+
+    if(!topicScores[q.topic]) topicScores[q.topic] = {correct:0,total:0};
+    topicScores[q.topic].total++;
+
+    if(ok){
+      correct++;
+      topicScores[q.topic].correct++;
+      card.className = "quiz-question correct";
+      feedback.innerHTML = `
+        <div class="feedback correct-box">
+          <h4>Correct</h4>
+          <strong>English:</strong> ${q.explanationEn}<br>
+          <strong>华语：</strong>${q.explanationZh}
+          <div class="memory-trick">Memory Trick 口诀：${q.trick}</div>
+        </div>
+      `;
+    } else {
+      wrongIds.push(q.id);
+      card.className = "quiz-question wrong";
+      feedback.innerHTML = `
+        <div class="feedback wrong-box">
+          <h4>Incorrect — Learn This Again</h4>
+          <strong>Why? 原因：</strong><br>
+          <strong>English:</strong> ${q.explanationEn}<br>
+          <strong>华语：</strong>${q.explanationZh}
+          <div class="memory-trick">Memory Trick 口诀：${q.trick}</div>
+        </div>
+      `;
+    }
+  });
+
+  lastPart5Wrong = wrongIds;
+  const percent = Math.round(correct / activePart5Questions.length * 100);
+  document.getElementById("p5Score").textContent = percent + "%";
+
+  let mastery = "Needs Support";
+  if(percent >= 90) mastery = "Mastered";
+  else if(percent >= 75) mastery = "Almost Mastered";
+  else if(percent >= 60) mastery = "Developing";
+  document.getElementById("p5Mastery").textContent = mastery;
+
+  const result = document.getElementById("p5OverallResult");
+  result.hidden = false;
+
+  const topicHtml = Object.entries(topicScores).map(([topic,data]) => {
+    const p = Math.round(data.correct/data.total*100);
+    return `<div class="mastery-item"><strong>${topic}</strong><br>${data.correct}/${data.total} correct (${p}%)</div>`;
+  }).join("");
+
+  let advice = "";
+  if(percent >= 90){
+    advice = "Excellent. The student has mastered Part 5 and may continue.";
+  }else if(percent >= 75){
+    advice = "Good progress. Retry all wrong questions before continuing.";
+  }else{
+    advice = "Do not continue yet. Review the supply sequence and the difference between raw water and treated water.";
+  }
+
+  result.innerHTML = `
+    <h3>Part 5 Result: ${correct} / ${activePart5Questions.length} (${percent}%)</h3>
+    <p><strong>Teacher's Advice:</strong> ${advice}</p>
+    <div class="mastery-grid">${topicHtml}</div>
+  `;
+  result.scrollIntoView({behavior:"smooth", block:"center"});
+}
+
+function retryPart5Wrong(){
+  if(lastPart5Wrong.length === 0){
+    alert("Please check all answers first, or there are no wrong questions.");
+    return;
+  }
+  activePart5Questions = part5Questions.filter(q => lastPart5Wrong.includes(q.id));
+  lastPart5Wrong = [];
+  document.getElementById("p5OverallResult").hidden = true;
+  document.getElementById("p5Score").textContent = "0%";
+  document.getElementById("p5Mastery").textContent = "Retry mode";
+  renderPart5Quiz();
+  document.getElementById("part5-smart-revision").scrollIntoView({behavior:"smooth"});
+}
+
+function resetPart5Quiz(){
+  activePart5Questions = [...part5Questions];
+  lastPart5Wrong = [];
+  document.getElementById("p5OverallResult").hidden = true;
+  document.getElementById("p5Score").textContent = "0%";
+  document.getElementById("p5Mastery").textContent = "Not assessed";
+  renderPart5Quiz();
+}
+
+document.addEventListener("DOMContentLoaded", renderPart5Quiz);
+</script>
+
+
+<section class="section" id="part6-water-pollution-notes">
+  <h2>Part 6: Water Pollution and Water Sustainability</h2>
+  <p class="section-intro">
+    English is the main examination language. Chinese explanations are included only to support understanding.
+  </p>
+
+  <div class="note-grid">
+    <article class="note-card full">
+      <h3><span class="number">1</span>Definition of Water Pollution</h3>
+      <p class="english">Water pollution is the contamination of water by harmful substances.</p>
+      <p class="chinese">水污染是水被有害物质污染。</p>
+      <div class="memory-line">Harmful substances enter water → Water quality decreases</div>
+    </article>
+  </div>
+</section>
+
+<section class="section">
+  <h2>2. Main Causes of Water Pollution</h2>
+
+  <div class="note-grid">
+    <article class="note-card">
+      <h3>Domestic Waste</h3>
+      <p class="english">Examples include rubbish, detergent and sewage.</p>
+      <p class="chinese">例子包括垃圾、清洁剂和污水。</p>
+    </article>
+
+    <article class="note-card">
+      <h3>Industrial Waste</h3>
+      <p class="english">Examples include chemicals, toxic waste and heavy metals.</p>
+      <p class="chinese">例子包括化学物质、有毒废料和重金属。</p>
+    </article>
+
+    <article class="note-card">
+      <h3>Agricultural Activities</h3>
+      <p class="english">Fertilisers, pesticides and animal waste may enter rivers.</p>
+      <p class="chinese">肥料、农药和动物粪便可能流入河流。</p>
+    </article>
+
+    <article class="note-card">
+      <h3>Oil Spills</h3>
+      <p class="english">Oil forms a layer on the water surface and reduces oxygen exchange.</p>
+      <p class="chinese">油会在水面形成油膜，并减少氧气交换。</p>
+    </article>
+  </div>
+</section>
+
+<section class="section">
+  <h2>3. Effects of Water Pollution</h2>
+
+  <table>
+    <thead>
+      <tr>
+        <th>Effect</th>
+        <th>Scientific Explanation</th>
+        <th>华语辅助</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><strong>Death of aquatic organisms</strong></td>
+        <td>Pollutants reduce water quality and may poison aquatic organisms.</td>
+        <td>污染物降低水质，并可能毒害水生生物。</td>
+      </tr>
+      <tr>
+        <td><strong>Reduced dissolved oxygen</strong></td>
+        <td>Oil films and excessive algae may reduce the oxygen available in water.</td>
+        <td>油膜和过量藻类可能减少水中的溶解氧。</td>
+      </tr>
+      <tr>
+        <td><strong>Spread of disease</strong></td>
+        <td>Contaminated water may contain harmful microorganisms.</td>
+        <td>受污染的水可能含有有害微生物并传播疾病。</td>
+      </tr>
+      <tr>
+        <td><strong>Unpleasant smell and appearance</strong></td>
+        <td>Polluted water may become dirty, smelly and unsuitable for use.</td>
+        <td>受污染的水可能肮脏、有异味，并不适合使用。</td>
+      </tr>
+    </tbody>
+  </table>
+</section>
+
+<section class="section">
+  <h2>4. Eutrophication</h2>
+  <p class="section-intro">This cause-and-effect sequence is a high-frequency KBAT topic.</p>
+
+  <div class="state-flow">
+    <div class="state">Excess Fertiliser<span>过量肥料</span></div>
+    <div class="arrow"><b>→</b></div>
+    <div class="state">Rapid Algal Growth<span>藻类大量生长</span></div>
+    <div class="arrow"><b>→</b></div>
+    <div class="state">Sunlight Blocked<span>阳光被阻挡</span></div>
+  </div>
+
+  <div class="state-flow">
+    <div class="state">Aquatic Plants Die<span>水生植物死亡</span></div>
+    <div class="arrow"><b>→</b></div>
+    <div class="state">Decomposition Uses Oxygen<span>分解消耗氧气</span></div>
+    <div class="arrow"><b>→</b></div>
+    <div class="state">Fish Die<span>鱼类缺氧死亡</span></div>
+  </div>
+
+  <div class="must-memorise">
+    <strong>Memory Trick:</strong><br>
+    Fertiliser → Algae → Less oxygen → Fish die<br>
+    <strong>华语口诀：</strong>肥料多 → 藻类多 → 氧气少 → 鱼死亡
+  </div>
+</section>
+
+<section class="section">
+  <h2>5. Ways to Reduce Water Pollution</h2>
+
+  <div class="checklist">
+    <div class="check-item">Dispose of rubbish and chemicals properly.</div>
+    <div class="check-item">Treat sewage before discharge.</div>
+    <div class="check-item">Treat industrial wastewater before discharge.</div>
+    <div class="check-item">Reduce excessive use of fertilisers and pesticides.</div>
+    <div class="check-item">Enforce environmental laws.</div>
+    <div class="check-item">Educate the public about protecting water sources.</div>
+  </div>
+
+  <p class="chinese">
+    应妥善处理垃圾和化学物质，排放前处理污水，减少过量使用肥料和农药，并加强执法与公众教育。
+  </p>
+</section>
+
+<section class="section">
+  <h2>6. Water Sustainability</h2>
+
+  <p class="english">
+    Water sustainability means using and managing water wisely so that enough clean water remains for future generations.
+  </p>
+  <p class="chinese">
+    水资源永续是明智地使用和管理水资源，确保未来世代仍有足够的清洁水。
+  </p>
+
+  <div class="memory-line">Use water wisely today → Enough clean water tomorrow</div>
+</section>
+
+<section class="section">
+  <h2>7. Ways to Conserve Water</h2>
+
+  <table>
+    <thead>
+      <tr>
+        <th>Action</th>
+        <th>华语辅助</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr><td>Turn off the tap when not in use.</td><td>不用水时关掉水龙头。</td></tr>
+      <tr><td>Repair leaking pipes and taps.</td><td>修理漏水的水管和水龙头。</td></tr>
+      <tr><td>Reuse water when suitable.</td><td>在适当情况下重复使用水。</td></tr>
+      <tr><td>Collect rainwater.</td><td>收集雨水。</td></tr>
+      <tr><td>Use water-efficient appliances.</td><td>使用节水设备。</td></tr>
+      <tr><td>Avoid unnecessary water wastage.</td><td>避免不必要的水资源浪费。</td></tr>
+    </tbody>
+  </table>
+</section>
+
+<section class="section">
+  <h2>8. Cause, Effect and Solution</h2>
+
+  <table>
+    <thead>
+      <tr>
+        <th>Cause</th>
+        <th>Effect</th>
+        <th>Solution</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>Untreated sewage enters a river.</td>
+        <td>Water may contain harmful microorganisms and spread disease.</td>
+        <td>Treat sewage before discharge.</td>
+      </tr>
+      <tr>
+        <td>Excess fertiliser enters a lake.</td>
+        <td>Algal growth increases and dissolved oxygen decreases.</td>
+        <td>Reduce excessive fertiliser use.</td>
+      </tr>
+      <tr>
+        <td>Oil spills on the water surface.</td>
+        <td>Oxygen exchange decreases and aquatic organisms are affected.</td>
+        <td>Prevent spills and clean them quickly.</td>
+      </tr>
+      <tr>
+        <td>Factories discharge toxic chemicals.</td>
+        <td>Water quality decreases and organisms may be poisoned.</td>
+        <td>Treat industrial wastewater and enforce laws.</td>
+      </tr>
+    </tbody>
+  </table>
+</section>
+
+<section class="section">
+  <h2>9. Common Examination Traps</h2>
+
+  <div class="must-memorise">
+    <strong>Weak answer:</strong> Water becomes dirty.<br>
+    <strong>Better answer:</strong> Pollutants reduce water quality and may kill aquatic organisms.<br><br>
+
+    <strong>Weak answer:</strong> Fertiliser kills fish.<br>
+    <strong>Better answer:</strong> Excess fertiliser causes rapid algal growth. Decomposition reduces dissolved oxygen, causing fish to die.<br><br>
+
+    <strong>Weak answer:</strong> Save water.<br>
+    <strong>Better answer:</strong> Repair leaking pipes, turn off unused taps and reuse water when suitable.
+  </div>
+</section>
+
+<section class="section" id="part6-smart-revision">
+  <h2>Part 6 Smart Revision Quiz</h2>
+  <p class="section-intro">
+    Complete all questions. Wrong answers will show English and Chinese explanations, memory tricks and correction guidance.
+  </p>
+
+  <div class="quiz-dashboard">
+    <div class="quiz-stat">
+      <span id="p6Progress">0 / 20</span>
+      <small>Questions answered</small>
+    </div>
+    <div class="quiz-stat">
+      <span id="p6Score">0%</span>
+      <small>Current score</small>
+    </div>
+    <div class="quiz-stat">
+      <span id="p6Mastery">Not assessed</span>
+      <small>Mastery level</small>
+    </div>
+  </div>
+
+  <div id="p6QuizContainer"></div>
+
+  <div class="quiz-actions">
+    <button class="quiz-btn primary" onclick="submitPart6Quiz()">Check All Answers</button>
+    <button class="quiz-btn" onclick="retryPart6Wrong()">Retry Wrong Questions</button>
+    <button class="quiz-btn" onclick="resetPart6Quiz()">Reset Quiz</button>
+  </div>
+
+  <div id="p6OverallResult" class="overall-result" hidden></div>
+</section>
+
+<script>
+const part6Questions = [
+  {
+    id:601, level:"Easy", topic:"Definition", type:"mcq",
+    question:"What is water pollution?",
+    options:[
+      "The freezing of water",
+      "The contamination of water by harmful substances",
+      "The filtration of water",
+      "The storage of treated water"
+    ], answer:1,
+    explanationEn:"Water pollution occurs when harmful substances contaminate water and reduce its quality.",
+    explanationZh:"当有害物质污染水并降低水质时，就发生水污染。",
+    trick:"Harmful substances + Water = Pollution."
+  },
+  {
+    id:602, level:"Easy", topic:"Causes", type:"mcq",
+    question:"Which is an example of domestic waste?",
+    options:["Sewage","Oxygen","Sand","Rainwater"], answer:0,
+    explanationEn:"Sewage is domestic waste produced by homes and communities.",
+    explanationZh:"污水是由家庭和社区产生的生活废物。",
+    trick:"Domestic = Home waste."
+  },
+  {
+    id:603, level:"Easy", topic:"Causes", type:"mcq",
+    question:"Which is an example of industrial waste?",
+    options:["Leaves","Heavy metals","Clean rainwater","Oxygen"], answer:1,
+    explanationEn:"Heavy metals and toxic chemicals may be released by industrial activities.",
+    explanationZh:"工业活动可能释放重金属和有毒化学物质。",
+    trick:"Industry = Chemicals and heavy metals."
+  },
+  {
+    id:604, level:"Easy", topic:"Causes", type:"mcq",
+    question:"Which agricultural substance may pollute water?",
+    options:["Fertiliser","Clean gravel","Pure oxygen","Distilled water"], answer:0,
+    explanationEn:"Fertilisers may be washed into rivers and lakes by rain.",
+    explanationZh:"肥料可能被雨水冲入河流和湖泊。",
+    trick:"Farm chemicals can enter water."
+  },
+  {
+    id:605, level:"Medium", topic:"Effects", type:"mcq",
+    question:"Which is a likely effect of polluted water?",
+    options:[
+      "Improved water quality",
+      "Death of aquatic organisms",
+      "More clean drinking water",
+      "Higher oxygen in every situation"
+    ], answer:1,
+    explanationEn:"Pollutants may poison aquatic organisms or reduce the oxygen available in water.",
+    explanationZh:"污染物可能毒害水生生物，或减少水中的氧气。",
+    trick:"Polluted water harms life."
+  },
+  {
+    id:606, level:"Medium", topic:"Effects", type:"mcq",
+    question:"Why can contaminated water spread disease?",
+    options:[
+      "It may contain harmful microorganisms.",
+      "It contains too much oxygen.",
+      "It is always cold.",
+      "It contains only sand."
+    ], answer:0,
+    explanationEn:"Contaminated water may contain disease-causing microorganisms.",
+    explanationZh:"受污染的水可能含有致病微生物。",
+    trick:"Dirty water may carry germs."
+  },
+  {
+    id:607, level:"Medium", topic:"Oil spills", type:"mcq",
+    question:"How can an oil layer affect aquatic organisms?",
+    options:[
+      "It increases oxygen exchange.",
+      "It reduces oxygen exchange at the water surface.",
+      "It turns oil into drinking water.",
+      "It increases sunlight below the surface."
+    ], answer:1,
+    explanationEn:"An oil layer can reduce the exchange of oxygen between the air and water.",
+    explanationZh:"油膜会减少空气与水之间的氧气交换。",
+    trick:"Oil layer blocks oxygen exchange."
+  },
+  {
+    id:608, level:"Medium", topic:"Eutrophication", type:"mcq",
+    question:"What usually starts eutrophication?",
+    options:[
+      "Excess fertiliser entering water",
+      "Removing all nutrients",
+      "Adding clean gravel",
+      "Filtering water"
+    ], answer:0,
+    explanationEn:"Excess nutrients from fertilisers enter the water and cause rapid algal growth.",
+    explanationZh:"肥料中的过量养分进入水体后，会导致藻类快速生长。",
+    trick:"Fertiliser starts the chain."
+  },
+  {
+    id:609, level:"Medium", topic:"Eutrophication", type:"mcq",
+    question:"What happens after algae grow rapidly?",
+    options:[
+      "More sunlight reaches aquatic plants.",
+      "Sunlight may be blocked.",
+      "All fish immediately become healthier.",
+      "Water becomes distilled."
+    ], answer:1,
+    explanationEn:"A dense layer of algae blocks sunlight from reaching plants below the water surface.",
+    explanationZh:"大量藻类会阻挡阳光到达水下植物。",
+    trick:"More algae = Less light."
+  },
+  {
+    id:610, level:"Hard", topic:"Eutrophication", type:"mcq",
+    question:"Why do fish die during severe eutrophication?",
+    options:[
+      "The water contains too much clean oxygen.",
+      "Decomposition uses up dissolved oxygen.",
+      "Fish cannot see the fertiliser.",
+      "The water freezes."
+    ], answer:1,
+    explanationEn:"Dead algae and plants are decomposed by microorganisms. This process uses dissolved oxygen, leaving too little for fish.",
+    explanationZh:"死亡的藻类和植物被微生物分解，分解过程消耗溶解氧，使鱼类缺氧。",
+    trick:"Decomposition uses oxygen."
+  },
+  {
+    id:611, level:"Hard", topic:"Eutrophication", type:"mcq",
+    question:"Which sequence is correct?",
+    options:[
+      "Fertiliser → Algae → Less oxygen → Fish die",
+      "Fish die → More oxygen → Algae disappear → Fertiliser forms",
+      "Oil spill → Distillation → More oxygen → Fish grow",
+      "Filtration → Sewage → More sunlight → Fish die"
+    ], answer:0,
+    explanationEn:"Excess fertiliser causes algal growth. Decomposition later reduces oxygen and fish may die.",
+    explanationZh:"过量肥料导致藻类生长，之后分解过程减少氧气，鱼类可能死亡。",
+    trick:"Fertiliser → Algae → Less oxygen → Fish die."
+  },
+  {
+    id:612, level:"Medium", topic:"Prevention", type:"mcq",
+    question:"What should factories do before discharging wastewater?",
+    options:[
+      "Treat the wastewater",
+      "Add more toxic chemicals",
+      "Release it directly into rivers",
+      "Mix it with rubbish"
+    ], answer:0,
+    explanationEn:"Industrial wastewater should be treated to remove or reduce harmful substances before discharge.",
+    explanationZh:"工业废水排放前应先处理，以去除或减少有害物质。",
+    trick:"Treat first, discharge later."
+  },
+  {
+    id:613, level:"Medium", topic:"Prevention", type:"mcq",
+    question:"Which action reduces agricultural water pollution?",
+    options:[
+      "Using excessive fertiliser",
+      "Using fertiliser and pesticides carefully",
+      "Throwing animal waste into rivers",
+      "Removing all plants near rivers"
+    ], answer:1,
+    explanationEn:"Careful use of fertilisers and pesticides reduces the amount washed into water bodies.",
+    explanationZh:"谨慎使用肥料和农药，可减少它们被冲入水体的数量。",
+    trick:"Use farm chemicals carefully."
+  },
+  {
+    id:614, level:"Medium", topic:"Sustainability", type:"mcq",
+    question:"What does water sustainability mean?",
+    options:[
+      "Using all water immediately",
+      "Managing water wisely for present and future use",
+      "Polluting water slowly",
+      "Storing only raw water"
+    ], answer:1,
+    explanationEn:"Water sustainability means using and managing water wisely so future generations also have enough clean water.",
+    explanationZh:"水资源永续是明智使用和管理水资源，让未来世代也有足够清洁水。",
+    trick:"Use wisely today, enough tomorrow."
+  },
+  {
+    id:615, level:"Medium", topic:"Conservation", type:"mcq",
+    question:"Which action conserves water?",
+    options:[
+      "Leaving taps running",
+      "Repairing leaking pipes",
+      "Washing small items with a full hose",
+      "Ignoring leaks"
+    ], answer:1,
+    explanationEn:"Repairing leaks prevents unnecessary water loss.",
+    explanationZh:"修理漏水可避免不必要的水资源流失。",
+    trick:"Stop leaks, save water."
+  },
+  {
+    id:616, level:"Hard", topic:"Reasoning", type:"mcq",
+    question:"Which answer best explains why 'water becomes dirty' is weak in an examination?",
+    options:[
+      "It is too scientific.",
+      "It does not state a specific effect or scientific cause.",
+      "It contains too many details.",
+      "It is always incorrect."
+    ], answer:1,
+    explanationEn:"A strong science answer should identify the pollutant, process or specific effect, such as reduced oxygen or death of aquatic organisms.",
+    explanationZh:"好的科学答案应说明污染物、过程或具体影响，例如溶解氧减少或水生生物死亡。",
+    trick:"Name the cause and the effect."
+  },
+  {
+    id:617, level:"Hard", topic:"Cause-effect-solution", type:"mcq",
+    question:"Untreated sewage enters a river. Which response is best?",
+    options:[
+      "Effect: disease may spread; Solution: treat sewage before discharge",
+      "Effect: water becomes pure; Solution: add more sewage",
+      "Effect: oxygen always increases; Solution: ignore it",
+      "Effect: rain stops; Solution: build a reservoir"
+    ], answer:0,
+    explanationEn:"Untreated sewage may contain harmful microorganisms. Treating it before discharge reduces this risk.",
+    explanationZh:"未经处理的污水可能含有有害微生物。排放前处理污水可降低风险。",
+    trick:"Sewage → Germs → Treat before discharge."
+  },
+  {
+    id:618, level:"Hard", topic:"Vocabulary", type:"text",
+    question:"Complete the sentence: Rapid excessive growth of algae caused by extra nutrients is called ______.",
+    answerText:["eutrophication"],
+    explanationEn:"Eutrophication is the enrichment of water with nutrients, causing excessive algal growth.",
+    explanationZh:"富营养化是水体养分过多，导致藻类过度生长的现象。",
+    trick:"Extra nutrients → Eutrophication."
+  },
+  {
+    id:619, level:"Hard", topic:"Vocabulary", type:"text",
+    question:"Complete the sentence: Using water wisely for future generations is called water ______.",
+    answerText:["sustainability"],
+    explanationEn:"Water sustainability means managing water so enough clean water remains for the future.",
+    explanationZh:"水资源永续是管理水资源，使未来仍有足够清洁水。",
+    trick:"Future water = Sustainability."
+  },
+  {
+    id:620, level:"Hard", topic:"KBAT", type:"mcq",
+    question:"A lake near farms has thick algae and dead fish. What is the best explanation?",
+    options:[
+      "Excess fertiliser caused algal growth and decomposition reduced dissolved oxygen.",
+      "The lake contains too much clean oxygen.",
+      "Sand from filtration killed the fish.",
+      "The storage tank stopped working."
+    ], answer:0,
+    explanationEn:"Fertiliser runoff adds nutrients, causing algal growth. When algae die, decomposition uses oxygen, leading to fish death.",
+    explanationZh:"肥料径流增加养分，导致藻类大量生长。藻类死亡后，分解消耗氧气，导致鱼类死亡。",
+    trick:"Farm fertiliser → Algae → Oxygen drops → Fish die."
+  }
+];
+
+let activePart6Questions = [...part6Questions];
+let lastPart6Wrong = [];
+
+function renderPart6Quiz(){
+  const container = document.getElementById("p6QuizContainer");
+  if(!container) return;
+  container.innerHTML = "";
+
+  activePart6Questions.forEach((q, index) => {
+    const card = document.createElement("div");
+    card.className = "quiz-question";
+    card.id = "p6-question-" + q.id;
+
+    let inputHtml = "";
+    if(q.type === "mcq"){
+      inputHtml = q.options.map((opt, i) => `
+        <label class="option">
+          <input type="radio" name="p6q${q.id}" value="${i}" onchange="updatePart6Progress()"> ${opt}
+        </label>
+      `).join("");
+    } else {
+      inputHtml = `<input class="quiz-input" id="p6-input-${q.id}" type="text" placeholder="Type your answer in English" oninput="updatePart6Progress()">`;
+    }
+
+    card.innerHTML = `
+      <div class="q-label">
+        <span class="q-number">Question ${index + 1}</span>
+        <span class="q-level">${q.level}</span>
+      </div>
+      <div class="q-text">${q.question}</div>
+      ${inputHtml}
+      <div id="p6-feedback-${q.id}"></div>
+    `;
+    container.appendChild(card);
+  });
+
+  updatePart6Progress();
+}
+
+function getPart6Answer(q){
+  if(q.type === "mcq"){
+    const selected = document.querySelector(`input[name="p6q${q.id}"]:checked`);
+    return selected ? Number(selected.value) : null;
+  }
+  const input = document.getElementById("p6-input-" + q.id);
+  return input ? input.value.trim().toLowerCase() : "";
+}
+
+function isPart6Correct(q, answer){
+  if(q.type === "mcq") return answer === q.answer;
+  return q.answerText.includes(answer);
+}
+
+function updatePart6Progress(){
+  let answered = 0;
+  activePart6Questions.forEach(q => {
+    const ans = getPart6Answer(q);
+    if((q.type === "mcq" && ans !== null) || (q.type === "text" && ans !== "")){
+      answered++;
+    }
+  });
+  const el = document.getElementById("p6Progress");
+  if(el) el.textContent = `${answered} / ${activePart6Questions.length}`;
+}
+
+function submitPart6Quiz(){
+  let correct = 0;
+  let wrongIds = [];
+  const topicScores = {};
+
+  activePart6Questions.forEach(q => {
+    const answer = getPart6Answer(q);
+    const ok = isPart6Correct(q, answer);
+    const card = document.getElementById("p6-question-" + q.id);
+    const feedback = document.getElementById("p6-feedback-" + q.id);
+
+    if(!topicScores[q.topic]) topicScores[q.topic] = {correct:0,total:0};
+    topicScores[q.topic].total++;
+
+    if(ok){
+      correct++;
+      topicScores[q.topic].correct++;
+      card.className = "quiz-question correct";
+      feedback.innerHTML = `
+        <div class="feedback correct-box">
+          <h4>Correct</h4>
+          <strong>English:</strong> ${q.explanationEn}<br>
+          <strong>华语：</strong>${q.explanationZh}
+          <div class="memory-trick">Memory Trick 口诀：${q.trick}</div>
+        </div>
+      `;
+    } else {
+      wrongIds.push(q.id);
+      card.className = "quiz-question wrong";
+      feedback.innerHTML = `
+        <div class="feedback wrong-box">
+          <h4>Incorrect — Learn This Again</h4>
+          <strong>Why? 原因：</strong><br>
+          <strong>English:</strong> ${q.explanationEn}<br>
+          <strong>华语：</strong>${q.explanationZh}
+          <div class="memory-trick">Memory Trick 口诀：${q.trick}</div>
+        </div>
+      `;
+    }
+  });
+
+  lastPart6Wrong = wrongIds;
+  const percent = Math.round(correct / activePart6Questions.length * 100);
+  document.getElementById("p6Score").textContent = percent + "%";
+
+  let mastery = "Needs Support";
+  if(percent >= 90) mastery = "Mastered";
+  else if(percent >= 75) mastery = "Almost Mastered";
+  else if(percent >= 60) mastery = "Developing";
+  document.getElementById("p6Mastery").textContent = mastery;
+
+  const result = document.getElementById("p6OverallResult");
+  result.hidden = false;
+
+  const topicHtml = Object.entries(topicScores).map(([topic,data]) => {
+    const p = Math.round(data.correct/data.total*100);
+    return `<div class="mastery-item"><strong>${topic}</strong><br>${data.correct}/${data.total} correct (${p}%)</div>`;
+  }).join("");
+
+  let advice = "";
+  if(percent >= 90){
+    advice = "Excellent. The student has mastered Part 6 and completed the main Chapter 5 revision.";
+  }else if(percent >= 75){
+    advice = "Good progress. Retry all wrong questions, especially eutrophication and cause-effect questions.";
+  }else{
+    advice = "Do not finish the chapter yet. Review pollution sources, effects, eutrophication and conservation methods.";
+  }
+
+  result.innerHTML = `
+    <h3>Part 6 Result: ${correct} / ${activePart6Questions.length} (${percent}%)</h3>
+    <p><strong>Teacher's Advice:</strong> ${advice}</p>
+    <div class="mastery-grid">${topicHtml}</div>
+  `;
+  result.scrollIntoView({behavior:"smooth", block:"center"});
+}
+
+function retryPart6Wrong(){
+  if(lastPart6Wrong.length === 0){
+    alert("Please check all answers first, or there are no wrong questions.");
+    return;
+  }
+  activePart6Questions = part6Questions.filter(q => lastPart6Wrong.includes(q.id));
+  lastPart6Wrong = [];
+  document.getElementById("p6OverallResult").hidden = true;
+  document.getElementById("p6Score").textContent = "0%";
+  document.getElementById("p6Mastery").textContent = "Retry mode";
+  renderPart6Quiz();
+  document.getElementById("part6-smart-revision").scrollIntoView({behavior:"smooth"});
+}
+
+function resetPart6Quiz(){
+  activePart6Questions = [...part6Questions];
+  lastPart6Wrong = [];
+  document.getElementById("p6OverallResult").hidden = true;
+  document.getElementById("p6Score").textContent = "0%";
+  document.getElementById("p6Mastery").textContent = "Not assessed";
+  renderPart6Quiz();
+}
+
+document.addEventListener("DOMContentLoaded", renderPart6Quiz);
+</script>
+
+
+<section class="section" id="part7-final-overview">
+  <h2>Part 7: Final Exam Challenge and Practical Skills</h2>
+  <p class="section-intro">
+    This final section checks whether students can apply knowledge from the whole chapter and answer experiment-based questions.
+  </p>
+
+  <div class="note-grid">
+    <article class="note-card">
+      <h3>Section A: Final Exam Challenge</h3>
+      <p class="english">Mixed questions from Parts 1–6.</p>
+      <p class="chinese">混合测试 Part 1–6 的全部知识点。</p>
+      <div class="must-memorise">Target: 90% and above</div>
+    </article>
+
+    <article class="note-card">
+      <h3>Section B: Practical and SPS</h3>
+      <p class="english">Experiments, variables, observations, inferences and conclusions.</p>
+      <p class="chinese">实验、变量、观察、推断与结论。</p>
+      <div class="must-memorise">SPS = Science Process Skills</div>
+    </article>
+  </div>
+</section>
+
+<section class="section">
+  <h2>Experiment 1: Rate of Dissolving</h2>
+
+  <table>
+    <thead>
+      <tr>
+        <th>Item</th>
+        <th>Answer</th>
+        <th>华语辅助</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><strong>Aim</strong></td>
+        <td>To investigate the effect of temperature on the rate of dissolving.</td>
+        <td>研究温度对溶解速度的影响。</td>
+      </tr>
+      <tr>
+        <td><strong>Manipulated Variable</strong></td>
+        <td>Temperature of water</td>
+        <td>水的温度</td>
+      </tr>
+      <tr>
+        <td><strong>Responding Variable</strong></td>
+        <td>Time taken for the solute to dissolve</td>
+        <td>溶质完全溶解所需时间</td>
+      </tr>
+      <tr>
+        <td><strong>Controlled Variables</strong></td>
+        <td>Amount of water, amount of solute, type of solute</td>
+        <td>水量、溶质量、溶质种类</td>
+      </tr>
+      <tr>
+        <td><strong>Hypothesis</strong></td>
+        <td>The higher the temperature of water, the shorter the time taken for the solute to dissolve.</td>
+        <td>水温越高，溶质完全溶解所需时间越短。</td>
+      </tr>
+      <tr>
+        <td><strong>Conclusion</strong></td>
+        <td>A higher water temperature increases the rate of dissolving.</td>
+        <td>较高的水温会提高溶解速度。</td>
+      </tr>
+    </tbody>
+  </table>
+
+  <div class="memory-line">Higher temperature → Shorter time → Faster dissolving</div>
+</section>
+
+<section class="section">
+  <h2>Experiment 2: Electrolysis of Water</h2>
+
+  <table>
+    <thead>
+      <tr>
+        <th>Item</th>
+        <th>Answer</th>
+        <th>华语辅助</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><strong>Aim</strong></td>
+        <td>To identify the gases produced during the electrolysis of water.</td>
+        <td>鉴定水电解时产生的气体。</td>
+      </tr>
+      <tr>
+        <td><strong>Observation at Negative Electrode</strong></td>
+        <td>More gas is collected and it produces a “pop” sound.</td>
+        <td>收集到较多气体，并发出“啪”声。</td>
+      </tr>
+      <tr>
+        <td><strong>Inference</strong></td>
+        <td>The gas is hydrogen.</td>
+        <td>该气体是氢气。</td>
+      </tr>
+      <tr>
+        <td><strong>Observation at Positive Electrode</strong></td>
+        <td>The gas relights a glowing wooden splint.</td>
+        <td>气体使带火星的木条重新燃烧。</td>
+      </tr>
+      <tr>
+        <td><strong>Inference</strong></td>
+        <td>The gas is oxygen.</td>
+        <td>该气体是氧气。</td>
+      </tr>
+      <tr>
+        <td><strong>Conclusion</strong></td>
+        <td>Water is decomposed into hydrogen and oxygen in a 2 : 1 volume ratio.</td>
+        <td>水被分解成氢气和氧气，体积比例为 2 : 1。</td>
+      </tr>
+    </tbody>
+  </table>
+
+  <div class="memory-line">Negative = Hydrogen = Pop • Positive = Oxygen = Relight</div>
+</section>
+
+<section class="section">
+  <h2>Experiment 3: Filtration</h2>
+
+  <table>
+    <thead>
+      <tr>
+        <th>Item</th>
+        <th>Answer</th>
+        <th>华语辅助</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><strong>Aim</strong></td>
+        <td>To remove suspended particles from muddy water by filtration.</td>
+        <td>利用过滤去除泥水中的悬浮颗粒。</td>
+      </tr>
+      <tr>
+        <td><strong>Observation</strong></td>
+        <td>The filtrate is clearer than the original muddy water.</td>
+        <td>滤液比原本的泥水更清澈。</td>
+      </tr>
+      <tr>
+        <td><strong>Inference</strong></td>
+        <td>Suspended particles are trapped by the filter material.</td>
+        <td>悬浮颗粒被过滤材料拦截。</td>
+      </tr>
+      <tr>
+        <td><strong>Limitation</strong></td>
+        <td>Filtration does not remove all dissolved substances or kill all microorganisms.</td>
+        <td>过滤不能去除所有溶解物质，也不能杀死所有微生物。</td>
+      </tr>
+      <tr>
+        <td><strong>Conclusion</strong></td>
+        <td>Filtration removes suspended particles from water.</td>
+        <td>过滤能去除水中的悬浮颗粒。</td>
+      </tr>
+    </tbody>
+  </table>
+
+  <div class="memory-line">Clearer water ≠ Completely safe water</div>
+</section>
+
+<section class="section">
+  <h2>Experiment 4: Water Treatment Model</h2>
+
+  <p class="english">
+    Students may be asked to arrange or label the treatment stages and state the function of each stage.
+  </p>
+  <p class="chinese">
+    学生可能需要排列或标示净水步骤，并写出每一个步骤的作用。
+  </p>
+
+  <div class="memory-line">Screening → Coagulation → Sedimentation → Filtration → Chlorination</div>
+
+  <table>
+    <thead>
+      <tr>
+        <th>Stage</th>
+        <th>What Students Must Write</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr><td>Screening</td><td>Removes large objects.</td></tr>
+      <tr><td>Coagulation</td><td>Alum causes small particles to clump.</td></tr>
+      <tr><td>Sedimentation</td><td>Heavy clumps settle.</td></tr>
+      <tr><td>Filtration</td><td>Removes remaining suspended particles.</td></tr>
+      <tr><td>Chlorination</td><td>Kills harmful microorganisms.</td></tr>
+    </tbody>
+  </table>
+</section>
+
+<section class="section">
+  <h2>SPS Answering Formula</h2>
+
+  <div class="note-grid">
+    <article class="note-card">
+      <h3>Observation</h3>
+      <p class="english">Write only what can be seen, heard or measured.</p>
+      <p class="chinese">只写能够看到、听到或测量到的现象。</p>
+    </article>
+
+    <article class="note-card">
+      <h3>Inference</h3>
+      <p class="english">Write the scientific explanation for the observation.</p>
+      <p class="chinese">写出该观察现象背后的科学解释。</p>
+    </article>
+
+    <article class="note-card">
+      <h3>Hypothesis</h3>
+      <p class="english">The higher/larger the MV, the higher/lower the RV.</p>
+      <p class="chinese">MV 越高／越大，RV 越高／越低。</p>
+    </article>
+
+    <article class="note-card">
+      <h3>Conclusion</h3>
+      <p class="english">State whether the hypothesis is accepted and describe the relationship.</p>
+      <p class="chinese">说明假设是否被接受，并写出变量之间的关系。</p>
+    </article>
+  </div>
+</section>
+
+<section class="section" id="part7-final-quiz">
+  <h2>Part 7A: Chapter 5 Final Exam Challenge</h2>
+  <p class="section-intro">
+    Mixed questions from the whole chapter. Students should score at least 90% to be considered fully ready.
+  </p>
+
+  <div class="quiz-dashboard">
+    <div class="quiz-stat">
+      <span id="p7Progress">0 / 30</span>
+      <small>Questions answered</small>
+    </div>
+    <div class="quiz-stat">
+      <span id="p7Score">0%</span>
+      <small>Current score</small>
+    </div>
+    <div class="quiz-stat">
+      <span id="p7Mastery">Not assessed</span>
+      <small>Final mastery</small>
+    </div>
+  </div>
+
+  <div id="p7QuizContainer"></div>
+
+  <div class="quiz-actions">
+    <button class="quiz-btn primary" onclick="submitPart7Quiz()">Check Final Assessment</button>
+    <button class="quiz-btn" onclick="retryPart7Wrong()">Retry Wrong Questions</button>
+    <button class="quiz-btn" onclick="resetPart7Quiz()">Reset Assessment</button>
+  </div>
+
+  <div id="p7OverallResult" class="overall-result" hidden></div>
+</section>
+
+<section class="section" id="practical-quiz">
+  <h2>Part 7B: Practical and SPS Quiz</h2>
+  <p class="section-intro">
+    This section tests variables, observations, inferences, hypotheses and conclusions.
+  </p>
+
+  <div class="quiz-dashboard">
+    <div class="quiz-stat">
+      <span id="prProgress">0 / 15</span>
+      <small>Questions answered</small>
+    </div>
+    <div class="quiz-stat">
+      <span id="prScore">0%</span>
+      <small>Practical score</small>
+    </div>
+    <div class="quiz-stat">
+      <span id="prMastery">Not assessed</span>
+      <small>SPS mastery</small>
+    </div>
+  </div>
+
+  <div id="prQuizContainer"></div>
+
+  <div class="quiz-actions">
+    <button class="quiz-btn primary" onclick="submitPracticalQuiz()">Check Practical Quiz</button>
+    <button class="quiz-btn" onclick="retryPracticalWrong()">Retry Wrong Questions</button>
+    <button class="quiz-btn" onclick="resetPracticalQuiz()">Reset Practical Quiz</button>
+  </div>
+
+  <div id="prOverallResult" class="overall-result" hidden></div>
+</section>
+
+<script>
+const part7Questions = [
+{id:701,level:"Easy",topic:"Part 1",type:"mcq",question:"Water boils at ______.",options:["0°C","50°C","100°C","150°C"],answer:2,explanationEn:"Water boils at 100°C under normal atmospheric pressure.",explanationZh:"在正常大气压下，水在 100°C 沸腾。",trick:"0 freezes, 100 boils."},
+{id:702,level:"Easy",topic:"Part 1",type:"mcq",question:"Gas changes into liquid by ______.",options:["Melting","Freezing","Condensation","Boiling"],answer:2,explanationEn:"Gas changing into liquid is condensation.",explanationZh:"气体变成液体叫凝结。",trick:"Gas → Liquid = Condensation."},
+{id:703,level:"Easy",topic:"Part 2",type:"mcq",question:"Which substance dissolves in a solvent?",options:["Solute","Solution","Colloid","Suspension"],answer:0,explanationEn:"A solute is dissolved by a solvent.",explanationZh:"溶质会被溶剂溶解。",trick:"Solute gets dissolved."},
+{id:704,level:"Easy",topic:"Part 2",type:"mcq",question:"Which mixture is a suspension?",options:["Salt water","Milk","Muddy water","Distilled water"],answer:2,explanationEn:"Muddy water is cloudy, settles and can be filtered.",explanationZh:"泥水混浊、会沉淀，而且可以过滤。",trick:"Settle + Filter = Suspension."},
+{id:705,level:"Easy",topic:"Part 3",type:"mcq",question:"Hydrogen is produced at the ______ electrode.",options:["Positive","Negative","Neutral","No"],answer:1,explanationEn:"Hydrogen is produced at the negative electrode.",explanationZh:"氢气在负极产生。",trick:"Negative → Hydrogen."},
+{id:706,level:"Easy",topic:"Part 3",type:"mcq",question:"What is the volume ratio of hydrogen to oxygen?",options:["1:1","1:2","2:1","3:2"],answer:2,explanationEn:"Hydrogen is produced in twice the volume of oxygen.",explanationZh:"氢气体积是氧气的两倍。",trick:"H:O = 2:1."},
+{id:707,level:"Easy",topic:"Part 4",type:"mcq",question:"Which substance kills harmful microorganisms during water treatment?",options:["Alum","Chlorine","Sand","Gravel"],answer:1,explanationEn:"Chlorine is added to kill harmful microorganisms.",explanationZh:"氯用来杀死有害微生物。",trick:"Chlorine kills."},
+{id:708,level:"Easy",topic:"Part 5",type:"mcq",question:"Which facility stores treated water?",options:["Reservoir","Storage tank","River","Treatment pipe"],answer:1,explanationEn:"A storage tank stores treated water before distribution.",explanationZh:"储水槽储存处理后的水。",trick:"Storage tank = Treated water."},
+{id:709,level:"Easy",topic:"Part 6",type:"mcq",question:"Which is a cause of water pollution?",options:["Industrial waste","Clean rainwater","Oxygen","Filtration"],answer:0,explanationEn:"Industrial waste may contain toxic chemicals and heavy metals.",explanationZh:"工业废料可能含有有毒化学物质和重金属。",trick:"Industry can release chemicals."},
+{id:710,level:"Medium",topic:"Part 1",type:"mcq",question:"Wet clothes dry below 100°C due to ______.",options:["Boiling","Evaporation","Condensation","Freezing"],answer:1,explanationEn:"Evaporation can occur at any temperature.",explanationZh:"蒸发可以在任何温度发生。",trick:"Any temperature = Evaporation."},
+{id:711,level:"Medium",topic:"Part 2",type:"mcq",question:"Why does powdered sugar dissolve faster than a sugar cube?",options:["Larger total surface area","Lower mass only","It becomes a solvent","It boils"],answer:0,explanationEn:"Smaller particles have a larger total surface area in contact with the solvent.",explanationZh:"较小颗粒拥有更大的总表面积与溶剂接触。",trick:"Smaller → Larger surface area."},
+{id:712,level:"Medium",topic:"Part 2",type:"mcq",question:"Which solution cannot dissolve more solute at that temperature?",options:["Dilute","Concentrated","Saturated","Colloid"],answer:2,explanationEn:"A saturated solution cannot dissolve more solute at that temperature.",explanationZh:"饱和溶液在该温度下不能再溶解更多溶质。",trick:"Saturated = No more dissolves."},
+{id:713,level:"Medium",topic:"Part 3",type:"mcq",question:"Which test identifies oxygen?",options:["Pop sound","Glowing splint relights","Limewater turns milky","Blue litmus turns red"],answer:1,explanationEn:"Oxygen relights a glowing wooden splint.",explanationZh:"氧气会使带火星的木条重新燃烧。",trick:"Relight = Oxygen."},
+{id:714,level:"Medium",topic:"Part 4",type:"mcq",question:"Which sequence is correct?",options:["Screening→Coagulation→Sedimentation→Filtration→Chlorination","Chlorination→Screening→Filtration","Filtration→Screening→Sedimentation","Sedimentation→Chlorination→Screening"],answer:0,explanationEn:"This is the correct water treatment sequence.",explanationZh:"这是正确的水处理顺序。",trick:"S-C-S-F-C."},
+{id:715,level:"Medium",topic:"Part 5",type:"mcq",question:"What comes immediately after the water treatment plant?",options:["Consumers","Reservoir","Storage tank","Rain cloud"],answer:2,explanationEn:"Treated water is stored in a storage tank before distribution.",explanationZh:"处理后的水会先储存在储水槽。",trick:"Plant → Tank."},
+{id:716,level:"Medium",topic:"Part 6",type:"mcq",question:"What starts eutrophication?",options:["Excess fertiliser","Clean water","Filtration","Rainwater collection"],answer:0,explanationEn:"Excess nutrients from fertiliser cause rapid algal growth.",explanationZh:"肥料中的过量养分会导致藻类快速生长。",trick:"Fertiliser starts the chain."},
+{id:717,level:"Hard",topic:"Part 1",type:"mcq",question:"Water droplets form outside a cold glass because ______.",options:["Water leaks out","Water vapour condenses","The glass melts","Water boils"],answer:1,explanationEn:"Water vapour loses heat and condenses on the cold surface.",explanationZh:"水蒸气在冷表面失去热量并凝结。",trick:"Cold surface + droplets = Condensation."},
+{id:718,level:"Hard",topic:"Part 2",type:"mcq",question:"Which action set makes salt dissolve fastest?",options:["Cold, unstirred, large crystals","Hot, stirred, fine salt","Cold, stirred, large crystals","Hot, unstirred, large crystals"],answer:1,explanationEn:"High temperature, stirring and smaller particles increase the rate of dissolving.",explanationZh:"高温、搅拌和较小颗粒会提高溶解速度。",trick:"Hot + Stir + Small = Fast."},
+{id:719,level:"Hard",topic:"Part 3",type:"mcq",question:"Why is dilute acid added during electrolysis of water?",options:["To cool water","To improve conductivity","To produce chlorine","To remove hydrogen"],answer:1,explanationEn:"Dilute acid provides ions and improves electrical conductivity.",explanationZh:"稀酸提供离子并提高导电性。",trick:"Dilute acid = Better conductivity."},
+{id:720,level:"Hard",topic:"Part 4",type:"mcq",question:"Why is sedimentation carried out after coagulation?",options:["Clumps formed become heavy and settle","Chlorine must evaporate","Large branches dissolve","Water must boil"],answer:0,explanationEn:"Coagulation forms larger clumps that can settle during sedimentation.",explanationZh:"混凝形成较大团块，使它们能在沉淀过程中下沉。",trick:"Clump first, sink next."},
+{id:721,level:"Hard",topic:"Part 5",type:"mcq",question:"If a distribution pipe breaks, what is the direct effect?",options:["Raw water stops entering reservoir","Treated water cannot reach consumers properly","Treatment stops everywhere","Rain stops"],answer:1,explanationEn:"Distribution pipes transport treated water to consumers.",explanationZh:"输水管负责把处理水送给用户。",trick:"Broken pipe = Delivery problem."},
+{id:722,level:"Hard",topic:"Part 6",type:"mcq",question:"Why do fish die during eutrophication?",options:["Too much clean oxygen","Decomposition uses dissolved oxygen","Fish eat fertiliser","Water freezes"],answer:1,explanationEn:"Decomposition uses dissolved oxygen, leaving too little for fish.",explanationZh:"分解过程消耗溶解氧，使鱼类缺氧。",trick:"Decomposition uses oxygen."},
+{id:723,level:"Hard",topic:"Part 2",type:"text",question:"Complete: A cloudy mixture that does not settle easily is a ______.",answerText:["colloid"],explanationEn:"A colloid is cloudy but stable and does not settle easily.",explanationZh:"胶体呈混浊状，但较稳定，不容易沉淀。",trick:"Cloudy but stable = Colloid."},
+{id:724,level:"Hard",topic:"Part 3",type:"text",question:"Complete: The positive electrode is called the ______.",answerText:["anode"],explanationEn:"The positive electrode is the anode.",explanationZh:"正极称为阳极。",trick:"Positive = Anode."},
+{id:725,level:"Hard",topic:"Part 4",type:"text",question:"Complete: Heavy clumps settling at the bottom is called ______.",answerText:["sedimentation"],explanationEn:"Sedimentation is the settling of heavier particles.",explanationZh:"沉淀是较重颗粒下沉的过程。",trick:"Settle = Sedimentation."},
+{id:726,level:"Hard",topic:"Part 5",type:"text",question:"Complete: Untreated water is called ______ water.",answerText:["raw"],explanationEn:"Untreated water is called raw water.",explanationZh:"未经处理的水称为原水。",trick:"Untreated = Raw."},
+{id:727,level:"Hard",topic:"Part 6",type:"text",question:"Complete: Excessive algal growth due to extra nutrients is called ______.",answerText:["eutrophication"],explanationEn:"This process is called eutrophication.",explanationZh:"这个过程称为富营养化。",trick:"Extra nutrients = Eutrophication."},
+{id:728,level:"KBAT",topic:"Mixed",type:"mcq",question:"A lake near farms has thick algae and dead fish. What is the best explanation?",options:["Fertiliser runoff caused algal growth and oxygen loss","The lake has too much clean oxygen","Sand killed the fish","The reservoir is empty"],answer:0,explanationEn:"Fertiliser runoff adds nutrients, causing algal growth. Decomposition then reduces oxygen.",explanationZh:"肥料径流增加养分，导致藻类生长，之后分解消耗氧气。",trick:"Farm → Algae → Oxygen drops → Fish die."},
+{id:729,level:"KBAT",topic:"Mixed",type:"mcq",question:"Filtered water looks clear. Which statement is correct?",options:["It is definitely safe to drink","All dissolved substances are removed","Suspended particles are reduced, but microorganisms may remain","It contains no impurities"],answer:2,explanationEn:"Filtration removes suspended particles but may not remove microorganisms or dissolved substances.",explanationZh:"过滤去除悬浮颗粒，但可能无法去除微生物或溶解物质。",trick:"Clear does not always mean safe."},
+{id:730,level:"KBAT",topic:"Mixed",type:"mcq",question:"Which answer best shows water sustainability?",options:["Use all available water now","Repair leaks and reuse water where suitable","Pollute rivers slowly","Store only raw water"],answer:1,explanationEn:"Repairing leaks and reusing water reduce wastage and support future supply.",explanationZh:"修理漏水并适当重复用水，可减少浪费并支持未来供水。",trick:"Save today, enough tomorrow."}
+];
+
+const practicalQuestions = [
+{id:801,level:"SPS",topic:"Variables",type:"mcq",question:"In an experiment on water temperature and dissolving rate, what is the manipulated variable?",options:["Time taken to dissolve","Temperature of water","Amount of solute dissolved","Colour of solution"],answer:1,explanationEn:"The manipulated variable is the factor deliberately changed, which is water temperature.",explanationZh:"操纵变量是实验者主动改变的因素，也就是水温。",trick:"MV = What you change."},
+{id:802,level:"SPS",topic:"Variables",type:"mcq",question:"What is the responding variable in that experiment?",options:["Temperature of water","Type of beaker","Time taken to dissolve","Amount of water"],answer:2,explanationEn:"The responding variable is what is measured, which is the time taken to dissolve.",explanationZh:"反应变量是被测量的结果，也就是溶解所需时间。",trick:"RV = What you measure."},
+{id:803,level:"SPS",topic:"Variables",type:"mcq",question:"Which is a controlled variable?",options:["Temperature","Time taken","Amount of solute","Final answer"],answer:2,explanationEn:"The amount of solute should be kept constant for a fair test.",explanationZh:"为了公平实验，溶质的量必须保持不变。",trick:"CV = Keep the same."},
+{id:804,level:"SPS",topic:"Hypothesis",type:"mcq",question:"Which is the best hypothesis?",options:["Sugar dissolves","The higher the water temperature, the shorter the dissolving time","Water is clear","The beaker is made of glass"],answer:1,explanationEn:"A hypothesis states the relationship between the manipulated and responding variables.",explanationZh:"假设必须说明操纵变量与反应变量之间的关系。",trick:"MV changes → RV changes."},
+{id:805,level:"SPS",topic:"Observation",type:"mcq",question:"Which is an observation during electrolysis?",options:["The gas is hydrogen","A pop sound is heard","Hydrogen is produced because water contains hydrogen","The experiment is successful"],answer:1,explanationEn:"A pop sound is something that can be heard directly.",explanationZh:"“听到啪声”是可以直接观察到的现象。",trick:"Observation = See, hear, measure."},
+{id:806,level:"SPS",topic:"Inference",type:"mcq",question:"A gas produces a pop sound. What is the inference?",options:["The gas is hydrogen","A sound is heard","The tube is full","The gas has no colour"],answer:0,explanationEn:"The pop sound indicates that the gas is hydrogen.",explanationZh:"啪声说明该气体是氢气。",trick:"Inference = Scientific meaning."},
+{id:807,level:"SPS",topic:"Observation",type:"mcq",question:"Which is the correct observation after filtration?",options:["The water is completely safe","The filtrate is clearer","All germs are dead","The liquid is distilled"],answer:1,explanationEn:"The visible observation is that the filtrate is clearer.",explanationZh:"可直接观察到的是滤液变得更清澈。",trick:"Write what you see."},
+{id:808,level:"SPS",topic:"Inference",type:"mcq",question:"What is the inference from clearer filtrate?",options:["Suspended particles were trapped","All salts disappeared","All microorganisms died","Water boiled"],answer:0,explanationEn:"The filter trapped suspended particles, making the water clearer.",explanationZh:"过滤材料拦截悬浮颗粒，使水变得更清澈。",trick:"Clearer = Fewer suspended particles."},
+{id:809,level:"SPS",topic:"Conclusion",type:"mcq",question:"Which is the best conclusion for the temperature experiment?",options:["Hot water is red","Higher temperature increases the rate of dissolving","Sugar is sweet","The beaker is warm"],answer:1,explanationEn:"The conclusion should state the relationship between temperature and dissolving rate.",explanationZh:"结论应说明温度与溶解速度之间的关系。",trick:"Conclusion = Relationship."},
+{id:810,level:"SPS",topic:"Fair test",type:"mcq",question:"Why must the same amount of sugar be used?",options:["To make the test fair","To change the MV","To change the RV","To make sugar sweeter"],answer:0,explanationEn:"Keeping the amount of sugar constant ensures a fair comparison.",explanationZh:"保持糖的量相同，才能进行公平比较。",trick:"Same conditions = Fair test."},
+{id:811,level:"SPS",topic:"Electrolysis",type:"mcq",question:"Why is more gas collected at the negative electrode?",options:["Hydrogen is produced in twice the volume of oxygen","Oxygen is heavier","The tube is larger","Water contains only hydrogen"],answer:0,explanationEn:"Hydrogen and oxygen are produced in a 2:1 ratio.",explanationZh:"氢气和氧气以 2:1 的比例产生。",trick:"More gas = Hydrogen."},
+{id:812,level:"SPS",topic:"Filtration",type:"mcq",question:"Which statement is a limitation of filtration?",options:["It removes all microorganisms","It may not remove dissolved substances","It always produces distilled water","It changes water into gas"],answer:1,explanationEn:"Filtration removes suspended particles but may not remove dissolved substances.",explanationZh:"过滤去除悬浮颗粒，但可能不能去除溶解物质。",trick:"Filtration removes particles, not everything."},
+{id:813,level:"SPS",topic:"Vocabulary",type:"text",question:"Complete: The variable deliberately changed is the ______ variable.",answerText:["manipulated"],explanationEn:"The manipulated variable is deliberately changed by the investigator.",explanationZh:"操纵变量是实验者主动改变的变量。",trick:"Manipulated = Changed."},
+{id:814,level:"SPS",topic:"Vocabulary",type:"text",question:"Complete: What is measured is the ______ variable.",answerText:["responding"],explanationEn:"The responding variable is the measured result.",explanationZh:"反应变量是被测量的结果。",trick:"Responding = Measured."},
+{id:815,level:"SPS",topic:"Vocabulary",type:"text",question:"Complete: A scientific explanation for an observation is an ______.",answerText:["inference"],explanationEn:"An inference explains the observation scientifically.",explanationZh:"推断是对观察现象的科学解释。",trick:"Observation seen; inference explained."}
+];
+
+function setupQuizEngine(prefix, questions, containerId, progressId, scoreId, masteryId, resultId, sectionId){
+  let active = [...questions];
+  let wrong = [];
+
+  function render(){
+    const container = document.getElementById(containerId);
+    if(!container) return;
+    container.innerHTML = "";
+    active.forEach((q,index)=>{
+      const card=document.createElement("div");
+      card.className="quiz-question";
+      card.id=`${prefix}-question-${q.id}`;
+      let inputHtml="";
+      if(q.type==="mcq"){
+        inputHtml=q.options.map((opt,i)=>`
+          <label class="option">
+            <input type="radio" name="${prefix}q${q.id}" value="${i}" onchange="${prefix}Update()"> ${opt}
+          </label>`).join("");
+      }else{
+        inputHtml=`<input class="quiz-input" id="${prefix}-input-${q.id}" type="text" placeholder="Type your answer in English" oninput="${prefix}Update()">`;
+      }
+      card.innerHTML=`
+        <div class="q-label"><span class="q-number">Question ${index+1}</span><span class="q-level">${q.level}</span></div>
+        <div class="q-text">${q.question}</div>${inputHtml}<div id="${prefix}-feedback-${q.id}"></div>`;
+      container.appendChild(card);
+    });
+    update();
+  }
+
+  function getAnswer(q){
+    if(q.type==="mcq"){
+      const selected=document.querySelector(`input[name="${prefix}q${q.id}"]:checked`);
+      return selected?Number(selected.value):null;
+    }
+    const input=document.getElementById(`${prefix}-input-${q.id}`);
+    return input?input.value.trim().toLowerCase():"";
+  }
+
+  function isCorrect(q,a){
+    return q.type==="mcq"?a===q.answer:q.answerText.includes(a);
+  }
+
+  function update(){
+    let answered=0;
+    active.forEach(q=>{
+      const a=getAnswer(q);
+      if((q.type==="mcq"&&a!==null)||(q.type==="text"&&a!=="")) answered++;
+    });
+    const el=document.getElementById(progressId);
+    if(el) el.textContent=`${answered} / ${active.length}`;
+  }
+
+  function submit(){
+    let correct=0;
+    wrong=[];
+    const topicScores={};
+
+    active.forEach(q=>{
+      const a=getAnswer(q);
+      const ok=isCorrect(q,a);
+      const card=document.getElementById(`${prefix}-question-${q.id}`);
+      const feedback=document.getElementById(`${prefix}-feedback-${q.id}`);
+
+      if(!topicScores[q.topic]) topicScores[q.topic]={correct:0,total:0};
+      topicScores[q.topic].total++;
+
+      if(ok){
+        correct++;
+        topicScores[q.topic].correct++;
+        card.className="quiz-question correct";
+        feedback.innerHTML=`<div class="feedback correct-box"><h4>Correct</h4><strong>English:</strong> ${q.explanationEn}<br><strong>华语：</strong>${q.explanationZh}<div class="memory-trick">Memory Trick 口诀：${q.trick}</div></div>`;
+      }else{
+        wrong.push(q.id);
+        card.className="quiz-question wrong";
+        feedback.innerHTML=`<div class="feedback wrong-box"><h4>Incorrect — Learn This Again</h4><strong>Why? 原因：</strong><br><strong>English:</strong> ${q.explanationEn}<br><strong>华语：</strong>${q.explanationZh}<div class="memory-trick">Memory Trick 口诀：${q.trick}</div></div>`;
+      }
+    });
+
+    const percent=Math.round(correct/active.length*100);
+    document.getElementById(scoreId).textContent=percent+"%";
+
+    let mastery="Needs Support";
+    if(percent>=90) mastery="Mastered";
+    else if(percent>=75) mastery="Almost Mastered";
+    else if(percent>=60) mastery="Developing";
+    document.getElementById(masteryId).textContent=mastery;
+
+    const result=document.getElementById(resultId);
+    result.hidden=false;
+
+    const topicHtml=Object.entries(topicScores).map(([topic,data])=>{
+      const p=Math.round(data.correct/data.total*100);
+      return `<div class="mastery-item"><strong>${topic}</strong><br>${data.correct}/${data.total} correct (${p}%)</div>`;
+    }).join("");
+
+    let advice=percent>=90
+      ?"Excellent. The student has mastered this assessment."
+      :percent>=75
+      ?"Good progress. Retry all wrong questions."
+      :"Review the weakest topics before trying again.";
+
+    result.innerHTML=`<h3>Result: ${correct} / ${active.length} (${percent}%)</h3><p><strong>Teacher's Advice:</strong> ${advice}</p><div class="mastery-grid">${topicHtml}</div>`;
+    result.scrollIntoView({behavior:"smooth",block:"center"});
+  }
+
+  function retry(){
+    if(wrong.length===0){
+      alert("Please check all answers first, or there are no wrong questions.");
+      return;
+    }
+    active=questions.filter(q=>wrong.includes(q.id));
+    wrong=[];
+    document.getElementById(resultId).hidden=true;
+    document.getElementById(scoreId).textContent="0%";
+    document.getElementById(masteryId).textContent="Retry mode";
+    render();
+    document.getElementById(sectionId).scrollIntoView({behavior:"smooth"});
+  }
+
+  function reset(){
+    active=[...questions];
+    wrong=[];
+    document.getElementById(resultId).hidden=true;
+    document.getElementById(scoreId).textContent="0%";
+    document.getElementById(masteryId).textContent="Not assessed";
+    render();
+  }
+
+  return {render,update,submit,retry,reset};
+}
+
+let p7Engine;
+let prEngine;
+
+document.addEventListener("DOMContentLoaded",()=>{
+  p7Engine=setupQuizEngine("p7",part7Questions,"p7QuizContainer","p7Progress","p7Score","p7Mastery","p7OverallResult","part7-final-quiz");
+  prEngine=setupQuizEngine("pr",practicalQuestions,"prQuizContainer","prProgress","prScore","prMastery","prOverallResult","practical-quiz");
+  p7Engine.render();
+  prEngine.render();
+});
+
+function p7Update(){p7Engine.update();}
+function submitPart7Quiz(){p7Engine.submit();}
+function retryPart7Wrong(){p7Engine.retry();}
+function resetPart7Quiz(){p7Engine.reset();}
+
+function prUpdate(){prEngine.update();}
+function submitPracticalQuiz(){prEngine.submit();}
+function retryPracticalWrong(){prEngine.retry();}
+function resetPracticalQuiz(){prEngine.reset();}
+</script>
+
+<p class="footer">Form 2 Science Chapter 5 • Exam Notes • English Main Language + Chinese Support</p>
+  </main>
+
+<script>
+function buildChapterAccordion(){
+  const boundaries = [
+    {part:1, start:document.querySelector("main.page > section.section"), end:document.getElementById("part2-solution-notes"), title:"Part 1: Water and Changes of State"},
+    {part:2, start:document.getElementById("part2-solution-notes"), end:document.getElementById("part3-electrolysis-notes"), title:"Part 2: Solution and Rate of Dissolving"},
+    {part:3, start:document.getElementById("part3-electrolysis-notes"), end:document.getElementById("part4-water-treatment-notes"), title:"Part 3: Electrolysis of Water"},
+    {part:4, start:document.getElementById("part4-water-treatment-notes"), end:document.getElementById("part5-water-supply-notes"), title:"Part 4: Water Purification and Treatment"},
+    {part:5, start:document.getElementById("part5-water-supply-notes"), end:document.getElementById("part6-water-pollution-notes"), title:"Part 5: Water Supply System"},
+    {part:6, start:document.getElementById("part6-water-pollution-notes"), end:document.getElementById("part7-final-overview"), title:"Part 6: Water Pollution and Sustainability"}
+  ];
+
+  boundaries.forEach(item=>{
+    if(!item.start || !item.end || document.getElementById("chapter-group-"+item.part)) return;
+
+    const wrapper=document.createElement("div");
+    wrapper.className="chapter-group";
+    wrapper.id="chapter-group-"+item.part;
+
+    const header=document.createElement("div");
+    header.className="chapter-group-header";
+    header.innerHTML=`
+      <h2>${item.title}</h2>
+      <button class="chapter-close-btn" onclick="closeChapterPart(${item.part})">Close Part</button>
+    `;
+    wrapper.appendChild(header);
+
+    item.start.parentNode.insertBefore(wrapper,item.start);
+
+    let node=item.start;
+    while(node && node!==item.end){
+      const next=node.nextSibling;
+      if(node.nodeType===1 && node.matches("section.section")){
+        wrapper.appendChild(node);
+      }
+      node=next;
+    }
+  });
+}
+
+function toggleChapterPart(part){
+  const group=document.getElementById("chapter-group-"+part);
+  if(!group) return;
+
+  const isOpen=group.classList.contains("open");
+
+  document.querySelectorAll(".chapter-group").forEach(el=>el.classList.remove("open"));
+  document.querySelectorAll(".chapter-open-btn").forEach(el=>el.classList.remove("active"));
+
+  if(!isOpen){
+    group.classList.add("open");
+    const button=document.querySelector(`.chapter-open-btn[data-part="${part}"]`);
+    if(button) button.classList.add("active");
+    setTimeout(()=>group.scrollIntoView({behavior:"smooth",block:"start"}),50);
+  }
+}
+
+function closeChapterPart(part){
+  const group=document.getElementById("chapter-group-"+part);
+  const button=document.querySelector(`.chapter-open-btn[data-part="${part}"]`);
+  if(group) group.classList.remove("open");
+  if(button) button.classList.remove("active");
+  document.getElementById("chapter-part-menu")?.scrollIntoView({behavior:"smooth",block:"start"});
+}
+
+document.addEventListener("DOMContentLoaded",buildChapterAccordion);
+</script>
+
+</body>
+</html>

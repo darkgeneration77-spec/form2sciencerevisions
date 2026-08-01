@@ -1,0 +1,1843 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Form 2 Science Chapter 6 Part 1 - Acids and Alkalis</title>
+  <style>
+    :root{
+      --bg:#f4f7fb;
+      --card:#fff;
+      --text:#172033;
+      --muted:#5c667a;
+      --line:#dfe5ef;
+      --accent:#7c3aed;
+      --accent-soft:#f2ebff;
+      --success:#eaf8ef;
+      --danger:#fff0f0;
+      --warning:#fff7df;
+      --shadow:0 12px 30px rgba(28,48,84,.10);
+    }
+    *{box-sizing:border-box}
+    body{
+      margin:0;
+      background:linear-gradient(180deg,#f2ecff 0%,var(--bg) 40%,#fff 100%);
+      color:var(--text);
+      font-family:Arial,"Noto Sans SC","Microsoft YaHei",sans-serif;
+      line-height:1.65;
+    }
+    .page{width:min(1100px,92%);margin:auto;padding:36px 0 60px}
+    .hero{
+      background:linear-gradient(135deg,#6d28d9,#8b5cf6);
+      color:#fff;padding:34px;border-radius:24px;box-shadow:var(--shadow)
+    }
+    .hero .tag{
+      display:inline-block;padding:6px 12px;border-radius:999px;
+      background:rgba(255,255,255,.18);border:1px solid rgba(255,255,255,.35);
+      font-size:.86rem;font-weight:800;letter-spacing:.04em
+    }
+    .hero h1{margin:12px 0 0;font-size:clamp(2rem,4vw,3.3rem);line-height:1.1}
+    .hero p{margin:14px 0 0;max-width:820px}
+    .hero-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:14px;margin-top:22px}
+    .hero-box{padding:14px;border-radius:16px;background:rgba(255,255,255,.14);border:1px solid rgba(255,255,255,.24)}
+    .hero-box strong{display:block;font-size:1.4rem}
+    .section{
+      background:var(--card);border:1px solid var(--line);border-radius:22px;
+      padding:26px;box-shadow:var(--shadow);margin:22px 0
+    }
+    .section h2{margin:0 0 8px;font-size:1.7rem}
+    .section-intro{margin:0 0 20px;color:var(--muted)}
+    .note-grid{display:grid;grid-template-columns:repeat(2,1fr);gap:16px}
+    .note-card{border:1px solid var(--line);border-radius:18px;padding:20px;background:#fff}
+    .note-card.full{grid-column:1/-1}
+    .number{
+      display:inline-flex;width:34px;height:34px;align-items:center;justify-content:center;
+      border-radius:50%;background:var(--accent);color:#fff;font-weight:900;margin-right:8px
+    }
+    .note-card h3{display:flex;align-items:center;margin:0 0 12px}
+    .english{font-weight:700}
+    .chinese{
+      color:var(--muted);background:var(--accent-soft);border-left:4px solid var(--accent);
+      border-radius:10px;padding:10px 12px
+    }
+    .must-memorise{background:var(--warning);border:1px solid #efd78d;border-radius:14px;padding:14px;margin-top:12px}
+    .memory-line{
+      background:var(--success);border:1px solid #b9e3c8;border-radius:16px;
+      padding:14px;text-align:center;font-weight:800;margin-top:14px
+    }
+    table{width:100%;border-collapse:collapse;margin-top:14px}
+    th,td{border:1px solid var(--line);padding:12px;text-align:left;vertical-align:top}
+    th{background:var(--accent-soft)}
+    .checklist{display:grid;grid-template-columns:repeat(2,1fr);gap:12px}
+    .check-item{padding:14px;border:1px solid var(--line);border-radius:14px;background:#f8fafc}
+    .check-item::before{content:"□";margin-right:8px;color:var(--accent);font-weight:900}
+    .quiz-dashboard{display:grid;grid-template-columns:repeat(3,1fr);gap:14px;margin:18px 0 24px}
+    .quiz-stat{background:#f8fafc;border:1px solid var(--line);border-radius:16px;padding:16px;text-align:center}
+    .quiz-stat span{display:block;font-size:1.55rem;font-weight:900;color:var(--accent)}
+    .quiz-stat small{color:var(--muted)}
+    .quiz-question{border:1px solid var(--line);border-radius:18px;padding:20px;margin:16px 0;background:#fff}
+    .quiz-question.correct{border-color:#62b57a;background:#f1fbf4}
+    .quiz-question.wrong{border-color:#dc6f6f;background:#fff7f7}
+    .q-label{display:flex;justify-content:space-between;gap:12px}
+    .q-number{font-weight:900;color:var(--accent)}
+    .q-level{font-size:.78rem;padding:4px 9px;border-radius:999px;background:var(--accent-soft);color:var(--accent);font-weight:800}
+    .q-text{font-size:1.05rem;font-weight:700;margin:10px 0 14px}
+    .option{display:block;border:1px solid var(--line);border-radius:12px;padding:10px 12px;margin:8px 0;cursor:pointer}
+    .option:hover{background:#f8fafc}
+    .quiz-input{width:100%;max-width:520px;padding:12px 14px;border:1px solid var(--line);border-radius:12px;font-size:1rem}
+    .feedback{margin-top:16px;padding:16px;border-radius:14px}
+    .correct-box{background:#eaf8ef;border:1px solid #b7dfc2}
+    .wrong-box{background:#fff0f0;border:1px solid #efbcbc}
+    .memory-trick{margin-top:10px;background:#fff8df;border-left:4px solid #e6b93f;padding:10px 12px;border-radius:10px;font-weight:700}
+    .quiz-actions{display:flex;flex-wrap:wrap;gap:12px;margin-top:22px}
+    .quiz-btn{padding:12px 18px;border:none;border-radius:12px;background:#e9eef7;font-weight:800;cursor:pointer}
+    .quiz-btn.primary{background:var(--accent);color:#fff}
+    .overall-result{margin-top:20px;padding:20px;border-radius:16px;border:1px solid var(--line);background:#f8fafc}
+    .mastery-grid{display:grid;grid-template-columns:repeat(2,1fr);gap:10px;margin-top:14px}
+    .mastery-item{border:1px solid var(--line);border-radius:12px;padding:12px;background:#fff}
+    .footer{text-align:center;color:var(--muted);margin-top:28px;font-size:.9rem}
+    @media(max-width:800px){
+      .hero-grid,.note-grid,.checklist,.quiz-dashboard,.mastery-grid{grid-template-columns:1fr}
+      .note-card.full{grid-column:auto}
+      .hero,.section{padding:20px;border-radius:18px}
+    }
+    @media print{
+      body{background:#fff}.page{width:100%;padding:0}.hero,.section{box-shadow:none;break-inside:avoid}
+    }
+  </style>
+</head>
+<body>
+<main class="page">
+
+  <section class="hero">
+    <div class="tag">FORM 2 SCIENCE • CHAPTER 6 • PART 1</div>
+    <h1>Properties of Acids and Alkalis</h1>
+    <p>English is the main examination language. Chinese explanations are included only to help weaker students understand the scientific meaning.</p>
+    <div class="hero-grid">
+      <div class="hero-box"><strong>Acid</strong>Blue litmus → Red</div>
+      <div class="hero-box"><strong>Alkali</strong>Red litmus → Blue</div>
+      <div class="hero-box"><strong>Water</strong>Needed to show properties</div>
+    </div>
+  </section>
+
+  <section class="section">
+    <h2>1. What Is an Acid?</h2>
+    <div class="note-grid">
+      <article class="note-card full">
+        <h3><span class="number">1</span>Acid</h3>
+        <p class="english">An acid is a substance that shows acidic properties when dissolved in water.</p>
+        <p class="chinese">酸是溶解在水中后会表现酸性特征的物质。</p>
+        <div class="must-memorise"><strong>Examples:</strong> Hydrochloric acid, sulphuric acid, nitric acid, ethanoic acid.</div>
+      </article>
+    </div>
+  </section>
+
+  <section class="section">
+    <h2>2. Properties of Acids</h2>
+    <table>
+      <thead><tr><th>Property</th><th>Exam Statement</th><th>华语辅助</th></tr></thead>
+      <tbody>
+        <tr><td><strong>Taste</strong></td><td>Acids taste sour.</td><td>酸有酸味。</td></tr>
+        <tr><td><strong>Litmus paper</strong></td><td>Acids turn blue litmus paper red.</td><td>酸使蓝色石蕊试纸变红。</td></tr>
+        <tr><td><strong>Corrosiveness</strong></td><td>Strong acids may be corrosive.</td><td>强酸可能具有腐蚀性。</td></tr>
+        <tr><td><strong>Reaction with metals</strong></td><td>Acids react with certain metals to produce hydrogen gas.</td><td>酸与某些金属反应会产生氢气。</td></tr>
+        <tr><td><strong>Reaction with carbonates</strong></td><td>Acids react with carbonates to produce carbon dioxide gas.</td><td>酸与碳酸盐反应会产生二氧化碳。</td></tr>
+      </tbody>
+    </table>
+    <div class="memory-line">Acid: Sour • Blue litmus turns Red • Can react with metals</div>
+  </section>
+
+  <section class="section">
+    <h2>3. What Is an Alkali?</h2>
+    <div class="note-grid">
+      <article class="note-card full">
+        <h3><span class="number">2</span>Alkali</h3>
+        <p class="english">An alkali is a base that dissolves in water.</p>
+        <p class="chinese">碱是能够溶解在水中的碱性物质。</p>
+        <div class="must-memorise"><strong>Examples:</strong> Sodium hydroxide solution, potassium hydroxide solution, ammonia solution.</div>
+      </article>
+    </div>
+  </section>
+
+  <section class="section">
+    <h2>4. Properties of Alkalis</h2>
+    <table>
+      <thead><tr><th>Property</th><th>Exam Statement</th><th>华语辅助</th></tr></thead>
+      <tbody>
+        <tr><td><strong>Taste</strong></td><td>Alkalis taste bitter.</td><td>碱有苦味。</td></tr>
+        <tr><td><strong>Touch</strong></td><td>Alkalis feel soapy or slippery.</td><td>碱摸起来像肥皂般滑。</td></tr>
+        <tr><td><strong>Litmus paper</strong></td><td>Alkalis turn red litmus paper blue.</td><td>碱使红色石蕊试纸变蓝。</td></tr>
+        <tr><td><strong>Corrosiveness</strong></td><td>Strong alkalis may be corrosive.</td><td>强碱可能具有腐蚀性。</td></tr>
+      </tbody>
+    </table>
+    <div class="memory-line">Alkali: Bitter • Slippery • Red litmus turns Blue</div>
+  </section>
+
+  <section class="section">
+    <h2>5. Acid and Alkali Comparison</h2>
+    <table>
+      <thead><tr><th>Feature</th><th>Acid</th><th>Alkali</th></tr></thead>
+      <tbody>
+        <tr><td>Taste</td><td>Sour</td><td>Bitter</td></tr>
+        <tr><td>Touch</td><td>Not tested by touching</td><td>Soapy / slippery</td></tr>
+        <tr><td>Litmus change</td><td>Blue → Red</td><td>Red → Blue</td></tr>
+        <tr><td>Strong solution</td><td>May be corrosive</td><td>May be corrosive</td></tr>
+      </tbody>
+    </table>
+    <div class="must-memorise">
+      <strong>Memory Trick:</strong><br>
+      Acid attacks BLUE and makes it RED.<br>
+      Alkali attacks RED and makes it BLUE.<br>
+      <strong>华语口诀：</strong>酸：蓝变红；碱：红变蓝。
+    </div>
+  </section>
+
+  <section class="section">
+    <h2>6. The Role of Water</h2>
+    <p class="english">Acids and alkalis show their characteristic properties only when dissolved in water.</p>
+    <p class="chinese">酸和碱只有溶解在水中后，才会表现各自的特征。</p>
+    <div class="must-memorise">
+      <strong>Exam idea:</strong> Dry hydrogen chloride gas does not change dry blue litmus paper because water is absent.
+    </div>
+    <div class="memory-line">No water → No acidic or alkaline properties shown clearly</div>
+  </section>
+
+  <section class="section">
+    <h2>7. Reaction of Acid with Metal</h2>
+    <p class="english">Acid + Metal → Salt + Hydrogen</p>
+    <p class="chinese">酸 + 金属 → 盐 + 氢气</p>
+    <table>
+      <thead><tr><th>Observation</th><th>Inference</th></tr></thead>
+      <tbody>
+        <tr><td>Bubbles are produced.</td><td>A gas is produced.</td></tr>
+        <tr><td>The gas produces a “pop” sound with a lighted splint.</td><td>The gas is hydrogen.</td></tr>
+        <tr><td>The metal becomes smaller.</td><td>The metal reacts with the acid.</td></tr>
+      </tbody>
+    </table>
+    <div class="memory-line">Acid + Metal = Hydrogen gives a “pop” sound</div>
+  </section>
+
+  <section class="section">
+    <h2>8. Safety Rules</h2>
+    <div class="checklist">
+      <div class="check-item">Do not taste laboratory chemicals.</div>
+      <div class="check-item">Do not touch acids or alkalis directly.</div>
+      <div class="check-item">Wear safety goggles and gloves.</div>
+      <div class="check-item">Wash spills with plenty of water and inform the teacher.</div>
+      <div class="check-item">Use only small quantities during experiments.</div>
+      <div class="check-item">Never smell chemicals directly.</div>
+    </div>
+  </section>
+
+  <section class="section">
+    <h2>9. Common Examination Traps</h2>
+    <div class="must-memorise">
+      <strong>Wrong:</strong> Acid turns red litmus blue.<br>
+      <strong>Correct:</strong> Acid turns blue litmus red.<br><br>
+      <strong>Wrong:</strong> Alkali turns blue litmus red.<br>
+      <strong>Correct:</strong> Alkali turns red litmus blue.<br><br>
+      <strong>Wrong:</strong> All acids are safe because some occur in food.<br>
+      <strong>Correct:</strong> Strong acids can be corrosive and dangerous.<br><br>
+      <strong>Wrong:</strong> Acids show their properties without water.<br>
+      <strong>Correct:</strong> Water is needed for acids and alkalis to show their characteristic properties.
+    </div>
+  </section>
+
+  <section class="section" id="smart-revision">
+    <h2>10. Part 1 Smart Revision Quiz</h2>
+    <p class="section-intro">Wrong answers will show English and Chinese explanations, reasons and memory tricks.</p>
+
+    <div class="quiz-dashboard">
+      <div class="quiz-stat"><span id="progressText">0 / 18</span><small>Questions answered</small></div>
+      <div class="quiz-stat"><span id="scoreText">0%</span><small>Current score</small></div>
+      <div class="quiz-stat"><span id="masteryText">Not assessed</span><small>Mastery level</small></div>
+    </div>
+
+    <div id="quizContainer"></div>
+
+    <div class="quiz-actions">
+      <button class="quiz-btn primary" onclick="submitQuiz()">Check All Answers</button>
+      <button class="quiz-btn" onclick="retryWrong()">Retry Wrong Questions</button>
+      <button class="quiz-btn" onclick="resetQuiz()">Reset Quiz</button>
+    </div>
+
+    <div id="overallResult" class="overall-result" hidden></div>
+  </section>
+
+  <section class="section" id="part2-indicators-ph">
+  <h2>Part 2: Indicators and pH Scale</h2>
+  <p class="section-intro">English is the main examination language. Chinese explanations are included only to support understanding.</p>
+  <div class="note-grid"><article class="note-card full"><h3><span class="number">1</span>Indicator</h3><p class="english">An indicator is a substance that changes colour in acidic or alkaline conditions.</p><p class="chinese">指示剂是在酸性或碱性环境中会改变颜色的物质。</p><div class="memory-line">Indicator = Colour change shows acid or alkali</div></article></div>
+</section>
+<section class="section"><h2>2. Litmus Paper</h2><table><thead><tr><th>Solution</th><th>Effect on Litmus Paper</th><th>华语辅助</th></tr></thead><tbody><tr><td><strong>Acid</strong></td><td>Blue litmus paper turns red.</td><td>酸使蓝色石蕊试纸变红。</td></tr><tr><td><strong>Alkali</strong></td><td>Red litmus paper turns blue.</td><td>碱使红色石蕊试纸变蓝。</td></tr><tr><td><strong>Neutral</strong></td><td>No change to red or blue litmus paper.</td><td>中性溶液不会使红色或蓝色石蕊试纸变色。</td></tr></tbody></table><div class="must-memorise"><strong>Memory Trick:</strong> Acid: Blue → Red • Alkali: Red → Blue</div></section>
+<section class="section"><h2>3. Universal Indicator</h2><p class="english">A universal indicator shows different colours at different pH values.</p><p class="chinese">通用指示剂会根据不同的 pH 值显示不同颜色。</p><table><thead><tr><th>Condition</th><th>pH Range</th><th>Typical Colour</th><th>华语</th></tr></thead><tbody><tr><td>Strong acid</td><td>0–3</td><td>Red</td><td>强酸</td></tr><tr><td>Weak acid</td><td>4–6</td><td>Orange / Yellow</td><td>弱酸</td></tr><tr><td>Neutral</td><td>7</td><td>Green</td><td>中性</td></tr><tr><td>Weak alkali</td><td>8–10</td><td>Blue</td><td>弱碱</td></tr><tr><td>Strong alkali</td><td>11–14</td><td>Purple</td><td>强碱</td></tr></tbody></table><div class="memory-line">pH 7 = Neutral = Green</div></section>
+<section class="section"><h2>4. pH Scale</h2><p class="english">The pH scale ranges from 0 to 14.</p><p class="chinese">pH 值范围从 0 到 14。</p><table><thead><tr><th>Condition</th><th>pH Value</th><th>华语辅助</th></tr></thead><tbody><tr><td><strong>Acidic</strong></td><td>Less than 7</td><td>小于 7 是酸性</td></tr><tr><td><strong>Neutral</strong></td><td>Equal to 7</td><td>等于 7 是中性</td></tr><tr><td><strong>Alkaline</strong></td><td>More than 7</td><td>大于 7 是碱性</td></tr></tbody></table><div class="must-memorise"><strong>Memory Trick:</strong><br>Below 7 = Acid<br>7 = Neutral<br>Above 7 = Alkali</div></section>
+<section class="section"><h2>5. Strength of Acids and Alkalis</h2><div class="note-grid"><article class="note-card"><h3>Acid Strength</h3><p class="english">The lower the pH value, the stronger the acid.</p><p class="chinese">pH 越低，酸性越强。</p><div class="memory-line">Closer to 0 = Stronger acid</div></article><article class="note-card"><h3>Alkali Strength</h3><p class="english">The higher the pH value, the stronger the alkali.</p><p class="chinese">pH 越高，碱性越强。</p><div class="memory-line">Closer to 14 = Stronger alkali</div></article></div></section>
+<section class="section"><h2>6. Other Indicators</h2><table><thead><tr><th>Indicator</th><th>In Acid</th><th>In Neutral</th><th>In Alkali</th></tr></thead><tbody><tr><td><strong>Methyl orange</strong></td><td>Red</td><td>Orange</td><td>Yellow</td></tr><tr><td><strong>Phenolphthalein</strong></td><td>Colourless</td><td>Colourless</td><td>Pink</td></tr></tbody></table><div class="must-memorise"><strong>Memory Trick:</strong> Phenolphthalein sees alkali and turns pink.<br><strong>华语口诀：</strong>酚酞遇到碱，马上变粉红。</div></section>
+<section class="section"><h2>7. pH Paper and pH Meter</h2><table><thead><tr><th>Tool</th><th>Function</th><th>Accuracy</th><th>华语辅助</th></tr></thead><tbody><tr><td><strong>pH paper</strong></td><td>Compare the colour with a pH colour chart.</td><td>Approximate value</td><td>与颜色表比较，得到大概 pH 值。</td></tr><tr><td><strong>pH meter</strong></td><td>Displays a numerical pH reading.</td><td>More accurate</td><td>显示数字，结果更准确。</td></tr></tbody></table><div class="memory-line">pH paper = Approximate • pH meter = More accurate</div></section>
+<section class="section"><h2>8. Common Examination Traps</h2><div class="must-memorise"><strong>Wrong:</strong> pH 7 is acidic.<br><strong>Correct:</strong> pH 7 is neutral.<br><br><strong>Wrong:</strong> The higher the pH, the stronger the acid.<br><strong>Correct:</strong> The lower the pH, the stronger the acid.<br><br><strong>Wrong:</strong> Phenolphthalein is pink in acid.<br><strong>Correct:</strong> Phenolphthalein is colourless in acid and pink in alkali.</div></section>
+<section class="section" id="part2-smart-revision"><h2>9. Part 2 Smart Revision Quiz</h2><p class="section-intro">Wrong answers will show English and Chinese explanations, reasons and memory tricks.</p><div class="quiz-dashboard"><div class="quiz-stat"><span id="p2Progress">0 / 20</span><small>Questions answered</small></div><div class="quiz-stat"><span id="p2Score">0%</span><small>Current score</small></div><div class="quiz-stat"><span id="p2Mastery">Not assessed</span><small>Mastery level</small></div></div><div id="p2QuizContainer"></div><div class="quiz-actions"><button class="quiz-btn primary" onclick="submitPart2Quiz()">Check All Answers</button><button class="quiz-btn" onclick="retryPart2Wrong()">Retry Wrong Questions</button><button class="quiz-btn" onclick="resetPart2Quiz()">Reset Quiz</button></div><div id="p2OverallResult" class="overall-result" hidden></div></section>
+<script>
+const part2Questions=[
+{id:201,level:'Easy',topic:'Indicator',type:'mcq',question:'What is an indicator?',options:['A substance that changes colour in acidic or alkaline conditions','A type of metal','A gas produced by acids','A neutral salt'],answer:0,explanationEn:'An indicator changes colour depending on whether a solution is acidic or alkaline.',explanationZh:'指示剂会根据溶液是酸性还是碱性而改变颜色。',trick:'Indicator = Colour change.'},
+{id:202,level:'Easy',topic:'Litmus',type:'mcq',question:'What happens to blue litmus paper in an acid?',options:['It turns red','It turns blue','It turns green','No change'],answer:0,explanationEn:'Acid turns blue litmus paper red.',explanationZh:'酸使蓝色石蕊试纸变红。',trick:'Acid: Blue → Red.'},
+{id:203,level:'Easy',topic:'Litmus',type:'mcq',question:'What happens to red litmus paper in an alkali?',options:['It turns red','It turns blue','It turns yellow','No change'],answer:1,explanationEn:'Alkali turns red litmus paper blue.',explanationZh:'碱使红色石蕊试纸变蓝。',trick:'Alkali: Red → Blue.'},
+{id:204,level:'Easy',topic:'pH scale',type:'mcq',question:'What is the pH range?',options:['0 to 7','1 to 10','0 to 14','7 to 14'],answer:2,explanationEn:'The pH scale ranges from 0 to 14.',explanationZh:'pH 值范围是 0 到 14。',trick:'pH = 0–14.'},
+{id:205,level:'Easy',topic:'pH scale',type:'mcq',question:'Which pH value is neutral?',options:['0','5','7','14'],answer:2,explanationEn:'A neutral solution has a pH of 7.',explanationZh:'中性溶液的 pH 值是 7。',trick:'7 = Neutral.'},
+{id:206,level:'Easy',topic:'Classification',type:'mcq',question:'A solution with pH 4 is ______.',options:['Acidic','Neutral','Alkaline','A metal'],answer:0,explanationEn:'Any pH value below 7 is acidic.',explanationZh:'任何小于 7 的 pH 值都是酸性。',trick:'Below 7 = Acid.'},
+{id:207,level:'Easy',topic:'Classification',type:'mcq',question:'A solution with pH 10 is ______.',options:['Acidic','Neutral','Alkaline','Pure water'],answer:2,explanationEn:'Any pH value above 7 is alkaline.',explanationZh:'任何大于 7 的 pH 值都是碱性。',trick:'Above 7 = Alkali.'},
+{id:208,level:'Medium',topic:'Strength',type:'mcq',question:'Which is the stronger acid?',options:['pH 1','pH 3','pH 5','pH 6'],answer:0,explanationEn:'The lower the pH value, the stronger the acid.',explanationZh:'pH 越低，酸性越强。',trick:'Closer to 0 = Stronger acid.'},
+{id:209,level:'Medium',topic:'Strength',type:'mcq',question:'Which is the stronger alkali?',options:['pH 8','pH 9','pH 11','pH 14'],answer:3,explanationEn:'The higher the pH value, the stronger the alkali.',explanationZh:'pH 越高，碱性越强。',trick:'Closer to 14 = Stronger alkali.'},
+{id:210,level:'Medium',topic:'Universal indicator',type:'mcq',question:'What colour does universal indicator usually show at pH 7?',options:['Red','Green','Purple','Orange'],answer:1,explanationEn:'A neutral solution at pH 7 is green with universal indicator.',explanationZh:'pH 7 的中性溶液在通用指示剂中通常呈绿色。',trick:'7 = Green.'},
+{id:211,level:'Medium',topic:'Universal indicator',type:'mcq',question:'Which colour is commonly associated with a strong acid?',options:['Red','Green','Blue','Purple'],answer:0,explanationEn:'Strong acids usually show red with universal indicator.',explanationZh:'强酸在通用指示剂中通常呈红色。',trick:'Strong acid = Red.'},
+{id:212,level:'Medium',topic:'Universal indicator',type:'mcq',question:'Which colour is commonly associated with a strong alkali?',options:['Yellow','Green','Purple','Orange'],answer:2,explanationEn:'Strong alkalis usually show purple with universal indicator.',explanationZh:'强碱在通用指示剂中通常呈紫色。',trick:'Strong alkali = Purple.'},
+{id:213,level:'Medium',topic:'Other indicators',type:'mcq',question:'What colour is phenolphthalein in an alkali?',options:['Colourless','Pink','Red','Green'],answer:1,explanationEn:'Phenolphthalein turns pink in alkaline conditions.',explanationZh:'酚酞在碱性环境中会变粉红色。',trick:'Phenolphthalein + Alkali = Pink.'},
+{id:214,level:'Medium',topic:'Other indicators',type:'mcq',question:'What colour is phenolphthalein in an acid?',options:['Pink','Blue','Colourless','Purple'],answer:2,explanationEn:'Phenolphthalein is colourless in acidic and neutral solutions.',explanationZh:'酚酞在酸性和中性溶液中都是无色。',trick:'Acid = Colourless phenolphthalein.'},
+{id:215,level:'Medium',topic:'Other indicators',type:'mcq',question:'What colour is methyl orange in an acid?',options:['Red','Yellow','Blue','Pink'],answer:0,explanationEn:'Methyl orange is red in acidic conditions.',explanationZh:'甲基橙在酸性环境中呈红色。',trick:'Methyl orange + Acid = Red.'},
+{id:216,level:'Hard',topic:'Tools',type:'mcq',question:'Which tool gives a more accurate pH reading?',options:['Litmus paper','pH paper','pH meter','Universal indicator only'],answer:2,explanationEn:'A pH meter gives a numerical reading and is more accurate.',explanationZh:'pH 计提供数字读数，结果更准确。',trick:'Meter = More accurate.'},
+{id:217,level:'Hard',topic:'Tools',type:'mcq',question:'Which statement about pH paper is correct?',options:['It always gives an exact reading','It gives an approximate pH by colour comparison','It only detects alkalis','It cannot be used with liquids'],answer:1,explanationEn:'pH paper gives an approximate pH by comparing its colour with a chart.',explanationZh:'pH 试纸通过与颜色表比较，得到大概 pH 值。',trick:'Paper = Approximate.'},
+{id:218,level:'Hard',topic:'Reasoning',type:'mcq',question:'Which statement is correct?',options:['pH 6 is neutral','pH 8 is acidic','pH 2 is more acidic than pH 5','pH 10 is more alkaline than pH 13'],answer:2,explanationEn:'A lower pH means stronger acidity, so pH 2 is more acidic than pH 5.',explanationZh:'较低的 pH 表示更强酸性，因此 pH 2 比 pH 5 更酸。',trick:'Lower pH = Stronger acid.'},
+{id:219,level:'Hard',topic:'Vocabulary',type:'text',question:'Complete: A solution with pH less than 7 is ______.',answerText:['acidic'],explanationEn:'A pH below 7 indicates an acidic solution.',explanationZh:'pH 小于 7 表示酸性溶液。',trick:'Below 7 = Acidic.'},
+{id:220,level:'KBAT',topic:'Application',type:'mcq',question:'Solution X has pH 3 and solution Y has pH 12. Which statement is correct?',options:['Both are neutral','X is acidic and Y is alkaline','X is alkaline and Y is acidic','Both are weak acids'],answer:1,explanationEn:'pH 3 is acidic and pH 12 is alkaline.',explanationZh:'pH 3 是酸性，pH 12 是碱性。',trick:'Below 7 acid; above 7 alkali.'}
+];
+let activePart2Questions=[...part2Questions],lastPart2Wrong=[];
+function renderPart2Quiz(){const c=document.getElementById('p2QuizContainer');if(!c)return;c.innerHTML='';activePart2Questions.forEach((q,i)=>{const d=document.createElement('div');d.className='quiz-question';d.id='p2-question-'+q.id;let h=q.type==='mcq'?q.options.map((o,j)=>`<label class="option"><input type="radio" name="p2q${q.id}" value="${j}" onchange="updatePart2Progress()"> ${o}</label>`).join(''):`<input class="quiz-input" id="p2-input-${q.id}" type="text" placeholder="Type your answer in English" oninput="updatePart2Progress()">`;d.innerHTML=`<div class="q-label"><span class="q-number">Question ${i+1}</span><span class="q-level">${q.level}</span></div><div class="q-text">${q.question}</div>${h}<div id="p2-feedback-${q.id}"></div>`;c.appendChild(d)});updatePart2Progress()}
+function getPart2Answer(q){if(q.type==='mcq'){const s=document.querySelector(`input[name="p2q${q.id}"]:checked`);return s?Number(s.value):null}const i=document.getElementById('p2-input-'+q.id);return i?i.value.trim().toLowerCase():''}
+function isPart2Correct(q,a){return q.type==='mcq'?a===q.answer:q.answerText.includes(a)}
+function updatePart2Progress(){let n=0;activePart2Questions.forEach(q=>{const a=getPart2Answer(q);if((q.type==='mcq'&&a!==null)||(q.type==='text'&&a!==''))n++});document.getElementById('p2Progress').textContent=`${n} / ${activePart2Questions.length}`}
+function submitPart2Quiz(){let correct=0;lastPart2Wrong=[];const topics={};activePart2Questions.forEach(q=>{const a=getPart2Answer(q),ok=isPart2Correct(q,a),card=document.getElementById('p2-question-'+q.id),f=document.getElementById('p2-feedback-'+q.id);if(!topics[q.topic])topics[q.topic]={correct:0,total:0};topics[q.topic].total++;if(ok){correct++;topics[q.topic].correct++;card.className='quiz-question correct';f.innerHTML=`<div class="feedback correct-box"><h4>Correct</h4><strong>English:</strong> ${q.explanationEn}<br><strong>华语：</strong>${q.explanationZh}<div class="memory-trick">Memory Trick 口诀：${q.trick}</div></div>`}else{lastPart2Wrong.push(q.id);card.className='quiz-question wrong';f.innerHTML=`<div class="feedback wrong-box"><h4>Incorrect — Learn This Again</h4><strong>Why? 原因：</strong><br><strong>English:</strong> ${q.explanationEn}<br><strong>华语：</strong>${q.explanationZh}<div class="memory-trick">Memory Trick 口诀：${q.trick}</div></div>`}});const p=Math.round(correct/activePart2Questions.length*100);document.getElementById('p2Score').textContent=p+'%';let m='Needs Support';if(p>=90)m='Mastered';else if(p>=75)m='Almost Mastered';else if(p>=60)m='Developing';document.getElementById('p2Mastery').textContent=m;const r=document.getElementById('p2OverallResult');r.hidden=false;const th=Object.entries(topics).map(([t,d])=>`<div class="mastery-item"><strong>${t}</strong><br>${d.correct}/${d.total} correct (${Math.round(d.correct/d.total*100)}%)</div>`).join('');const advice=p>=90?'Excellent. The student has mastered Part 2 and may continue.':p>=75?'Good progress. Retry all wrong questions before continuing.':'Review pH classification, indicator colours and strength comparisons before retrying.';r.innerHTML=`<h3>Part 2 Result: ${correct} / ${activePart2Questions.length} (${p}%)</h3><p><strong>Teacher's Advice:</strong> ${advice}</p><div class="mastery-grid">${th}</div>`;r.scrollIntoView({behavior:'smooth',block:'center'})}
+function retryPart2Wrong(){if(lastPart2Wrong.length===0){alert('Please check all answers first, or there are no wrong questions.');return}activePart2Questions=part2Questions.filter(q=>lastPart2Wrong.includes(q.id));lastPart2Wrong=[];document.getElementById('p2OverallResult').hidden=true;document.getElementById('p2Score').textContent='0%';document.getElementById('p2Mastery').textContent='Retry mode';renderPart2Quiz();document.getElementById('part2-smart-revision').scrollIntoView({behavior:'smooth'})}
+function resetPart2Quiz(){activePart2Questions=[...part2Questions];lastPart2Wrong=[];document.getElementById('p2OverallResult').hidden=true;document.getElementById('p2Score').textContent='0%';document.getElementById('p2Mastery').textContent='Not assessed';renderPart2Quiz()}
+document.addEventListener('DOMContentLoaded',renderPart2Quiz);
+</script>
+
+<section class="section" id="part3-neutralisation">
+  <h2>Part 3: Neutralisation</h2>
+  <p class="section-intro">
+    English is the main examination language. Chinese explanations are included only to support understanding.
+  </p>
+
+  <div class="note-grid">
+    <article class="note-card full">
+      <h3><span class="number">1</span>Definition</h3>
+      <p class="english">Neutralisation is a reaction between an acid and an alkali to produce salt and water.</p>
+      <p class="chinese">中和反应是酸与碱反应，产生盐和水的过程。</p>
+      <div class="memory-line">Acid + Alkali → Salt + Water</div>
+    </article>
+  </div>
+</section>
+
+<section class="section">
+  <h2>2. Example of Neutralisation</h2>
+  <p class="english"><strong>Hydrochloric acid + Sodium hydroxide → Sodium chloride + Water</strong></p>
+  <p class="chinese">盐酸 + 氢氧化钠 → 氯化钠 + 水</p>
+
+  <table>
+    <thead><tr><th>Substance</th><th>Role</th><th>华语辅助</th></tr></thead>
+    <tbody>
+      <tr><td>Hydrochloric acid</td><td>Acid</td><td>酸</td></tr>
+      <tr><td>Sodium hydroxide</td><td>Alkali</td><td>碱</td></tr>
+      <tr><td>Sodium chloride</td><td>Salt</td><td>盐</td></tr>
+      <tr><td>Water</td><td>Product</td><td>产物</td></tr>
+    </tbody>
+  </table>
+</section>
+
+<section class="section">
+  <h2>3. Changes During Neutralisation</h2>
+  <div class="checklist">
+    <div class="check-item">Acidity decreases.</div>
+    <div class="check-item">Alkalinity decreases.</div>
+    <div class="check-item">The pH moves towards 7.</div>
+    <div class="check-item">Salt is formed.</div>
+    <div class="check-item">Water is formed.</div>
+    <div class="check-item">Heat is usually released.</div>
+  </div>
+
+  <div class="must-memorise">
+    <strong>Memory Trick:</strong> Acid meets alkali → Both lose strength → Salt + Water
+  </div>
+</section>
+
+<section class="section">
+  <h2>4. Temperature Change</h2>
+  <p class="english">Neutralisation is usually an exothermic reaction.</p>
+  <p class="english"><strong>Observation:</strong> The temperature of the mixture increases.</p>
+  <p class="english"><strong>Inference:</strong> Heat energy is released.</p>
+  <p class="chinese">中和反应通常是放热反应。观察：混合物温度上升。推断：热能被释放。</p>
+
+  <div class="memory-line">Temperature increases → Heat released → Exothermic reaction</div>
+</section>
+
+<section class="section">
+  <h2>5. Indicators and End Point</h2>
+
+  <p class="english">An indicator is used to show when neutralisation is complete.</p>
+  <p class="chinese">指示剂用来显示中和反应何时完成。</p>
+
+  <table>
+    <thead><tr><th>Indicator</th><th>Useful Colour Information</th></tr></thead>
+    <tbody>
+      <tr><td>Phenolphthalein</td><td>Pink in alkali; colourless in acid or neutral solution.</td></tr>
+      <tr><td>Methyl orange</td><td>Red in acid; yellow in alkali.</td></tr>
+      <tr><td>Universal indicator</td><td>Green near pH 7.</td></tr>
+    </tbody>
+  </table>
+
+  <div class="must-memorise">
+    <strong>End point:</strong> The point at which the indicator changes colour permanently.<br>
+    <strong>华语：</strong>终点是指示剂出现持久颜色变化的时刻。
+  </div>
+</section>
+
+<section class="section">
+  <h2>6. Titration Apparatus</h2>
+
+  <table>
+    <thead><tr><th>Apparatus</th><th>Function</th><th>华语辅助</th></tr></thead>
+    <tbody>
+      <tr><td><strong>Burette</strong></td><td>Adds one solution slowly and accurately.</td><td>缓慢且准确地加入溶液。</td></tr>
+      <tr><td><strong>Pipette</strong></td><td>Measures a fixed volume accurately.</td><td>准确量取固定体积。</td></tr>
+      <tr><td><strong>Conical flask</strong></td><td>Contains the reacting solution and can be swirled safely.</td><td>装反应溶液，并方便摇匀。</td></tr>
+      <tr><td><strong>Indicator</strong></td><td>Shows the end point by a colour change.</td><td>通过颜色变化显示终点。</td></tr>
+    </tbody>
+  </table>
+</section>
+
+<section class="section">
+  <h2>7. Basic Titration Procedure</h2>
+  <ol>
+    <li>Measure the alkali using a pipette.</li>
+    <li>Transfer it into a conical flask.</li>
+    <li>Add a few drops of indicator.</li>
+    <li>Add acid slowly from the burette.</li>
+    <li>Swirl the flask continuously.</li>
+    <li>Stop when the indicator changes colour permanently.</li>
+  </ol>
+
+  <p class="chinese">
+    用移液管量取碱液，放入锥形瓶，加入指示剂，再从滴定管缓慢加入酸，同时摇匀；当颜色永久改变时停止。
+  </p>
+
+  <div class="memory-line">Pipette → Flask → Indicator → Burette → Swirl → End point</div>
+</section>
+
+<section class="section">
+  <h2>8. Observation, Inference and Conclusion</h2>
+
+  <table>
+    <thead><tr><th>Science Skill</th><th>Correct Answer</th></tr></thead>
+    <tbody>
+      <tr><td>Observation</td><td>The indicator changes colour permanently.</td></tr>
+      <tr><td>Observation</td><td>The temperature increases.</td></tr>
+      <tr><td>Inference</td><td>Neutralisation has reached the end point.</td></tr>
+      <tr><td>Inference</td><td>Heat energy is released.</td></tr>
+      <tr><td>Conclusion</td><td>An acid reacts with an alkali to form salt and water.</td></tr>
+    </tbody>
+  </table>
+</section>
+
+<section class="section">
+  <h2>9. Common Examination Traps</h2>
+  <div class="must-memorise">
+    <strong>Wrong:</strong> Acid + Alkali → Hydrogen + Water<br>
+    <strong>Correct:</strong> Acid + Alkali → Salt + Water<br><br>
+
+    <strong>Wrong:</strong> A temperature increase means heat is absorbed.<br>
+    <strong>Correct:</strong> A temperature increase means heat is released.<br><br>
+
+    <strong>Wrong:</strong> The burette measures a fixed volume for transfer.<br>
+    <strong>Correct:</strong> The pipette measures a fixed volume; the burette adds solution gradually.<br><br>
+
+    <strong>Wrong:</strong> Any temporary colour change is the end point.<br>
+    <strong>Correct:</strong> The colour change must remain permanent.
+  </div>
+</section>
+
+<section class="section" id="part3-smart-revision">
+  <h2>10. Part 3 Smart Revision Quiz</h2>
+  <p class="section-intro">Wrong answers will show English and Chinese explanations, reasons and memory tricks.</p>
+
+  <div class="quiz-dashboard">
+    <div class="quiz-stat"><span id="p3Progress">0 / 20</span><small>Questions answered</small></div>
+    <div class="quiz-stat"><span id="p3Score">0%</span><small>Current score</small></div>
+    <div class="quiz-stat"><span id="p3Mastery">Not assessed</span><small>Mastery level</small></div>
+  </div>
+
+  <div id="p3QuizContainer"></div>
+
+  <div class="quiz-actions">
+    <button class="quiz-btn primary" onclick="submitPart3Quiz()">Check All Answers</button>
+    <button class="quiz-btn" onclick="retryPart3Wrong()">Retry Wrong Questions</button>
+    <button class="quiz-btn" onclick="resetPart3Quiz()">Reset Quiz</button>
+  </div>
+
+  <div id="p3OverallResult" class="overall-result" hidden></div>
+</section>
+
+<script>
+const part3Questions = [
+{id:301,level:"Easy",topic:"Definition",type:"mcq",question:"What is neutralisation?",options:["A reaction between an acid and an alkali","A reaction between a metal and oxygen","The boiling of water","The filtration of a mixture"],answer:0,explanationEn:"Neutralisation is the reaction between an acid and an alkali.",explanationZh:"中和反应是酸与碱之间的反应。",trick:"Acid meets alkali."},
+{id:302,level:"Easy",topic:"Products",type:"mcq",question:"What are the products of neutralisation?",options:["Salt and water","Hydrogen and oxygen","Metal and gas","Acid and alkali"],answer:0,explanationEn:"Neutralisation produces salt and water.",explanationZh:"中和反应产生盐和水。",trick:"Acid + Alkali = Salt + Water."},
+{id:303,level:"Easy",topic:"Equation",type:"text",question:"Complete: Acid + Alkali → Salt + ______.",answerText:["water"],explanationEn:"Water is always one of the products of neutralisation.",explanationZh:"水一定是中和反应的产物之一。",trick:"Salt + Water."},
+{id:304,level:"Easy",topic:"Example",type:"mcq",question:"Hydrochloric acid reacts with sodium hydroxide to form sodium chloride and ______.",options:["Hydrogen","Water","Oxygen","Carbon dioxide"],answer:1,explanationEn:"The products are sodium chloride and water.",explanationZh:"产物是氯化钠和水。",trick:"Salt + Water."},
+{id:305,level:"Medium",topic:"pH",type:"mcq",question:"During neutralisation, the pH usually moves towards ______.",options:["0","3","7","14"],answer:2,explanationEn:"Neutralisation reduces acidity or alkalinity, so pH moves towards 7.",explanationZh:"中和会降低酸性或碱性，因此 pH 趋近 7。",trick:"Neutral → 7."},
+{id:306,level:"Medium",topic:"Energy",type:"mcq",question:"What usually happens to the temperature during neutralisation?",options:["It increases","It decreases to 0°C","It never changes","It becomes 100°C"],answer:0,explanationEn:"Neutralisation usually releases heat, causing temperature to increase.",explanationZh:"中和反应通常释放热量，使温度上升。",trick:"Temperature up = Heat released."},
+{id:307,level:"Medium",topic:"Energy",type:"mcq",question:"A temperature increase shows that neutralisation is ______.",options:["Endothermic","Exothermic","A physical change only","Freezing"],answer:1,explanationEn:"An exothermic reaction releases heat to the surroundings.",explanationZh:"放热反应会把热量释放到周围。",trick:"Exothermic = Exit heat."},
+{id:308,level:"Medium",topic:"End point",type:"mcq",question:"What is the end point?",options:["When the indicator changes colour permanently","When the flask breaks","When the solution boils","When all water evaporates"],answer:0,explanationEn:"The end point is shown by a permanent indicator colour change.",explanationZh:"终点由指示剂持久的颜色变化显示。",trick:"Permanent colour change = End point."},
+{id:309,level:"Medium",topic:"Indicator",type:"mcq",question:"What colour is phenolphthalein in an alkaline solution?",options:["Pink","Colourless","Green","Orange"],answer:0,explanationEn:"Phenolphthalein is pink in alkali.",explanationZh:"酚酞在碱性溶液中呈粉红色。",trick:"Alkali + Phenolphthalein = Pink."},
+{id:310,level:"Medium",topic:"Apparatus",type:"mcq",question:"Which apparatus measures a fixed volume accurately?",options:["Burette","Pipette","Beaker","Test tube"],answer:1,explanationEn:"A pipette measures and transfers a fixed volume accurately.",explanationZh:"移液管能准确量取并转移固定体积。",trick:"Pipette = Precise fixed volume."},
+{id:311,level:"Medium",topic:"Apparatus",type:"mcq",question:"Which apparatus adds a solution slowly during titration?",options:["Pipette","Burette","Thermometer","Evaporating dish"],answer:1,explanationEn:"A burette delivers solution gradually and accurately.",explanationZh:"滴定管能缓慢且准确地加入溶液。",trick:"Burette = Drop by drop."},
+{id:312,level:"Medium",topic:"Procedure",type:"mcq",question:"Why is the conical flask swirled?",options:["To mix the solutions evenly","To cool it to 0°C","To produce hydrogen","To remove the indicator"],answer:0,explanationEn:"Swirling mixes the acid and alkali evenly.",explanationZh:"摇匀能让酸和碱均匀混合。",trick:"Swirl = Mix evenly."},
+{id:313,level:"Hard",topic:"Observation",type:"mcq",question:"Which is an observation?",options:["Heat is released","The temperature increases","Neutralisation occurs","Salt is formed"],answer:1,explanationEn:"The temperature increase can be measured directly, so it is an observation.",explanationZh:"温度上升可以直接测量，因此属于观察。",trick:"Observation = See or measure."},
+{id:314,level:"Hard",topic:"Inference",type:"mcq",question:"The temperature increases. What is the inference?",options:["Heat energy is released","The flask is blue","Water freezes","The solution is a metal"],answer:0,explanationEn:"A rise in temperature indicates that heat energy is released.",explanationZh:"温度上升说明热能被释放。",trick:"Temperature up → Heat released."},
+{id:315,level:"Hard",topic:"Reasoning",type:"mcq",question:"Which statement is correct?",options:["Neutralisation produces hydrogen","Neutralisation forms salt and water","Neutralisation always produces carbon dioxide","Neutralisation is acid plus metal"],answer:1,explanationEn:"The defining products of neutralisation are salt and water.",explanationZh:"中和反应的标准产物是盐和水。",trick:"Salt + Water."},
+{id:316,level:"Hard",topic:"Reasoning",type:"mcq",question:"Why is an indicator used in titration?",options:["To show the end point","To increase the temperature","To produce salt","To measure mass"],answer:0,explanationEn:"The indicator changes colour at the end point.",explanationZh:"指示剂在终点时改变颜色。",trick:"Indicator shows end point."},
+{id:317,level:"Hard",topic:"Vocabulary",type:"text",question:"Complete: A reaction that releases heat is called an ______ reaction.",answerText:["exothermic"],explanationEn:"An exothermic reaction releases heat energy.",explanationZh:"放热反应会释放热能。",trick:"Exothermic = Heat exits."},
+{id:318,level:"Hard",topic:"Vocabulary",type:"text",question:"Complete: The apparatus used to add solution gradually is the ______.",answerText:["burette"],explanationEn:"A burette adds solution slowly and accurately.",explanationZh:"滴定管用于缓慢且准确地加入溶液。",trick:"Burette = Drop by drop."},
+{id:319,level:"Hard",topic:"Sequence",type:"mcq",question:"Which sequence is correct?",options:["Pipette → Flask → Indicator → Burette → Swirl","Burette → Pipette → Boil → Filter","Flask → Freeze → Indicator → Pipette","Indicator → Reservoir → Burette"],answer:0,explanationEn:"This is the correct basic titration sequence.",explanationZh:"这是基本滴定实验的正确顺序。",trick:"P-F-I-B-S."},
+{id:320,level:"KBAT",topic:"Application",type:"mcq",question:"An alkali containing phenolphthalein is pink. Acid is added slowly until the solution becomes permanently colourless. What does this show?",options:["The end point has been reached","Hydrogen is produced","The solution is boiling","The alkali becomes stronger"],answer:0,explanationEn:"A permanent colour change shows that the titration end point has been reached.",explanationZh:"持久的颜色变化说明滴定终点已经达到。",trick:"Permanent change = End point."}
+];
+
+let activePart3Questions=[...part3Questions];
+let lastPart3Wrong=[];
+
+function renderPart3Quiz(){
+  const c=document.getElementById("p3QuizContainer");
+  if(!c)return;
+  c.innerHTML="";
+  activePart3Questions.forEach((q,index)=>{
+    const card=document.createElement("div");
+    card.className="quiz-question";
+    card.id="p3-question-"+q.id;
+    let inputHtml="";
+    if(q.type==="mcq"){
+      inputHtml=q.options.map((opt,i)=>`<label class="option"><input type="radio" name="p3q${q.id}" value="${i}" onchange="updatePart3Progress()"> ${opt}</label>`).join("");
+    }else{
+      inputHtml=`<input class="quiz-input" id="p3-input-${q.id}" type="text" placeholder="Type your answer in English" oninput="updatePart3Progress()">`;
+    }
+    card.innerHTML=`<div class="q-label"><span class="q-number">Question ${index+1}</span><span class="q-level">${q.level}</span></div><div class="q-text">${q.question}</div>${inputHtml}<div id="p3-feedback-${q.id}"></div>`;
+    c.appendChild(card);
+  });
+  updatePart3Progress();
+}
+function getPart3Answer(q){
+  if(q.type==="mcq"){
+    const s=document.querySelector(`input[name="p3q${q.id}"]:checked`);
+    return s?Number(s.value):null;
+  }
+  const i=document.getElementById("p3-input-"+q.id);
+  return i?i.value.trim().toLowerCase():"";
+}
+function isPart3Correct(q,a){return q.type==="mcq"?a===q.answer:q.answerText.includes(a);}
+function updatePart3Progress(){
+  let n=0;
+  activePart3Questions.forEach(q=>{
+    const a=getPart3Answer(q);
+    if((q.type==="mcq"&&a!==null)||(q.type==="text"&&a!==""))n++;
+  });
+  document.getElementById("p3Progress").textContent=`${n} / ${activePart3Questions.length}`;
+}
+function submitPart3Quiz(){
+  let correct=0;
+  lastPart3Wrong=[];
+  const topics={};
+  activePart3Questions.forEach(q=>{
+    const a=getPart3Answer(q), ok=isPart3Correct(q,a);
+    const card=document.getElementById("p3-question-"+q.id);
+    const feedback=document.getElementById("p3-feedback-"+q.id);
+    if(!topics[q.topic])topics[q.topic]={correct:0,total:0};
+    topics[q.topic].total++;
+    if(ok){
+      correct++;topics[q.topic].correct++;card.className="quiz-question correct";
+      feedback.innerHTML=`<div class="feedback correct-box"><h4>Correct</h4><strong>English:</strong> ${q.explanationEn}<br><strong>华语：</strong>${q.explanationZh}<div class="memory-trick">Memory Trick 口诀：${q.trick}</div></div>`;
+    }else{
+      lastPart3Wrong.push(q.id);card.className="quiz-question wrong";
+      feedback.innerHTML=`<div class="feedback wrong-box"><h4>Incorrect — Learn This Again</h4><strong>Why? 原因：</strong><br><strong>English:</strong> ${q.explanationEn}<br><strong>华语：</strong>${q.explanationZh}<div class="memory-trick">Memory Trick 口诀：${q.trick}</div></div>`;
+    }
+  });
+  const percent=Math.round(correct/activePart3Questions.length*100);
+  document.getElementById("p3Score").textContent=percent+"%";
+  let mastery="Needs Support";
+  if(percent>=90)mastery="Mastered";else if(percent>=75)mastery="Almost Mastered";else if(percent>=60)mastery="Developing";
+  document.getElementById("p3Mastery").textContent=mastery;
+  const r=document.getElementById("p3OverallResult");r.hidden=false;
+  const topicHtml=Object.entries(topics).map(([t,d])=>`<div class="mastery-item"><strong>${t}</strong><br>${d.correct}/${d.total} correct (${Math.round(d.correct/d.total*100)}%)</div>`).join("");
+  const advice=percent>=90?"Excellent. The student has mastered Part 3 and may continue.":percent>=75?"Good progress. Retry all wrong questions before continuing.":"Review the equation, exothermic change, end point and apparatus before retrying.";
+  r.innerHTML=`<h3>Part 3 Result: ${correct} / ${activePart3Questions.length} (${percent}%)</h3><p><strong>Teacher's Advice:</strong> ${advice}</p><div class="mastery-grid">${topicHtml}</div>`;
+  r.scrollIntoView({behavior:"smooth",block:"center"});
+}
+function retryPart3Wrong(){
+  if(lastPart3Wrong.length===0){alert("Please check all answers first, or there are no wrong questions.");return;}
+  activePart3Questions=part3Questions.filter(q=>lastPart3Wrong.includes(q.id));
+  lastPart3Wrong=[];
+  document.getElementById("p3OverallResult").hidden=true;
+  document.getElementById("p3Score").textContent="0%";
+  document.getElementById("p3Mastery").textContent="Retry mode";
+  renderPart3Quiz();
+  document.getElementById("part3-smart-revision").scrollIntoView({behavior:"smooth"});
+}
+function resetPart3Quiz(){
+  activePart3Questions=[...part3Questions];lastPart3Wrong=[];
+  document.getElementById("p3OverallResult").hidden=true;
+  document.getElementById("p3Score").textContent="0%";
+  document.getElementById("p3Mastery").textContent="Not assessed";
+  renderPart3Quiz();
+}
+document.addEventListener("DOMContentLoaded",renderPart3Quiz);
+</script>
+
+
+<section class="section" id="part4-applications">
+  <h2>Part 4: Applications of Neutralisation</h2>
+  <p class="section-intro">
+    English is the main examination language. Chinese explanations are included only to support understanding.
+  </p>
+
+  <div class="note-grid">
+    <article class="note-card full">
+      <h3><span class="number">1</span>Core Exam Idea</h3>
+      <p class="english">Neutralisation is used to reduce excessive acidity or alkalinity in daily life.</p>
+      <p class="chinese">中和反应用来降低日常生活中过强的酸性或碱性。</p>
+      <div class="memory-line">Identify the problem → Choose the opposite substance → Neutralise</div>
+    </article>
+  </div>
+</section>
+
+<section class="section">
+  <h2>2. Toothpaste and Tooth Decay</h2>
+  <p class="english">Bacteria in the mouth produce acids that may damage tooth enamel.</p>
+  <p class="english">Alkaline toothpaste neutralises the acids produced by bacteria.</p>
+  <p class="chinese">口腔细菌会产生酸，酸可能侵蚀牙釉质。碱性牙膏可以中和这些酸。</p>
+  <div class="memory-line">Mouth acid + Alkaline toothpaste → Less tooth decay</div>
+</section>
+
+<section class="section">
+  <h2>3. Antacid and Excess Stomach Acid</h2>
+  <p class="english">The stomach contains hydrochloric acid for digestion.</p>
+  <p class="english">Antacid contains a mild alkali that neutralises excess stomach acid.</p>
+  <p class="chinese">胃中含有帮助消化的盐酸。抗酸剂含有温和的碱，可中和过多的胃酸。</p>
+  <div class="must-memorise">
+    <strong>Exam sentence:</strong> Antacid neutralises excess hydrochloric acid in the stomach.
+  </div>
+</section>
+
+<section class="section">
+  <h2>4. Acidic Soil</h2>
+  <p class="english">Soil that is too acidic may reduce healthy plant growth.</p>
+  <p class="english">Slaked lime is added to acidic soil to reduce its acidity.</p>
+  <p class="chinese">酸性过强的土壤可能不利于植物健康生长。加入熟石灰可以降低土壤酸性。</p>
+  <div class="memory-line">Acidic soil → Add slaked lime</div>
+</section>
+
+<section class="section">
+  <h2>5. Acidic Industrial Waste</h2>
+  <p class="english">Some factories produce acidic wastewater.</p>
+  <p class="english">An alkali is added before discharge to neutralise the acid and reduce environmental harm.</p>
+  <p class="chinese">部分工厂会产生酸性废水。排放前加入碱来中和酸性，以减少环境危害。</p>
+  <div class="must-memorise">
+    <strong>Strong answer:</strong> An alkali is added to acidic industrial wastewater before discharge to reduce its acidity.
+  </div>
+</section>
+
+<section class="section">
+  <h2>6. Bee Sting and Wasp Sting</h2>
+  <table>
+    <thead>
+      <tr>
+        <th>Sting</th>
+        <th>Nature of Venom</th>
+        <th>Substance Used</th>
+        <th>华语辅助</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><strong>Bee sting</strong></td>
+        <td>Acidic</td>
+        <td>A mild alkali</td>
+        <td>蜜蜂毒液呈酸性，可用温和的碱中和。</td>
+      </tr>
+      <tr>
+        <td><strong>Wasp sting</strong></td>
+        <td>Alkaline</td>
+        <td>A weak acid</td>
+        <td>黄蜂毒液呈碱性，可用弱酸中和。</td>
+      </tr>
+    </tbody>
+  </table>
+  <div class="must-memorise">
+    <strong>Memory Trick:</strong><br>
+    Bee = Acid → Use alkali<br>
+    Wasp = Alkali → Use acid
+  </div>
+</section>
+
+<section class="section">
+  <h2>7. Hair Conditioner, Facial Toner and Fabric Softener</h2>
+  <table>
+    <thead>
+      <tr>
+        <th>Product</th>
+        <th>Application</th>
+        <th>华语辅助</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><strong>Hair conditioner</strong></td>
+        <td>Mildly acidic conditioner neutralises alkaline residue left by shampoo.</td>
+        <td>弱酸性护发素中和洗发水留下的碱性残留。</td>
+      </tr>
+      <tr>
+        <td><strong>Facial toner</strong></td>
+        <td>May help neutralise alkaline facial cleanser residue and restore skin pH.</td>
+        <td>可帮助中和碱性洁面产品残留，并恢复皮肤 pH。</td>
+      </tr>
+      <tr>
+        <td><strong>Fabric softener</strong></td>
+        <td>Helps neutralise alkaline detergent residue on clothes.</td>
+        <td>帮助中和衣物上的碱性清洁剂残留。</td>
+      </tr>
+    </tbody>
+  </table>
+</section>
+
+<section class="section">
+  <h2>8. High-Frequency Matching Table</h2>
+  <table>
+    <thead>
+      <tr>
+        <th>Situation</th>
+        <th>Problem</th>
+        <th>Substance Used</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr><td>Mouth</td><td>Acid produced by bacteria</td><td>Alkaline toothpaste</td></tr>
+      <tr><td>Stomach</td><td>Excess hydrochloric acid</td><td>Antacid</td></tr>
+      <tr><td>Soil</td><td>Soil too acidic</td><td>Slaked lime</td></tr>
+      <tr><td>Factory waste</td><td>Acidic wastewater</td><td>Alkali</td></tr>
+      <tr><td>Bee sting</td><td>Acidic venom</td><td>Mild alkali</td></tr>
+      <tr><td>Wasp sting</td><td>Alkaline venom</td><td>Weak acid</td></tr>
+      <tr><td>Hair</td><td>Alkaline shampoo residue</td><td>Acidic conditioner</td></tr>
+    </tbody>
+  </table>
+</section>
+
+<section class="section">
+  <h2>9. Exam Answer Formula</h2>
+  <div class="must-memorise">
+    <strong>_____ is used to neutralise _____, thereby reducing its acidity / alkalinity.</strong><br><br>
+    使用 _____ 来中和 _____，从而降低其酸性／碱性。
+  </div>
+</section>
+
+<section class="section">
+  <h2>10. Common Examination Traps</h2>
+  <div class="must-memorise">
+    <strong>Wrong:</strong> Toothpaste is acidic.<br>
+    <strong>Correct:</strong> Toothpaste is alkaline and neutralises mouth acids.<br><br>
+
+    <strong>Wrong:</strong> Antacid is an acid.<br>
+    <strong>Correct:</strong> Antacid contains a mild alkali.<br><br>
+
+    <strong>Wrong:</strong> Bee sting is alkaline and wasp sting is acidic.<br>
+    <strong>Correct:</strong> Bee sting is acidic; wasp sting is alkaline.<br><br>
+
+    <strong>Weak answer:</strong> Slaked lime helps plants.<br>
+    <strong>Strong answer:</strong> Slaked lime neutralises acidic soil and reduces its acidity.
+  </div>
+</section>
+
+<section class="section" id="part4-smart-revision">
+  <h2>11. Part 4 Smart Revision Quiz</h2>
+  <p class="section-intro">Wrong answers will show English and Chinese explanations, reasons and memory tricks.</p>
+
+  <div class="quiz-dashboard">
+    <div class="quiz-stat"><span id="p4Progress">0 / 20</span><small>Questions answered</small></div>
+    <div class="quiz-stat"><span id="p4Score">0%</span><small>Current score</small></div>
+    <div class="quiz-stat"><span id="p4Mastery">Not assessed</span><small>Mastery level</small></div>
+  </div>
+
+  <div id="p4QuizContainer"></div>
+
+  <div class="quiz-actions">
+    <button class="quiz-btn primary" onclick="submitPart4Quiz()">Check All Answers</button>
+    <button class="quiz-btn" onclick="retryPart4Wrong()">Retry Wrong Questions</button>
+    <button class="quiz-btn" onclick="resetPart4Quiz()">Reset Quiz</button>
+  </div>
+
+  <div id="p4OverallResult" class="overall-result" hidden></div>
+</section>
+
+<script>
+const part4Questions = [
+{id:401,level:"Easy",topic:"Toothpaste",type:"mcq",question:"Why is toothpaste usually alkaline?",options:["To neutralise acids in the mouth","To increase tooth acidity","To produce hydrogen","To make saliva strongly acidic"],answer:0,explanationEn:"Alkaline toothpaste neutralises acids produced by bacteria in the mouth.",explanationZh:"碱性牙膏会中和口腔细菌产生的酸。",trick:"Mouth acid → Alkaline toothpaste."},
+{id:402,level:"Easy",topic:"Antacid",type:"mcq",question:"What does antacid neutralise?",options:["Excess hydrochloric acid in the stomach","Oxygen in the lungs","Alkali in toothpaste","Water in the blood"],answer:0,explanationEn:"Antacid neutralises excess hydrochloric acid in the stomach.",explanationZh:"抗酸剂中和胃中过多的盐酸。",trick:"Antacid = Against excess acid."},
+{id:403,level:"Easy",topic:"Soil",type:"mcq",question:"What is added to acidic soil?",options:["Slaked lime","Hydrochloric acid","Vinegar","Lemon juice"],answer:0,explanationEn:"Slaked lime is alkaline and reduces soil acidity.",explanationZh:"熟石灰呈碱性，可降低土壤酸性。",trick:"Acidic soil → Lime."},
+{id:404,level:"Easy",topic:"Industrial waste",type:"mcq",question:"What should be added to acidic industrial wastewater before discharge?",options:["An alkali","More acid","Oil","Sugar"],answer:0,explanationEn:"An alkali is added to neutralise the acidic wastewater.",explanationZh:"加入碱来中和酸性工业废水。",trick:"Acidic waste → Add alkali."},
+{id:405,level:"Easy",topic:"Stings",type:"mcq",question:"Bee sting venom is generally described as ______.",options:["Acidic","Alkaline","Neutral","Metallic"],answer:0,explanationEn:"Bee sting venom is commonly treated as acidic in this syllabus context.",explanationZh:"在本课程内容中，蜜蜂毒液被视为酸性。",trick:"Bee = Acid."},
+{id:406,level:"Easy",topic:"Stings",type:"mcq",question:"Wasp sting venom is generally described as ______.",options:["Acidic","Alkaline","Neutral","Salty"],answer:1,explanationEn:"Wasp sting venom is commonly treated as alkaline in this syllabus context.",explanationZh:"在本课程内容中，黄蜂毒液被视为碱性。",trick:"Wasp = Alkali."},
+{id:407,level:"Medium",topic:"Stings",type:"mcq",question:"Which substance may help neutralise a bee sting?",options:["A mild alkali","A strong acid","More bee venom","Pure metal"],answer:0,explanationEn:"A mild alkali may neutralise acidic bee venom.",explanationZh:"温和的碱可帮助中和酸性的蜜蜂毒液。",trick:"Bee acid → Mild alkali."},
+{id:408,level:"Medium",topic:"Stings",type:"mcq",question:"Which substance may help neutralise a wasp sting?",options:["A weak acid","A strong alkali","More wasp venom","Salt only"],answer:0,explanationEn:"A weak acid may neutralise alkaline wasp venom.",explanationZh:"弱酸可帮助中和碱性的黄蜂毒液。",trick:"Wasp alkali → Weak acid."},
+{id:409,level:"Medium",topic:"Hair care",type:"mcq",question:"Why is hair conditioner often mildly acidic?",options:["To neutralise alkaline shampoo residue","To make hair strongly alkaline","To produce salt crystals","To remove all water"],answer:0,explanationEn:"Mildly acidic conditioner helps neutralise alkaline residue left by shampoo.",explanationZh:"弱酸性护发素可中和洗发水留下的碱性残留。",trick:"Alkaline shampoo → Acidic conditioner."},
+{id:410,level:"Medium",topic:"Fabric care",type:"mcq",question:"What may fabric softener neutralise?",options:["Alkaline detergent residue","Strong acid in the stomach","Bee venom","Soil acidity"],answer:0,explanationEn:"Fabric softener may help neutralise alkaline detergent residue.",explanationZh:"衣物柔顺剂可帮助中和碱性清洁剂残留。",trick:"Detergent residue → Softener."},
+{id:411,level:"Medium",topic:"Facial care",type:"mcq",question:"What is one role of facial toner?",options:["To help restore skin pH after alkaline cleanser use","To make skin strongly alkaline","To produce hydrogen gas","To neutralise stomach acid"],answer:0,explanationEn:"A mildly acidic toner may help neutralise alkaline cleanser residue and restore skin pH.",explanationZh:"弱酸性爽肤水可中和碱性洁面产品残留，并帮助恢复皮肤 pH。",trick:"Cleanser alkaline → Toner mildly acidic."},
+{id:412,level:"Medium",topic:"Reasoning",type:"mcq",question:"Why should antacid not remove all stomach acid?",options:["Some stomach acid is needed for digestion","Stomach acid is always harmful","The stomach contains no acid","Antacid is a strong acid"],answer:0,explanationEn:"Stomach acid has an important role in digestion, so only excess acid should be neutralised.",explanationZh:"胃酸有帮助消化的重要作用，因此只应中和过量胃酸。",trick:"Neutralise excess, not all."},
+{id:413,level:"Hard",topic:"Exam wording",type:"mcq",question:"Which is the best exam answer about slaked lime?",options:["It helps plants","It neutralises acidic soil and reduces its acidity","It makes soil more acidic","It produces hydrogen"],answer:1,explanationEn:"A strong science answer states both the action and the effect.",explanationZh:"好的科学答案要同时说明作用和结果。",trick:"State neutralise + reduce acidity."},
+{id:414,level:"Hard",topic:"Exam wording",type:"mcq",question:"Which is the best answer about industrial wastewater?",options:["Clean the water","Add alkali to neutralise the acidic wastewater before discharge","Add more acid","Store it forever"],answer:1,explanationEn:"The complete answer identifies the substance used, the problem and the purpose.",explanationZh:"完整答案要指出使用的物质、问题和目的。",trick:"Add alkali → Neutralise acid → Before discharge."},
+{id:415,level:"Hard",topic:"Application",type:"mcq",question:"A farmer finds that soil pH is very low. What should be done?",options:["Add slaked lime","Add hydrochloric acid","Add vinegar","Do nothing"],answer:0,explanationEn:"A very low pH means the soil is acidic. Slaked lime reduces the acidity.",explanationZh:"很低的 pH 表示土壤呈酸性。熟石灰可降低酸性。",trick:"Low pH soil → Lime."},
+{id:416,level:"Hard",topic:"Application",type:"mcq",question:"A cleanser leaves alkaline residue on the skin. Which product may help?",options:["A mildly acidic toner","A strong alkali","More cleanser","Metal powder"],answer:0,explanationEn:"A mildly acidic toner can help neutralise alkaline residue.",explanationZh:"弱酸性爽肤水可帮助中和碱性残留。",trick:"Alkali residue → Mild acid."},
+{id:417,level:"Hard",topic:"Vocabulary",type:"text",question:"Complete: Slaked lime is added to ______ acidic soil.",answerText:["neutralise","neutralize"],explanationEn:"Slaked lime is used to neutralise acidic soil.",explanationZh:"熟石灰用于中和酸性土壤。",trick:"Lime neutralises soil acid."},
+{id:418,level:"Hard",topic:"Vocabulary",type:"text",question:"Complete: Antacid neutralises excess ______ acid in the stomach.",answerText:["hydrochloric"],explanationEn:"The stomach contains hydrochloric acid.",explanationZh:"胃中含有盐酸。",trick:"Stomach acid = Hydrochloric acid."},
+{id:419,level:"Hard",topic:"Reasoning",type:"mcq",question:"Which pair is matched correctly?",options:["Bee sting — acidic — mild alkali","Wasp sting — acidic — weak acid","Acidic soil — add acid","Stomach acid — alkaline toothpaste"],answer:0,explanationEn:"Acidic bee venom may be neutralised by a mild alkali.",explanationZh:"酸性蜜蜂毒液可用温和的碱中和。",trick:"Bee acid → Alkali."},
+{id:420,level:"KBAT",topic:"Application",type:"mcq",question:"Factory wastewater has pH 3. Which action is most suitable before discharge?",options:["Add a suitable alkali until acidity is reduced","Add more acid","Add oil","Heat it without treatment"],answer:0,explanationEn:"pH 3 is acidic. A suitable alkali should be added to reduce the acidity before discharge.",explanationZh:"pH 3 表示酸性。排放前应加入适当的碱来降低酸性。",trick:"Low pH waste → Add alkali."}
+];
+
+let activePart4Questions=[...part4Questions];
+let lastPart4Wrong=[];
+
+function renderPart4Quiz(){
+  const c=document.getElementById("p4QuizContainer");
+  if(!c)return;
+  c.innerHTML="";
+  activePart4Questions.forEach((q,index)=>{
+    const card=document.createElement("div");
+    card.className="quiz-question";
+    card.id="p4-question-"+q.id;
+    let inputHtml="";
+    if(q.type==="mcq"){
+      inputHtml=q.options.map((opt,i)=>`<label class="option"><input type="radio" name="p4q${q.id}" value="${i}" onchange="updatePart4Progress()"> ${opt}</label>`).join("");
+    }else{
+      inputHtml=`<input class="quiz-input" id="p4-input-${q.id}" type="text" placeholder="Type your answer in English" oninput="updatePart4Progress()">`;
+    }
+    card.innerHTML=`<div class="q-label"><span class="q-number">Question ${index+1}</span><span class="q-level">${q.level}</span></div><div class="q-text">${q.question}</div>${inputHtml}<div id="p4-feedback-${q.id}"></div>`;
+    c.appendChild(card);
+  });
+  updatePart4Progress();
+}
+
+function getPart4Answer(q){
+  if(q.type==="mcq"){
+    const s=document.querySelector(`input[name="p4q${q.id}"]:checked`);
+    return s?Number(s.value):null;
+  }
+  const i=document.getElementById("p4-input-"+q.id);
+  return i?i.value.trim().toLowerCase():"";
+}
+
+function isPart4Correct(q,a){
+  return q.type==="mcq"?a===q.answer:q.answerText.includes(a);
+}
+
+function updatePart4Progress(){
+  let n=0;
+  activePart4Questions.forEach(q=>{
+    const a=getPart4Answer(q);
+    if((q.type==="mcq"&&a!==null)||(q.type==="text"&&a!==""))n++;
+  });
+  document.getElementById("p4Progress").textContent=`${n} / ${activePart4Questions.length}`;
+}
+
+function submitPart4Quiz(){
+  let correct=0;
+  lastPart4Wrong=[];
+  const topics={};
+
+  activePart4Questions.forEach(q=>{
+    const a=getPart4Answer(q);
+    const ok=isPart4Correct(q,a);
+    const card=document.getElementById("p4-question-"+q.id);
+    const feedback=document.getElementById("p4-feedback-"+q.id);
+
+    if(!topics[q.topic])topics[q.topic]={correct:0,total:0};
+    topics[q.topic].total++;
+
+    if(ok){
+      correct++;
+      topics[q.topic].correct++;
+      card.className="quiz-question correct";
+      feedback.innerHTML=`<div class="feedback correct-box"><h4>Correct</h4><strong>English:</strong> ${q.explanationEn}<br><strong>华语：</strong>${q.explanationZh}<div class="memory-trick">Memory Trick 口诀：${q.trick}</div></div>`;
+    }else{
+      lastPart4Wrong.push(q.id);
+      card.className="quiz-question wrong";
+      feedback.innerHTML=`<div class="feedback wrong-box"><h4>Incorrect — Learn This Again</h4><strong>Why? 原因：</strong><br><strong>English:</strong> ${q.explanationEn}<br><strong>华语：</strong>${q.explanationZh}<div class="memory-trick">Memory Trick 口诀：${q.trick}</div></div>`;
+    }
+  });
+
+  const percent=Math.round(correct/activePart4Questions.length*100);
+  document.getElementById("p4Score").textContent=percent+"%";
+
+  let mastery="Needs Support";
+  if(percent>=90)mastery="Mastered";
+  else if(percent>=75)mastery="Almost Mastered";
+  else if(percent>=60)mastery="Developing";
+  document.getElementById("p4Mastery").textContent=mastery;
+
+  const r=document.getElementById("p4OverallResult");
+  r.hidden=false;
+
+  const topicHtml=Object.entries(topics).map(([t,d])=>`<div class="mastery-item"><strong>${t}</strong><br>${d.correct}/${d.total} correct (${Math.round(d.correct/d.total*100)}%)</div>`).join("");
+
+  const advice=percent>=90
+    ?"Excellent. The student has mastered Part 4 and may continue."
+    :percent>=75
+    ?"Good progress. Retry all wrong questions before continuing."
+    :"Review the situation, the acidic or alkaline problem, and the correct neutralising substance.";
+
+  r.innerHTML=`<h3>Part 4 Result: ${correct} / ${activePart4Questions.length} (${percent}%)</h3><p><strong>Teacher's Advice:</strong> ${advice}</p><div class="mastery-grid">${topicHtml}</div>`;
+  r.scrollIntoView({behavior:"smooth",block:"center"});
+}
+
+function retryPart4Wrong(){
+  if(lastPart4Wrong.length===0){
+    alert("Please check all answers first, or there are no wrong questions.");
+    return;
+  }
+  activePart4Questions=part4Questions.filter(q=>lastPart4Wrong.includes(q.id));
+  lastPart4Wrong=[];
+  document.getElementById("p4OverallResult").hidden=true;
+  document.getElementById("p4Score").textContent="0%";
+  document.getElementById("p4Mastery").textContent="Retry mode";
+  renderPart4Quiz();
+  document.getElementById("part4-smart-revision").scrollIntoView({behavior:"smooth"});
+}
+
+function resetPart4Quiz(){
+  activePart4Questions=[...part4Questions];
+  lastPart4Wrong=[];
+  document.getElementById("p4OverallResult").hidden=true;
+  document.getElementById("p4Score").textContent="0%";
+  document.getElementById("p4Mastery").textContent="Not assessed";
+  renderPart4Quiz();
+}
+
+document.addEventListener("DOMContentLoaded",renderPart4Quiz);
+</script>
+
+
+<section class="section" id="part5-experiments">
+  <h2>Part 5: Experiments and Science Process Skills</h2>
+  <p class="section-intro">
+    This section focuses on experiment questions, variables, observations, inferences and conclusions.
+  </p>
+
+  <div class="note-grid">
+    <article class="note-card full">
+      <h3><span class="number">1</span>SPS Core Formula</h3>
+      <p class="english"><strong>Manipulated Variable:</strong> The factor that is changed.</p>
+      <p class="english"><strong>Responding Variable:</strong> The factor that is measured or observed.</p>
+      <p class="english"><strong>Controlled Variable:</strong> The factor that is kept constant.</p>
+      <p class="chinese">操纵变量：主动改变的因素。反应变量：被测量或观察的结果。控制变量：保持不变的因素。</p>
+      <div class="memory-line">MV = Change • RV = Measure • CV = Keep the same</div>
+    </article>
+  </div>
+</section>
+
+<section class="section">
+  <h2>Experiment 1: Testing Acids and Alkalis</h2>
+  <table>
+    <thead><tr><th>Item</th><th>Answer</th><th>华语辅助</th></tr></thead>
+    <tbody>
+      <tr><td>Aim</td><td>To identify the properties of acidic and alkaline substances.</td><td>鉴定酸性和碱性物质的性质。</td></tr>
+      <tr><td>Observation: Acid</td><td>Blue litmus paper turns red.</td><td>蓝色石蕊试纸变红。</td></tr>
+      <tr><td>Inference: Acid</td><td>The solution is acidic.</td><td>该溶液呈酸性。</td></tr>
+      <tr><td>Observation: Alkali</td><td>Red litmus paper turns blue.</td><td>红色石蕊试纸变蓝。</td></tr>
+      <tr><td>Inference: Alkali</td><td>The solution is alkaline.</td><td>该溶液呈碱性。</td></tr>
+    </tbody>
+  </table>
+  <div class="memory-line">Colour change = Observation • Acid/alkali judgement = Inference</div>
+</section>
+
+<section class="section">
+  <h2>Experiment 2: Role of Water</h2>
+  <table>
+    <thead><tr><th>Item</th><th>Answer</th><th>华语辅助</th></tr></thead>
+    <tbody>
+      <tr><td>Aim</td><td>To investigate the role of water in showing acidic properties.</td><td>研究水在表现酸性性质中的作用。</td></tr>
+      <tr><td>Observation 1</td><td>Dry blue litmus paper does not change colour.</td><td>干燥蓝色石蕊试纸没有变色。</td></tr>
+      <tr><td>Observation 2</td><td>Moist blue litmus paper turns red.</td><td>湿润蓝色石蕊试纸变红。</td></tr>
+      <tr><td>Inference</td><td>Water is needed for hydrogen chloride to show acidic properties.</td><td>水是氯化氢表现酸性所必需的。</td></tr>
+    </tbody>
+  </table>
+  <div class="memory-line">No water = No acidic property shown</div>
+</section>
+
+<section class="section">
+  <h2>Experiment 3: Acid Reacts with Metal</h2>
+  <p class="english"><strong>Example:</strong> Dilute hydrochloric acid + Magnesium</p>
+  <table>
+    <thead><tr><th>Science Skill</th><th>Correct Answer</th><th>华语辅助</th></tr></thead>
+    <tbody>
+      <tr><td>Aim</td><td>To investigate the reaction between an acid and a metal.</td><td>研究酸与金属之间的反应。</td></tr>
+      <tr><td>Observation</td><td>Bubbles are produced.</td><td>产生气泡。</td></tr>
+      <tr><td>Observation</td><td>Magnesium becomes smaller.</td><td>镁变小。</td></tr>
+      <tr><td>Observation</td><td>The gas produces a “pop” sound.</td><td>气体发出“啪”声。</td></tr>
+      <tr><td>Inference</td><td>The gas is hydrogen.</td><td>该气体是氢气。</td></tr>
+      <tr><td>Conclusion</td><td>Acid reacts with a suitable metal to produce salt and hydrogen gas.</td><td>酸与适当金属反应，产生盐和氢气。</td></tr>
+    </tbody>
+  </table>
+  <div class="memory-line">Acid + Metal → Salt + Hydrogen</div>
+</section>
+
+<section class="section">
+  <h2>Experiment 4: Determining pH</h2>
+  <table>
+    <thead><tr><th>Item</th><th>Answer</th><th>华语辅助</th></tr></thead>
+    <tbody>
+      <tr><td>Aim</td><td>To determine the pH values of different solutions.</td><td>测定不同溶液的 pH 值。</td></tr>
+      <tr><td>pH paper</td><td>Gives an approximate pH value.</td><td>给出大概的 pH 值。</td></tr>
+      <tr><td>pH meter</td><td>Gives a more accurate pH value.</td><td>给出更准确的 pH 值。</td></tr>
+      <tr><td>Inference</td><td>pH below 7 is acidic, pH 7 is neutral, pH above 7 is alkaline.</td><td>pH 小于 7 为酸性，等于 7 为中性，大于 7 为碱性。</td></tr>
+    </tbody>
+  </table>
+  <div class="memory-line">Paper = Approximate • Meter = Accurate</div>
+</section>
+
+<section class="section">
+  <h2>Experiment 5: Neutralisation and Temperature Change</h2>
+  <table>
+    <thead><tr><th>Item</th><th>Answer</th><th>华语辅助</th></tr></thead>
+    <tbody>
+      <tr><td>Aim</td><td>To investigate the temperature change during neutralisation.</td><td>研究中和反应中的温度变化。</td></tr>
+      <tr><td>Manipulated Variable</td><td>Volume of acid or alkali added.</td><td>加入的酸或碱的体积。</td></tr>
+      <tr><td>Responding Variable</td><td>Temperature of the mixture.</td><td>混合物的温度。</td></tr>
+      <tr><td>Controlled Variables</td><td>Concentration, initial temperature, type of acid and alkali.</td><td>浓度、初始温度、酸和碱的种类。</td></tr>
+      <tr><td>Observation</td><td>The temperature increases.</td><td>温度上升。</td></tr>
+      <tr><td>Inference</td><td>Heat energy is released.</td><td>热能被释放。</td></tr>
+      <tr><td>Conclusion</td><td>Neutralisation is an exothermic reaction.</td><td>中和反应是放热反应。</td></tr>
+    </tbody>
+  </table>
+  <div class="memory-line">Temperature rises → Heat released → Exothermic</div>
+</section>
+
+<section class="section">
+  <h2>Experiment 6: Titration</h2>
+  <table>
+    <thead><tr><th>Item</th><th>Answer</th><th>华语辅助</th></tr></thead>
+    <tbody>
+      <tr><td>Burette</td><td>Adds a solution slowly and accurately.</td><td>缓慢且准确地加入溶液。</td></tr>
+      <tr><td>Pipette</td><td>Measures a fixed volume accurately.</td><td>准确量取固定体积。</td></tr>
+      <tr><td>Conical flask</td><td>Contains and allows safe swirling of the solution.</td><td>装溶液并方便安全摇匀。</td></tr>
+      <tr><td>Indicator</td><td>Shows the end point by a colour change.</td><td>通过颜色变化显示终点。</td></tr>
+      <tr><td>Observation</td><td>The indicator changes colour permanently.</td><td>指示剂出现持久颜色变化。</td></tr>
+      <tr><td>Inference</td><td>The end point has been reached.</td><td>已经达到终点。</td></tr>
+    </tbody>
+  </table>
+  <div class="memory-line">Pipette → Flask → Indicator → Burette → Swirl → End point</div>
+</section>
+
+<section class="section">
+  <h2>Observation, Inference and Conclusion</h2>
+  <table>
+    <thead><tr><th>Skill</th><th>How to Answer</th><th>华语辅助</th></tr></thead>
+    <tbody>
+      <tr><td>Observation</td><td>Write only what can be seen, heard or measured.</td><td>只写看到、听到或测量到的现象。</td></tr>
+      <tr><td>Inference</td><td>Write the scientific explanation for the observation.</td><td>写出观察现象背后的科学解释。</td></tr>
+      <tr><td>Hypothesis</td><td>State the relationship between MV and RV.</td><td>说明操纵变量与反应变量之间的关系。</td></tr>
+      <tr><td>Conclusion</td><td>State the final relationship or scientific concept proved.</td><td>写出最终变量关系或被证明的科学概念。</td></tr>
+    </tbody>
+  </table>
+</section>
+
+<section class="section">
+  <h2>Safety Precautions</h2>
+  <div class="checklist">
+    <div class="check-item">Wear safety goggles and gloves.</div>
+    <div class="check-item">Use dilute acids and alkalis.</div>
+    <div class="check-item">Do not taste or touch chemicals.</div>
+    <div class="check-item">Add solutions slowly during titration.</div>
+    <div class="check-item">Wash spills with plenty of water.</div>
+    <div class="check-item">Report accidents to the teacher immediately.</div>
+  </div>
+</section>
+
+<section class="section" id="part5-smart-revision">
+  <h2>Part 5 Smart Revision Quiz</h2>
+  <p class="section-intro">This quiz tests experiments and Science Process Skills.</p>
+
+  <div class="quiz-dashboard">
+    <div class="quiz-stat"><span id="p5Progress">0 / 20</span><small>Questions answered</small></div>
+    <div class="quiz-stat"><span id="p5Score">0%</span><small>Current score</small></div>
+    <div class="quiz-stat"><span id="p5Mastery">Not assessed</span><small>SPS mastery</small></div>
+  </div>
+
+  <div id="p5QuizContainer"></div>
+
+  <div class="quiz-actions">
+    <button class="quiz-btn primary" onclick="submitPart5Quiz()">Check All Answers</button>
+    <button class="quiz-btn" onclick="retryPart5Wrong()">Retry Wrong Questions</button>
+    <button class="quiz-btn" onclick="resetPart5Quiz()">Reset Quiz</button>
+  </div>
+
+  <div id="p5OverallResult" class="overall-result" hidden></div>
+</section>
+
+<script>
+const part5Questions = [
+{id:501,level:"SPS",topic:"Variables",type:"mcq",question:"What is a manipulated variable?",options:["The factor that is changed","The factor that is measured","The factor kept constant","The final conclusion"],answer:0,explanationEn:"The manipulated variable is deliberately changed by the investigator.",explanationZh:"操纵变量是实验者主动改变的因素。",trick:"MV = Change."},
+{id:502,level:"SPS",topic:"Variables",type:"mcq",question:"What is a responding variable?",options:["The factor changed","The factor measured or observed","The factor kept constant","The apparatus used"],answer:1,explanationEn:"The responding variable is the measured or observed result.",explanationZh:"反应变量是被测量或观察的结果。",trick:"RV = Measure."},
+{id:503,level:"SPS",topic:"Variables",type:"mcq",question:"What is a controlled variable?",options:["The factor kept constant","The factor changed","The final observation","The colour change"],answer:0,explanationEn:"A controlled variable is kept the same to ensure a fair test.",explanationZh:"控制变量保持不变，以确保实验公平。",trick:"CV = Keep the same."},
+{id:504,level:"SPS",topic:"Observation",type:"mcq",question:"Which is an observation?",options:["The solution is acidic","Blue litmus paper turns red","Hydrogen is present","Neutralisation occurs"],answer:1,explanationEn:"A colour change can be directly seen, so it is an observation.",explanationZh:"颜色变化可直接看到，因此属于观察。",trick:"Observation = See, hear, measure."},
+{id:505,level:"SPS",topic:"Inference",type:"mcq",question:"Blue litmus paper turns red. What is the inference?",options:["The solution is acidic","The paper is wet","The solution is hot","The solution contains metal"],answer:0,explanationEn:"The colour change indicates that the solution is acidic.",explanationZh:"该颜色变化说明溶液呈酸性。",trick:"Blue → Red = Acid."},
+{id:506,level:"SPS",topic:"Role of water",type:"mcq",question:"Why does dry hydrogen chloride not change dry blue litmus paper?",options:["Water is absent","It is an alkali","The litmus is neutral","Hydrogen chloride is a metal"],answer:0,explanationEn:"Water is needed for acidic properties to be shown.",explanationZh:"酸性特征需要水存在才会表现。",trick:"No water = No acid property."},
+{id:507,level:"SPS",topic:"Acid and metal",type:"mcq",question:"Which gas is produced when dilute acid reacts with magnesium?",options:["Oxygen","Hydrogen","Carbon dioxide","Nitrogen"],answer:1,explanationEn:"Acid and a suitable metal produce salt and hydrogen gas.",explanationZh:"酸与适当金属反应会产生盐和氢气。",trick:"Acid + Metal = Hydrogen."},
+{id:508,level:"SPS",topic:"Gas test",type:"mcq",question:"What is the observation for the hydrogen test?",options:["A pop sound is heard","A glowing splint relights","Limewater turns milky","The gas turns blue"],answer:0,explanationEn:"Hydrogen produces a pop sound with a lighted splint.",explanationZh:"氢气遇到燃烧的木条会发出啪声。",trick:"Hydrogen = Pop."},
+{id:509,level:"SPS",topic:"pH tools",type:"mcq",question:"Which tool gives a more accurate pH value?",options:["Litmus paper","pH paper","pH meter","Dropper"],answer:2,explanationEn:"A pH meter provides a more accurate numerical reading.",explanationZh:"pH 计提供更准确的数字读数。",trick:"Meter = Accurate."},
+{id:510,level:"SPS",topic:"pH tools",type:"mcq",question:"What does pH paper provide?",options:["An approximate pH value","An exact mass","A gas test","A temperature reading"],answer:0,explanationEn:"pH paper gives an approximate pH by colour comparison.",explanationZh:"pH 试纸通过颜色比较给出大概 pH 值。",trick:"Paper = Approximate."},
+{id:511,level:"SPS",topic:"Neutralisation",type:"mcq",question:"What is the observation during an exothermic neutralisation reaction?",options:["Temperature increases","Temperature falls to 0°C","A pop sound is heard","The solution freezes"],answer:0,explanationEn:"The temperature rises because heat is released.",explanationZh:"温度上升，这是由于热能被释放。",trick:"Temperature up = Exothermic."},
+{id:512,level:"SPS",topic:"Inference",type:"mcq",question:"The temperature increases. What is the inference?",options:["Heat energy is released","Oxygen is produced","The solution is acidic","The apparatus is broken"],answer:0,explanationEn:"A rise in temperature indicates that heat energy is released.",explanationZh:"温度上升说明热能被释放。",trick:"Temperature up → Heat released."},
+{id:513,level:"SPS",topic:"Titration",type:"mcq",question:"Which apparatus measures a fixed volume accurately?",options:["Burette","Pipette","Beaker","Test tube"],answer:1,explanationEn:"A pipette measures and transfers a fixed volume accurately.",explanationZh:"移液管能准确量取并转移固定体积。",trick:"Pipette = Fixed volume."},
+{id:514,level:"SPS",topic:"Titration",type:"mcq",question:"Which apparatus adds solution slowly and accurately?",options:["Pipette","Burette","Thermometer","Evaporating dish"],answer:1,explanationEn:"A burette delivers solution gradually and accurately.",explanationZh:"滴定管能缓慢且准确地加入溶液。",trick:"Burette = Drop by drop."},
+{id:515,level:"SPS",topic:"End point",type:"mcq",question:"What shows that the end point has been reached?",options:["A permanent colour change","A temporary bubble","The flask becomes cold","The liquid evaporates"],answer:0,explanationEn:"A permanent indicator colour change shows the end point.",explanationZh:"指示剂持久的颜色变化表示已经达到终点。",trick:"Permanent change = End point."},
+{id:516,level:"SPS",topic:"Fair test",type:"mcq",question:"Why must controlled variables be kept constant?",options:["To ensure a fair test","To change the responding variable","To create more acid","To stop all reactions"],answer:0,explanationEn:"Keeping other factors constant ensures that only the manipulated variable affects the result.",explanationZh:"保持其他因素不变，才能确保结果主要由操纵变量造成。",trick:"Same conditions = Fair test."},
+{id:517,level:"SPS",topic:"Vocabulary",type:"text",question:"Complete: The variable deliberately changed is the ______ variable.",answerText:["manipulated"],explanationEn:"The manipulated variable is changed by the investigator.",explanationZh:"操纵变量由实验者主动改变。",trick:"Manipulated = Changed."},
+{id:518,level:"SPS",topic:"Vocabulary",type:"text",question:"Complete: The measured result is the ______ variable.",answerText:["responding"],explanationEn:"The responding variable is the measured result.",explanationZh:"反应变量是被测量的结果。",trick:"Responding = Measured."},
+{id:519,level:"SPS",topic:"Vocabulary",type:"text",question:"Complete: A scientific explanation for an observation is an ______.",answerText:["inference"],explanationEn:"An inference explains an observation scientifically.",explanationZh:"推断是对观察现象的科学解释。",trick:"Observation seen; inference explained."},
+{id:520,level:"KBAT",topic:"Experiment reasoning",type:"mcq",question:"A student writes 'hydrogen is produced' under Observation. Why is this weak?",options:["Hydrogen is an inference, while bubbles or a pop sound are observations","Hydrogen is not a gas","Observations must always include pH","The experiment has no reaction"],answer:0,explanationEn:"The identity of the gas is inferred from the gas test. The directly observed facts are bubbles and the pop sound.",explanationZh:"气体身份是根据检验推断出来的。直接观察到的是气泡和啪声。",trick:"Write what you see first."}
+];
+
+let activePart5Questions=[...part5Questions];
+let lastPart5Wrong=[];
+
+function renderPart5Quiz(){
+  const c=document.getElementById("p5QuizContainer");
+  if(!c)return;
+  c.innerHTML="";
+  activePart5Questions.forEach((q,index)=>{
+    const card=document.createElement("div");
+    card.className="quiz-question";
+    card.id="p5-question-"+q.id;
+    let inputHtml="";
+    if(q.type==="mcq"){
+      inputHtml=q.options.map((opt,i)=>`<label class="option"><input type="radio" name="p5q${q.id}" value="${i}" onchange="updatePart5Progress()"> ${opt}</label>`).join("");
+    }else{
+      inputHtml=`<input class="quiz-input" id="p5-input-${q.id}" type="text" placeholder="Type your answer in English" oninput="updatePart5Progress()">`;
+    }
+    card.innerHTML=`<div class="q-label"><span class="q-number">Question ${index+1}</span><span class="q-level">${q.level}</span></div><div class="q-text">${q.question}</div>${inputHtml}<div id="p5-feedback-${q.id}"></div>`;
+    c.appendChild(card);
+  });
+  updatePart5Progress();
+}
+
+function getPart5Answer(q){
+  if(q.type==="mcq"){
+    const s=document.querySelector(`input[name="p5q${q.id}"]:checked`);
+    return s?Number(s.value):null;
+  }
+  const i=document.getElementById("p5-input-"+q.id);
+  return i?i.value.trim().toLowerCase():"";
+}
+
+function isPart5Correct(q,a){
+  return q.type==="mcq"?a===q.answer:q.answerText.includes(a);
+}
+
+function updatePart5Progress(){
+  let n=0;
+  activePart5Questions.forEach(q=>{
+    const a=getPart5Answer(q);
+    if((q.type==="mcq"&&a!==null)||(q.type==="text"&&a!==""))n++;
+  });
+  document.getElementById("p5Progress").textContent=`${n} / ${activePart5Questions.length}`;
+}
+
+function submitPart5Quiz(){
+  let correct=0;
+  lastPart5Wrong=[];
+  const topics={};
+
+  activePart5Questions.forEach(q=>{
+    const a=getPart5Answer(q);
+    const ok=isPart5Correct(q,a);
+    const card=document.getElementById("p5-question-"+q.id);
+    const feedback=document.getElementById("p5-feedback-"+q.id);
+
+    if(!topics[q.topic])topics[q.topic]={correct:0,total:0};
+    topics[q.topic].total++;
+
+    if(ok){
+      correct++;
+      topics[q.topic].correct++;
+      card.className="quiz-question correct";
+      feedback.innerHTML=`<div class="feedback correct-box"><h4>Correct</h4><strong>English:</strong> ${q.explanationEn}<br><strong>华语：</strong>${q.explanationZh}<div class="memory-trick">Memory Trick 口诀：${q.trick}</div></div>`;
+    }else{
+      lastPart5Wrong.push(q.id);
+      card.className="quiz-question wrong";
+      feedback.innerHTML=`<div class="feedback wrong-box"><h4>Incorrect — Learn This Again</h4><strong>Why? 原因：</strong><br><strong>English:</strong> ${q.explanationEn}<br><strong>华语：</strong>${q.explanationZh}<div class="memory-trick">Memory Trick 口诀：${q.trick}</div></div>`;
+    }
+  });
+
+  const percent=Math.round(correct/activePart5Questions.length*100);
+  document.getElementById("p5Score").textContent=percent+"%";
+
+  let mastery="Needs Support";
+  if(percent>=90)mastery="Mastered";
+  else if(percent>=75)mastery="Almost Mastered";
+  else if(percent>=60)mastery="Developing";
+  document.getElementById("p5Mastery").textContent=mastery;
+
+  const r=document.getElementById("p5OverallResult");
+  r.hidden=false;
+
+  const topicHtml=Object.entries(topics).map(([t,d])=>`<div class="mastery-item"><strong>${t}</strong><br>${d.correct}/${d.total} correct (${Math.round(d.correct/d.total*100)}%)</div>`).join("");
+
+  const advice=percent>=90
+    ?"Excellent. The student has mastered the practical and SPS section."
+    :percent>=75
+    ?"Good progress. Retry all wrong questions before continuing."
+    :"Review variables, observation versus inference, titration apparatus and experiment conclusions.";
+
+  r.innerHTML=`<h3>Part 5 Result: ${correct} / ${activePart5Questions.length} (${percent}%)</h3><p><strong>Teacher's Advice:</strong> ${advice}</p><div class="mastery-grid">${topicHtml}</div>`;
+  r.scrollIntoView({behavior:"smooth",block:"center"});
+}
+
+function retryPart5Wrong(){
+  if(lastPart5Wrong.length===0){
+    alert("Please check all answers first, or there are no wrong questions.");
+    return;
+  }
+  activePart5Questions=part5Questions.filter(q=>lastPart5Wrong.includes(q.id));
+  lastPart5Wrong=[];
+  document.getElementById("p5OverallResult").hidden=true;
+  document.getElementById("p5Score").textContent="0%";
+  document.getElementById("p5Mastery").textContent="Retry mode";
+  renderPart5Quiz();
+  document.getElementById("part5-smart-revision").scrollIntoView({behavior:"smooth"});
+}
+
+function resetPart5Quiz(){
+  activePart5Questions=[...part5Questions];
+  lastPart5Wrong=[];
+  document.getElementById("p5OverallResult").hidden=true;
+  document.getElementById("p5Score").textContent="0%";
+  document.getElementById("p5Mastery").textContent="Not assessed";
+  renderPart5Quiz();
+}
+
+document.addEventListener("DOMContentLoaded",renderPart5Quiz);
+</script>
+
+
+<section class="section" id="part6-final-assessment">
+  <h2>Part 6: Chapter 6 Final Assessment</h2>
+  <p class="section-intro">
+    This final assessment checks mastery of Parts 1–5. Students should score at least 90% before moving on.
+  </p>
+
+  <div class="quiz-dashboard">
+    <div class="quiz-stat"><span id="p6Progress">0 / 40</span><small>Questions answered</small></div>
+    <div class="quiz-stat"><span id="p6Score">0%</span><small>Final score</small></div>
+    <div class="quiz-stat"><span id="p6Mastery">Not assessed</span><small>Chapter mastery</small></div>
+  </div>
+
+  <div id="p6QuizContainer"></div>
+
+  <div class="quiz-actions">
+    <button class="quiz-btn primary" onclick="submitPart6Quiz()">Check Final Assessment</button>
+    <button class="quiz-btn" onclick="retryPart6Wrong()">Retry Wrong Questions</button>
+    <button class="quiz-btn" onclick="resetPart6Quiz()">Reset Assessment</button>
+  </div>
+
+  <div id="p6OverallResult" class="overall-result" hidden></div>
+</section>
+
+<script>
+const part6Questions = [
+{id:601,level:"Easy",topic:"Part 1",type:"mcq",question:"What taste is associated with acids?",options:["Sour","Bitter","Sweet","Salty"],answer:0,explanationEn:"Acids are described as sour.",explanationZh:"酸通常被描述为有酸味。",trick:"Acid = Sour."},
+{id:602,level:"Easy",topic:"Part 1",type:"mcq",question:"What taste is associated with alkalis?",options:["Sour","Bitter","Sweet","Salty"],answer:1,explanationEn:"Alkalis are described as bitter.",explanationZh:"碱通常被描述为有苦味。",trick:"Alkali = Bitter."},
+{id:603,level:"Easy",topic:"Part 1",type:"mcq",question:"Acid turns ______ litmus paper red.",options:["Blue","Red","Green","Yellow"],answer:0,explanationEn:"Acid turns blue litmus paper red.",explanationZh:"酸使蓝色石蕊试纸变红。",trick:"Acid: Blue → Red."},
+{id:604,level:"Easy",topic:"Part 1",type:"mcq",question:"Alkali turns ______ litmus paper blue.",options:["Blue","Red","Green","Yellow"],answer:1,explanationEn:"Alkali turns red litmus paper blue.",explanationZh:"碱使红色石蕊试纸变蓝。",trick:"Alkali: Red → Blue."},
+{id:605,level:"Easy",topic:"Part 1",type:"mcq",question:"Which gas is produced when acid reacts with a suitable metal?",options:["Oxygen","Hydrogen","Nitrogen","Carbon dioxide"],answer:1,explanationEn:"Acid reacts with a suitable metal to produce salt and hydrogen.",explanationZh:"酸与适当金属反应，产生盐和氢气。",trick:"Acid + Metal = Hydrogen."},
+{id:606,level:"Easy",topic:"Part 2",type:"mcq",question:"What is the pH of a neutral solution?",options:["0","3","7","14"],answer:2,explanationEn:"A neutral solution has pH 7.",explanationZh:"中性溶液的 pH 值是 7。",trick:"7 = Neutral."},
+{id:607,level:"Easy",topic:"Part 2",type:"mcq",question:"Which pH is acidic?",options:["3","7","9","12"],answer:0,explanationEn:"Any pH below 7 is acidic.",explanationZh:"任何小于 7 的 pH 值都是酸性。",trick:"Below 7 = Acid."},
+{id:608,level:"Easy",topic:"Part 2",type:"mcq",question:"Which pH is alkaline?",options:["2","5","7","11"],answer:3,explanationEn:"Any pH above 7 is alkaline.",explanationZh:"任何大于 7 的 pH 值都是碱性。",trick:"Above 7 = Alkali."},
+{id:609,level:"Easy",topic:"Part 2",type:"mcq",question:"What colour is universal indicator at pH 7?",options:["Red","Green","Purple","Orange"],answer:1,explanationEn:"Universal indicator is green at pH 7.",explanationZh:"通用指示剂在 pH 7 时呈绿色。",trick:"7 = Green."},
+{id:610,level:"Easy",topic:"Part 2",type:"mcq",question:"Phenolphthalein is ______ in alkali.",options:["Pink","Colourless","Green","Yellow"],answer:0,explanationEn:"Phenolphthalein turns pink in alkaline solution.",explanationZh:"酚酞在碱性溶液中呈粉红色。",trick:"Alkali + Phenolphthalein = Pink."},
+
+{id:611,level:"Medium",topic:"Part 2",type:"mcq",question:"Which is the stronger acid?",options:["pH 1","pH 4","pH 5","pH 6"],answer:0,explanationEn:"The lower the pH, the stronger the acid.",explanationZh:"pH 越低，酸性越强。",trick:"Closer to 0 = Stronger acid."},
+{id:612,level:"Medium",topic:"Part 2",type:"mcq",question:"Which is the stronger alkali?",options:["pH 8","pH 9","pH 11","pH 14"],answer:3,explanationEn:"The higher the pH, the stronger the alkali.",explanationZh:"pH 越高，碱性越强。",trick:"Closer to 14 = Stronger alkali."},
+{id:613,level:"Medium",topic:"Part 3",type:"mcq",question:"Neutralisation produces ______.",options:["Salt and water","Hydrogen and oxygen","Metal and gas","Acid and alkali"],answer:0,explanationEn:"Neutralisation produces salt and water.",explanationZh:"中和反应产生盐和水。",trick:"Acid + Alkali = Salt + Water."},
+{id:614,level:"Medium",topic:"Part 3",type:"mcq",question:"During neutralisation, pH moves towards ______.",options:["0","3","7","14"],answer:2,explanationEn:"Neutralisation reduces acidity or alkalinity, so pH moves towards 7.",explanationZh:"中和降低酸性或碱性，因此 pH 趋近 7。",trick:"Neutral → 7."},
+{id:615,level:"Medium",topic:"Part 3",type:"mcq",question:"A temperature increase during neutralisation shows that the reaction is ______.",options:["Endothermic","Exothermic","Neutral only","Physical"],answer:1,explanationEn:"A rise in temperature shows that heat is released.",explanationZh:"温度上升说明热能被释放，因此属于放热反应。",trick:"Temperature up = Exothermic."},
+{id:616,level:"Medium",topic:"Part 3",type:"mcq",question:"Which apparatus measures a fixed volume accurately?",options:["Burette","Pipette","Beaker","Test tube"],answer:1,explanationEn:"A pipette measures a fixed volume accurately.",explanationZh:"移液管能准确量取固定体积。",trick:"Pipette = Fixed volume."},
+{id:617,level:"Medium",topic:"Part 3",type:"mcq",question:"Which apparatus adds solution gradually during titration?",options:["Pipette","Burette","Thermometer","Tripod stand"],answer:1,explanationEn:"A burette adds solution slowly and accurately.",explanationZh:"滴定管能缓慢且准确地加入溶液。",trick:"Burette = Drop by drop."},
+{id:618,level:"Medium",topic:"Part 4",type:"mcq",question:"Why is toothpaste alkaline?",options:["To neutralise acids in the mouth","To increase acidity","To produce hydrogen","To make teeth bitter"],answer:0,explanationEn:"Alkaline toothpaste neutralises acids produced by bacteria.",explanationZh:"碱性牙膏中和细菌产生的酸。",trick:"Mouth acid → Alkaline toothpaste."},
+{id:619,level:"Medium",topic:"Part 4",type:"mcq",question:"What does antacid neutralise?",options:["Excess stomach acid","Alkaline shampoo","Soil acidity","Bee venom only"],answer:0,explanationEn:"Antacid neutralises excess hydrochloric acid in the stomach.",explanationZh:"抗酸剂中和胃中过多的盐酸。",trick:"Antacid = Against excess acid."},
+{id:620,level:"Medium",topic:"Part 4",type:"mcq",question:"What is added to acidic soil?",options:["Slaked lime","Hydrochloric acid","Vinegar","Lemon juice"],answer:0,explanationEn:"Slaked lime neutralises acidic soil.",explanationZh:"熟石灰中和酸性土壤。",trick:"Acidic soil → Lime."},
+
+{id:621,level:"Hard",topic:"Part 4",type:"mcq",question:"Which pair is correct?",options:["Bee sting — acidic — mild alkali","Wasp sting — acidic — weak acid","Acidic soil — add acid","Antacid — strong acid"],answer:0,explanationEn:"Bee sting venom is treated as acidic and may be neutralised by a mild alkali.",explanationZh:"蜜蜂毒液在课程中视为酸性，可用温和的碱中和。",trick:"Bee acid → Alkali."},
+{id:622,level:"Hard",topic:"Part 4",type:"mcq",question:"What may neutralise alkaline shampoo residue?",options:["Mildly acidic conditioner","Strong alkali","More shampoo","Metal powder"],answer:0,explanationEn:"A mildly acidic conditioner helps neutralise alkaline residue.",explanationZh:"弱酸性护发素帮助中和碱性残留。",trick:"Alkaline residue → Mild acid."},
+{id:623,level:"Hard",topic:"Part 5",type:"mcq",question:"Which is an observation?",options:["The solution is acidic","Blue litmus turns red","Hydrogen is present","Neutralisation occurs"],answer:1,explanationEn:"A colour change can be directly observed.",explanationZh:"颜色变化可以直接观察到。",trick:"Observation = See, hear, measure."},
+{id:624,level:"Hard",topic:"Part 5",type:"mcq",question:"Blue litmus turns red. What is the inference?",options:["The solution is acidic","The paper is wet","The solution is hot","The solution is a metal"],answer:0,explanationEn:"The colour change indicates an acidic solution.",explanationZh:"该颜色变化说明溶液呈酸性。",trick:"Blue → Red = Acid."},
+{id:625,level:"Hard",topic:"Part 5",type:"mcq",question:"Why does dry hydrogen chloride not change dry blue litmus paper?",options:["Water is absent","It is an alkali","Litmus cannot detect acids","It is a metal"],answer:0,explanationEn:"Water is needed for acidic properties to be shown.",explanationZh:"酸性特征需要水存在才会表现。",trick:"No water = No acidic property."},
+{id:626,level:"Hard",topic:"Part 5",type:"mcq",question:"What does a pop sound indicate?",options:["Hydrogen","Oxygen","Carbon dioxide","Nitrogen"],answer:0,explanationEn:"A pop sound confirms hydrogen gas.",explanationZh:"啪声证实该气体是氢气。",trick:"Pop = Hydrogen."},
+{id:627,level:"Hard",topic:"Part 5",type:"mcq",question:"Which tool gives the more accurate pH reading?",options:["Litmus paper","pH paper","pH meter","Dropper"],answer:2,explanationEn:"A pH meter gives a numerical and more accurate reading.",explanationZh:"pH 计提供数字且更准确的读数。",trick:"Meter = More accurate."},
+{id:628,level:"Hard",topic:"Part 5",type:"mcq",question:"Why are controlled variables kept constant?",options:["To ensure a fair test","To change the result","To produce more acid","To stop the reaction"],answer:0,explanationEn:"Controlled variables are kept constant so only the manipulated variable affects the result.",explanationZh:"控制变量保持不变，才能确保结果主要由操纵变量造成。",trick:"Same conditions = Fair test."},
+{id:629,level:"Hard",topic:"Part 5",type:"mcq",question:"Which is the responding variable in a temperature-change experiment?",options:["Temperature of the mixture","Type of acid","Volume of flask","Colour of table"],answer:0,explanationEn:"The responding variable is what is measured, which is the temperature.",explanationZh:"反应变量是被测量的结果，也就是温度。",trick:"RV = What you measure."},
+{id:630,level:"Hard",topic:"Part 5",type:"mcq",question:"What shows the titration end point?",options:["Permanent colour change","Temporary bubbles","Flask becomes cold","Liquid evaporates"],answer:0,explanationEn:"A permanent indicator colour change shows the end point.",explanationZh:"指示剂持久的颜色变化表示达到终点。",trick:"Permanent change = End point."},
+
+{id:631,level:"Hard",topic:"Part 1",type:"text",question:"Complete: Acid + Metal → Salt + ______.",answerText:["hydrogen"],explanationEn:"A suitable metal reacting with acid produces hydrogen gas.",explanationZh:"适当金属与酸反应会产生氢气。",trick:"Acid + Metal = Hydrogen."},
+{id:632,level:"Hard",topic:"Part 2",type:"text",question:"Complete: A solution with pH below 7 is ______.",answerText:["acidic"],explanationEn:"Any pH below 7 is acidic.",explanationZh:"任何小于 7 的 pH 值都是酸性。",trick:"Below 7 = Acidic."},
+{id:633,level:"Hard",topic:"Part 3",type:"text",question:"Complete: Acid + Alkali → Salt + ______.",answerText:["water"],explanationEn:"Water is one of the products of neutralisation.",explanationZh:"水是中和反应的产物之一。",trick:"Salt + Water."},
+{id:634,level:"Hard",topic:"Part 3",type:"text",question:"Complete: A reaction that releases heat is ______.",answerText:["exothermic"],explanationEn:"An exothermic reaction releases heat energy.",explanationZh:"放热反应会释放热能。",trick:"Exothermic = Heat exits."},
+{id:635,level:"Hard",topic:"Part 4",type:"text",question:"Complete: Slaked lime is used to ______ acidic soil.",answerText:["neutralise","neutralize"],explanationEn:"Slaked lime neutralises acidic soil.",explanationZh:"熟石灰中和酸性土壤。",trick:"Lime neutralises soil acid."},
+{id:636,level:"Hard",topic:"Part 5",type:"text",question:"Complete: The variable deliberately changed is the ______ variable.",answerText:["manipulated"],explanationEn:"The manipulated variable is deliberately changed.",explanationZh:"操纵变量是实验者主动改变的变量。",trick:"MV = Change."},
+{id:637,level:"Hard",topic:"Part 5",type:"text",question:"Complete: A scientific explanation for an observation is an ______.",answerText:["inference"],explanationEn:"An inference explains the observation scientifically.",explanationZh:"推断是对观察现象的科学解释。",trick:"Observation seen; inference explained."},
+
+{id:638,level:"KBAT",topic:"Mixed",type:"mcq",question:"Solution X has pH 2 and solution Y has pH 12. Which statement is correct?",options:["X is acidic and Y is alkaline","Both are neutral","X is alkaline and Y is acidic","Both are weak acids"],answer:0,explanationEn:"pH 2 is acidic and pH 12 is alkaline.",explanationZh:"pH 2 是酸性，pH 12 是碱性。",trick:"Below 7 acid; above 7 alkali."},
+{id:639,level:"KBAT",topic:"Mixed",type:"mcq",question:"Factory wastewater has pH 3. What should be done before discharge?",options:["Add a suitable alkali","Add more acid","Add oil","Do nothing"],answer:0,explanationEn:"pH 3 is acidic, so a suitable alkali should be added to reduce the acidity.",explanationZh:"pH 3 表示酸性，因此应加入适当的碱降低酸性。",trick:"Low pH waste → Add alkali."},
+{id:640,level:"KBAT",topic:"Mixed",type:"mcq",question:"A student writes 'hydrogen is produced' as an observation. Why is this weak?",options:["Hydrogen identity is an inference; bubbles or a pop sound are observations","Hydrogen is not a gas","Observations must include pH","No reaction occurs"],answer:0,explanationEn:"The gas identity is inferred from the test. The direct observations are bubbles and the pop sound.",explanationZh:"气体身份是根据检验推断出来的。直接观察到的是气泡和啪声。",trick:"Write what you see first."}
+];
+
+let activePart6Questions=[...part6Questions];
+let lastPart6Wrong=[];
+
+function renderPart6Quiz(){
+  const c=document.getElementById("p6QuizContainer");
+  if(!c)return;
+  c.innerHTML="";
+  activePart6Questions.forEach((q,index)=>{
+    const card=document.createElement("div");
+    card.className="quiz-question";
+    card.id="p6-question-"+q.id;
+    let inputHtml="";
+    if(q.type==="mcq"){
+      inputHtml=q.options.map((opt,i)=>`<label class="option"><input type="radio" name="p6q${q.id}" value="${i}" onchange="updatePart6Progress()"> ${opt}</label>`).join("");
+    }else{
+      inputHtml=`<input class="quiz-input" id="p6-input-${q.id}" type="text" placeholder="Type your answer in English" oninput="updatePart6Progress()">`;
+    }
+    card.innerHTML=`<div class="q-label"><span class="q-number">Question ${index+1}</span><span class="q-level">${q.level}</span></div><div class="q-text">${q.question}</div>${inputHtml}<div id="p6-feedback-${q.id}"></div>`;
+    c.appendChild(card);
+  });
+  updatePart6Progress();
+}
+
+function getPart6Answer(q){
+  if(q.type==="mcq"){
+    const s=document.querySelector(`input[name="p6q${q.id}"]:checked`);
+    return s?Number(s.value):null;
+  }
+  const i=document.getElementById("p6-input-"+q.id);
+  return i?i.value.trim().toLowerCase():"";
+}
+
+function isPart6Correct(q,a){
+  return q.type==="mcq"?a===q.answer:q.answerText.includes(a);
+}
+
+function updatePart6Progress(){
+  let n=0;
+  activePart6Questions.forEach(q=>{
+    const a=getPart6Answer(q);
+    if((q.type==="mcq"&&a!==null)||(q.type==="text"&&a!==""))n++;
+  });
+  document.getElementById("p6Progress").textContent=`${n} / ${activePart6Questions.length}`;
+}
+
+function submitPart6Quiz(){
+  let correct=0;
+  lastPart6Wrong=[];
+  const topics={};
+
+  activePart6Questions.forEach(q=>{
+    const a=getPart6Answer(q);
+    const ok=isPart6Correct(q,a);
+    const card=document.getElementById("p6-question-"+q.id);
+    const feedback=document.getElementById("p6-feedback-"+q.id);
+
+    if(!topics[q.topic])topics[q.topic]={correct:0,total:0};
+    topics[q.topic].total++;
+
+    if(ok){
+      correct++;
+      topics[q.topic].correct++;
+      card.className="quiz-question correct";
+      feedback.innerHTML=`<div class="feedback correct-box"><h4>Correct</h4><strong>English:</strong> ${q.explanationEn}<br><strong>华语：</strong>${q.explanationZh}<div class="memory-trick">Memory Trick 口诀：${q.trick}</div></div>`;
+    }else{
+      lastPart6Wrong.push(q.id);
+      card.className="quiz-question wrong";
+      feedback.innerHTML=`<div class="feedback wrong-box"><h4>Incorrect — Learn This Again</h4><strong>Why? 原因：</strong><br><strong>English:</strong> ${q.explanationEn}<br><strong>华语：</strong>${q.explanationZh}<div class="memory-trick">Memory Trick 口诀：${q.trick}</div></div>`;
+    }
+  });
+
+  const percent=Math.round(correct/activePart6Questions.length*100);
+  document.getElementById("p6Score").textContent=percent+"%";
+
+  let mastery="Needs Support";
+  if(percent>=90)mastery="Mastered";
+  else if(percent>=75)mastery="Almost Mastered";
+  else if(percent>=60)mastery="Developing";
+  document.getElementById("p6Mastery").textContent=mastery;
+
+  const r=document.getElementById("p6OverallResult");
+  r.hidden=false;
+
+  const topicHtml=Object.entries(topics).map(([t,d])=>{
+    const p=Math.round(d.correct/d.total*100);
+    return `<div class="mastery-item"><strong>${t}</strong><br>${d.correct}/${d.total} correct (${p}%)</div>`;
+  }).join("");
+
+  const weakest=Object.entries(topics)
+    .map(([t,d])=>({topic:t,score:d.correct/d.total}))
+    .sort((a,b)=>a.score-b.score)[0];
+
+  const advice=percent>=90
+    ?"Excellent. The student has mastered Chapter 6."
+    :percent>=75
+    ?"Good progress. Retry all wrong questions before finishing the chapter."
+    :"Review the weakest part before trying again.";
+
+  r.innerHTML=`
+    <h3>Final Result: ${correct} / ${activePart6Questions.length} (${percent}%)</h3>
+    <p><strong>Teacher's Advice:</strong> ${advice}</p>
+    <p><strong>Weakest Area:</strong> ${weakest ? weakest.topic : "Not available"}</p>
+    <div class="mastery-grid">${topicHtml}</div>`;
+  r.scrollIntoView({behavior:"smooth",block:"center"});
+}
+
+function retryPart6Wrong(){
+  if(lastPart6Wrong.length===0){
+    alert("Please check all answers first, or there are no wrong questions.");
+    return;
+  }
+  activePart6Questions=part6Questions.filter(q=>lastPart6Wrong.includes(q.id));
+  lastPart6Wrong=[];
+  document.getElementById("p6OverallResult").hidden=true;
+  document.getElementById("p6Score").textContent="0%";
+  document.getElementById("p6Mastery").textContent="Retry mode";
+  renderPart6Quiz();
+  document.getElementById("part6-final-assessment").scrollIntoView({behavior:"smooth"});
+}
+
+function resetPart6Quiz(){
+  activePart6Questions=[...part6Questions];
+  lastPart6Wrong=[];
+  document.getElementById("p6OverallResult").hidden=true;
+  document.getElementById("p6Score").textContent="0%";
+  document.getElementById("p6Mastery").textContent="Not assessed";
+  renderPart6Quiz();
+}
+
+document.addEventListener("DOMContentLoaded",renderPart6Quiz);
+</script>
+
+
+<section class="section" id="part7-rescue-pack">
+  <h2>Part 7: Exam Rescue Pack and Error Book</h2>
+  <p class="section-intro">
+    This section is designed for the final 10–15 minutes of revision before an examination.
+  </p>
+
+  <div class="note-grid">
+    <article class="note-card">
+      <h3>Acid</h3>
+      <p class="english">Sour • Blue litmus turns red • pH below 7</p>
+      <p class="chinese">酸味 • 蓝色石蕊变红 • pH 小于 7</p>
+    </article>
+
+    <article class="note-card">
+      <h3>Alkali</h3>
+      <p class="english">Bitter • Slippery • Red litmus turns blue • pH above 7</p>
+      <p class="chinese">苦味 • 滑 • 红色石蕊变蓝 • pH 大于 7</p>
+    </article>
+
+    <article class="note-card full">
+      <h3>Neutralisation</h3>
+      <p class="english">Acid + Alkali → Salt + Water</p>
+      <p class="chinese">酸 + 碱 → 盐 + 水</p>
+      <div class="memory-line">pH moves towards 7 • Temperature usually increases</div>
+    </article>
+  </div>
+</section>
+
+<section class="section">
+  <h2>1. Indicator Colour Rescue Table</h2>
+  <table>
+    <thead><tr><th>Indicator</th><th>Acid</th><th>Neutral</th><th>Alkali</th></tr></thead>
+    <tbody>
+      <tr><td>Blue litmus</td><td>Turns red</td><td>No change</td><td>No change</td></tr>
+      <tr><td>Red litmus</td><td>No change</td><td>No change</td><td>Turns blue</td></tr>
+      <tr><td>Universal indicator</td><td>Red / Orange / Yellow</td><td>Green</td><td>Blue / Purple</td></tr>
+      <tr><td>Phenolphthalein</td><td>Colourless</td><td>Colourless</td><td>Pink</td></tr>
+      <tr><td>Methyl orange</td><td>Red</td><td>Orange</td><td>Yellow</td></tr>
+    </tbody>
+  </table>
+</section>
+
+<section class="section">
+  <h2>2. pH Strength Rescue</h2>
+  <div class="note-grid">
+    <article class="note-card">
+      <h3>Acid Strength</h3>
+      <p class="english">Closer to pH 0 = Stronger acid</p>
+      <p class="chinese">越接近 pH 0，酸性越强。</p>
+    </article>
+    <article class="note-card">
+      <h3>Alkali Strength</h3>
+      <p class="english">Closer to pH 14 = Stronger alkali</p>
+      <p class="chinese">越接近 pH 14，碱性越强。</p>
+    </article>
+  </div>
+</section>
+
+<section class="section">
+  <h2>3. Titration Apparatus Rescue</h2>
+  <table>
+    <thead><tr><th>Apparatus</th><th>Function</th></tr></thead>
+    <tbody>
+      <tr><td>Pipette</td><td>Measures a fixed volume accurately.</td></tr>
+      <tr><td>Burette</td><td>Adds solution slowly and accurately.</td></tr>
+      <tr><td>Conical flask</td><td>Contains solution and allows swirling.</td></tr>
+      <tr><td>Indicator</td><td>Shows the end point by colour change.</td></tr>
+    </tbody>
+  </table>
+  <div class="memory-line">Pipette = Fixed volume • Burette = Drop by drop</div>
+</section>
+
+<section class="section">
+  <h2>4. Ten Common Mistakes</h2>
+  <div class="checklist">
+    <div class="check-item">Acid does not turn red litmus blue.</div>
+    <div class="check-item">Alkali does not turn blue litmus red.</div>
+    <div class="check-item">pH 7 is neutral.</div>
+    <div class="check-item">Lower pH means stronger acid.</div>
+    <div class="check-item">Higher pH means stronger alkali.</div>
+    <div class="check-item">Phenolphthalein is pink only in alkali.</div>
+    <div class="check-item">Neutralisation forms salt and water.</div>
+    <div class="check-item">Temperature rise means heat is released.</div>
+    <div class="check-item">Observation is what you see, hear or measure.</div>
+    <div class="check-item">Inference is the scientific explanation.</div>
+  </div>
+</section>
+
+<section class="section">
+  <h2>5. Daily Application Rescue</h2>
+  <table>
+    <thead><tr><th>Situation</th><th>Correct Neutralising Substance</th></tr></thead>
+    <tbody>
+      <tr><td>Mouth acid</td><td>Alkaline toothpaste</td></tr>
+      <tr><td>Excess stomach acid</td><td>Antacid</td></tr>
+      <tr><td>Acidic soil</td><td>Slaked lime</td></tr>
+      <tr><td>Acidic industrial waste</td><td>Suitable alkali</td></tr>
+      <tr><td>Bee sting</td><td>Mild alkali</td></tr>
+      <tr><td>Wasp sting</td><td>Weak acid</td></tr>
+      <tr><td>Alkaline shampoo residue</td><td>Mildly acidic conditioner</td></tr>
+    </tbody>
+  </table>
+</section>
+
+<section class="section" id="part7-speed-quiz">
+  <h2>6. Ten-Minute Speed Quiz</h2>
+  <p class="section-intro">Answer all 15 questions without referring to the notes.</p>
+
+  <div class="quiz-dashboard">
+    <div class="quiz-stat"><span id="p7Progress">0 / 15</span><small>Questions answered</small></div>
+    <div class="quiz-stat"><span id="p7Score">0%</span><small>Speed score</small></div>
+    <div class="quiz-stat"><span id="p7Mastery">Not assessed</span><small>Exam readiness</small></div>
+  </div>
+
+  <div id="p7QuizContainer"></div>
+
+  <div class="quiz-actions">
+    <button class="quiz-btn primary" onclick="submitPart7Quiz()">Check Speed Quiz</button>
+    <button class="quiz-btn" onclick="retryPart7Wrong()">Retry Wrong Questions</button>
+    <button class="quiz-btn" onclick="resetPart7Quiz()">Reset Speed Quiz</button>
+  </div>
+
+  <div id="p7OverallResult" class="overall-result" hidden></div>
+</section>
+
+<script>
+const part7Questions = [
+{id:701,level:"Speed",topic:"Core",type:"mcq",question:"Acid turns blue litmus paper ______.",options:["Red","Blue","Green","Pink"],answer:0,explanationEn:"Acid turns blue litmus paper red.",explanationZh:"酸使蓝色石蕊试纸变红。",trick:"Acid: Blue → Red."},
+{id:702,level:"Speed",topic:"Core",type:"mcq",question:"Alkali turns red litmus paper ______.",options:["Red","Blue","Yellow","Colourless"],answer:1,explanationEn:"Alkali turns red litmus paper blue.",explanationZh:"碱使红色石蕊试纸变蓝。",trick:"Alkali: Red → Blue."},
+{id:703,level:"Speed",topic:"pH",type:"mcq",question:"Which pH is neutral?",options:["2","5","7","12"],answer:2,explanationEn:"pH 7 is neutral.",explanationZh:"pH 7 是中性。",trick:"7 = Neutral."},
+{id:704,level:"Speed",topic:"pH",type:"mcq",question:"Which is the strongest acid?",options:["pH 1","pH 3","pH 5","pH 6"],answer:0,explanationEn:"The lower the pH, the stronger the acid.",explanationZh:"pH 越低，酸性越强。",trick:"Closer to 0 = Stronger acid."},
+{id:705,level:"Speed",topic:"pH",type:"mcq",question:"Which is the strongest alkali?",options:["pH 8","pH 10","pH 12","pH 14"],answer:3,explanationEn:"The higher the pH, the stronger the alkali.",explanationZh:"pH 越高，碱性越强。",trick:"Closer to 14 = Stronger alkali."},
+{id:706,level:"Speed",topic:"Indicator",type:"mcq",question:"Phenolphthalein is pink in ______.",options:["Acid","Neutral solution","Alkali","Water only"],answer:2,explanationEn:"Phenolphthalein turns pink in alkali.",explanationZh:"酚酞在碱性溶液中变粉红。",trick:"Phenolphthalein + Alkali = Pink."},
+{id:707,level:"Speed",topic:"Neutralisation",type:"mcq",question:"Neutralisation produces ______.",options:["Salt and water","Hydrogen and oxygen","Metal and gas","Acid only"],answer:0,explanationEn:"Neutralisation produces salt and water.",explanationZh:"中和反应产生盐和水。",trick:"Acid + Alkali = Salt + Water."},
+{id:708,level:"Speed",topic:"Energy",type:"mcq",question:"Temperature rises during neutralisation. This shows the reaction is ______.",options:["Endothermic","Exothermic","Freezing","Neutral only"],answer:1,explanationEn:"A temperature rise indicates heat release, so the reaction is exothermic.",explanationZh:"温度上升表示释放热量，因此是放热反应。",trick:"Temperature up = Exothermic."},
+{id:709,level:"Speed",topic:"Apparatus",type:"mcq",question:"Which apparatus measures a fixed volume accurately?",options:["Burette","Pipette","Beaker","Test tube"],answer:1,explanationEn:"A pipette measures a fixed volume accurately.",explanationZh:"移液管准确量取固定体积。",trick:"Pipette = Fixed volume."},
+{id:710,level:"Speed",topic:"Apparatus",type:"mcq",question:"Which apparatus adds solution drop by drop?",options:["Pipette","Burette","Thermometer","Funnel"],answer:1,explanationEn:"A burette adds solution gradually and accurately.",explanationZh:"滴定管缓慢且准确地加入溶液。",trick:"Burette = Drop by drop."},
+{id:711,level:"Speed",topic:"Application",type:"mcq",question:"What is added to acidic soil?",options:["Slaked lime","Hydrochloric acid","Vinegar","Lemon juice"],answer:0,explanationEn:"Slaked lime neutralises acidic soil.",explanationZh:"熟石灰中和酸性土壤。",trick:"Acidic soil → Lime."},
+{id:712,level:"Speed",topic:"Application",type:"mcq",question:"What neutralises excess stomach acid?",options:["Antacid","Toothpaste","Conditioner","Water only"],answer:0,explanationEn:"Antacid neutralises excess hydrochloric acid in the stomach.",explanationZh:"抗酸剂中和胃中过多的盐酸。",trick:"Antacid = Against excess acid."},
+{id:713,level:"Speed",topic:"SPS",type:"mcq",question:"Which is an observation?",options:["The solution is acidic","Blue litmus turns red","Hydrogen is present","Neutralisation occurs"],answer:1,explanationEn:"A colour change can be directly observed.",explanationZh:"颜色变化可以直接观察。",trick:"Observation = See, hear, measure."},
+{id:714,level:"Speed",topic:"SPS",type:"mcq",question:"A scientific explanation for an observation is called ______.",options:["Inference","Observation","Variable","Apparatus"],answer:0,explanationEn:"An inference explains an observation scientifically.",explanationZh:"推断是对观察现象的科学解释。",trick:"Inference = Explanation."},
+{id:715,level:"Speed",topic:"Role of water",type:"mcq",question:"Why does dry hydrogen chloride not change dry blue litmus paper?",options:["Water is absent","It is an alkali","The paper is red","Hydrogen chloride is a metal"],answer:0,explanationEn:"Water is needed for acidic properties to be shown.",explanationZh:"酸性特征需要水存在才会表现。",trick:"No water = No acidic property."}
+];
+
+let activePart7Questions=[...part7Questions];
+let lastPart7Wrong=[];
+
+function renderPart7Quiz(){
+  const c=document.getElementById("p7QuizContainer");
+  if(!c)return;
+  c.innerHTML="";
+  activePart7Questions.forEach((q,index)=>{
+    const card=document.createElement("div");
+    card.className="quiz-question";
+    card.id="p7-question-"+q.id;
+    const inputHtml=q.options.map((opt,i)=>`<label class="option"><input type="radio" name="p7q${q.id}" value="${i}" onchange="updatePart7Progress()"> ${opt}</label>`).join("");
+    card.innerHTML=`<div class="q-label"><span class="q-number">Question ${index+1}</span><span class="q-level">${q.level}</span></div><div class="q-text">${q.question}</div>${inputHtml}<div id="p7-feedback-${q.id}"></div>`;
+    c.appendChild(card);
+  });
+  updatePart7Progress();
+}
+
+function getPart7Answer(q){
+  const s=document.querySelector(`input[name="p7q${q.id}"]:checked`);
+  return s?Number(s.value):null;
+}
+
+function updatePart7Progress(){
+  let n=0;
+  activePart7Questions.forEach(q=>{if(getPart7Answer(q)!==null)n++;});
+  document.getElementById("p7Progress").textContent=`${n} / ${activePart7Questions.length}`;
+}
+
+function submitPart7Quiz(){
+  let correct=0;
+  lastPart7Wrong=[];
+  const topics={};
+
+  activePart7Questions.forEach(q=>{
+    const ok=getPart7Answer(q)===q.answer;
+    const card=document.getElementById("p7-question-"+q.id);
+    const feedback=document.getElementById("p7-feedback-"+q.id);
+
+    if(!topics[q.topic])topics[q.topic]={correct:0,total:0};
+    topics[q.topic].total++;
+
+    if(ok){
+      correct++;
+      topics[q.topic].correct++;
+      card.className="quiz-question correct";
+      feedback.innerHTML=`<div class="feedback correct-box"><h4>Correct</h4><strong>English:</strong> ${q.explanationEn}<br><strong>华语：</strong>${q.explanationZh}<div class="memory-trick">Memory Trick 口诀：${q.trick}</div></div>`;
+    }else{
+      lastPart7Wrong.push(q.id);
+      card.className="quiz-question wrong";
+      feedback.innerHTML=`<div class="feedback wrong-box"><h4>Incorrect — Learn This Again</h4><strong>Why? 原因：</strong><br><strong>English:</strong> ${q.explanationEn}<br><strong>华语：</strong>${q.explanationZh}<div class="memory-trick">Memory Trick 口诀：${q.trick}</div></div>`;
+    }
+  });
+
+  const percent=Math.round(correct/activePart7Questions.length*100);
+  document.getElementById("p7Score").textContent=percent+"%";
+
+  let mastery="Needs More Revision";
+  if(percent>=90)mastery="Exam Ready";
+  else if(percent>=75)mastery="Almost Ready";
+  else if(percent>=60)mastery="Developing";
+  document.getElementById("p7Mastery").textContent=mastery;
+
+  const r=document.getElementById("p7OverallResult");
+  r.hidden=false;
+
+  const topicHtml=Object.entries(topics).map(([t,d])=>`<div class="mastery-item"><strong>${t}</strong><br>${d.correct}/${d.total} correct (${Math.round(d.correct/d.total*100)}%)</div>`).join("");
+
+  const advice=percent>=90
+    ?"The student is ready for the Chapter 6 examination."
+    :percent>=75
+    ?"Review the wrong answers once more before the examination."
+    :"Return to the weakest sections and repeat the speed quiz.";
+
+  r.innerHTML=`<h3>Speed Quiz Result: ${correct} / ${activePart7Questions.length} (${percent}%)</h3><p><strong>Final Advice:</strong> ${advice}</p><div class="mastery-grid">${topicHtml}</div>`;
+  r.scrollIntoView({behavior:"smooth",block:"center"});
+}
+
+function retryPart7Wrong(){
+  if(lastPart7Wrong.length===0){
+    alert("Please check all answers first, or there are no wrong questions.");
+    return;
+  }
+  activePart7Questions=part7Questions.filter(q=>lastPart7Wrong.includes(q.id));
+  lastPart7Wrong=[];
+  document.getElementById("p7OverallResult").hidden=true;
+  document.getElementById("p7Score").textContent="0%";
+  document.getElementById("p7Mastery").textContent="Retry mode";
+  renderPart7Quiz();
+  document.getElementById("part7-speed-quiz").scrollIntoView({behavior:"smooth"});
+}
+
+function resetPart7Quiz(){
+  activePart7Questions=[...part7Questions];
+  lastPart7Wrong=[];
+  document.getElementById("p7OverallResult").hidden=true;
+  document.getElementById("p7Score").textContent="0%";
+  document.getElementById("p7Mastery").textContent="Not assessed";
+  renderPart7Quiz();
+}
+
+document.addEventListener("DOMContentLoaded",renderPart7Quiz);
+</script>
+
+<p class="footer">Form 2 Science Chapter 6 • Part 1 • Properties of Acids and Alkalis</p>
+</main>
+
+<script>
+const questions = [
+{id:1,level:"Easy",topic:"Acid properties",type:"mcq",question:"What is the taste of an acid?",options:["Sweet","Sour","Bitter","Salty"],answer:1,explanationEn:"Acids taste sour. However, laboratory chemicals must never be tasted.",explanationZh:"酸具有酸味，但实验室化学品绝对不能品尝。",trick:"Acid = Sour."},
+{id:2,level:"Easy",topic:"Alkali properties",type:"mcq",question:"What is the taste of an alkali?",options:["Sour","Sweet","Bitter","Salty"],answer:2,explanationEn:"Alkalis are described as bitter.",explanationZh:"碱通常被描述为具有苦味。",trick:"Alkali = Bitter."},
+{id:3,level:"Easy",topic:"Litmus",type:"mcq",question:"What happens to blue litmus paper in an acid?",options:["It turns red","It turns blue","No change in every case","It turns green"],answer:0,explanationEn:"An acid turns blue litmus paper red.",explanationZh:"酸会使蓝色石蕊试纸变红。",trick:"Acid: Blue → Red."},
+{id:4,level:"Easy",topic:"Litmus",type:"mcq",question:"What happens to red litmus paper in an alkali?",options:["It turns red","It turns blue","It turns yellow","It disappears"],answer:1,explanationEn:"An alkali turns red litmus paper blue.",explanationZh:"碱会使红色石蕊试纸变蓝。",trick:"Alkali: Red → Blue."},
+{id:5,level:"Easy",topic:"Definitions",type:"mcq",question:"Which statement best describes an alkali?",options:["A metal","A base that dissolves in water","A gas","A neutral substance"],answer:1,explanationEn:"An alkali is a base that is soluble in water.",explanationZh:"碱是能够溶解在水中的碱性物质。",trick:"Alkali = Soluble base."},
+{id:6,level:"Medium",topic:"Acid properties",type:"mcq",question:"Which is a property of a strong acid?",options:["It is always harmless","It may be corrosive","It always feels soapy","It turns red litmus blue"],answer:1,explanationEn:"Strong acids may be corrosive and can damage materials or skin.",explanationZh:"强酸可能具有腐蚀性，会损坏物质或皮肤。",trick:"Strong acid = Corrosive danger."},
+{id:7,level:"Medium",topic:"Alkali properties",type:"mcq",question:"Which description is associated with an alkali?",options:["Slippery or soapy","Always sour","Blue litmus turns red","Produces carbon dioxide with metal"],answer:0,explanationEn:"Alkalis often feel slippery or soapy, but they should not be touched directly.",explanationZh:"碱常有滑或像肥皂的感觉，但不能直接触摸。",trick:"Alkali = Slippery."},
+{id:8,level:"Medium",topic:"Role of water",type:"mcq",question:"Why is water important for acids and alkalis?",options:["It changes all acids into metals","It allows them to show their characteristic properties","It makes all solutions neutral","It removes all ions"],answer:1,explanationEn:"Acids and alkalis show their characteristic properties when dissolved in water.",explanationZh:"酸和碱溶于水后才会表现其特征。",trick:"Water activates acid/alkali properties."},
+{id:9,level:"Medium",topic:"Reaction with metal",type:"mcq",question:"Which gas is produced when an acid reacts with a suitable metal?",options:["Oxygen","Hydrogen","Nitrogen","Carbon dioxide"],answer:1,explanationEn:"Acid reacting with a suitable metal produces salt and hydrogen gas.",explanationZh:"酸与适当金属反应会产生盐和氢气。",trick:"Acid + Metal = Hydrogen."},
+{id:10,level:"Medium",topic:"Gas test",type:"mcq",question:"How is hydrogen gas identified?",options:["A glowing splint relights","A lighted splint produces a pop sound","Limewater turns milky","Red litmus turns blue"],answer:1,explanationEn:"Hydrogen produces a characteristic pop sound with a lighted splint.",explanationZh:"氢气遇到燃烧的木条会发出特有的啪声。",trick:"Hydrogen = Pop."},
+{id:11,level:"Hard",topic:"Application",type:"mcq",question:"A solution turns blue litmus paper red. What can be concluded?",options:["The solution is acidic","The solution is alkaline","The solution is definitely water","The solution contains metal only"],answer:0,explanationEn:"Turning blue litmus red is a characteristic acidic property.",explanationZh:"使蓝色石蕊试纸变红是酸性特征。",trick:"Blue to red = Acid."},
+{id:12,level:"Hard",topic:"Application",type:"mcq",question:"A solution turns red litmus paper blue and feels slippery. What is it most likely to be?",options:["An acid","An alkali","Pure water","A metal"],answer:1,explanationEn:"Red litmus turning blue and a slippery feel are properties of an alkali.",explanationZh:"红色石蕊变蓝和滑感都是碱的特征。",trick:"Red to blue + slippery = Alkali."},
+{id:13,level:"Hard",topic:"Observation and inference",type:"mcq",question:"Bubbles form when magnesium is added to dilute hydrochloric acid. Which is the best observation?",options:["Hydrogen is produced","Bubbles are produced","The acid is dangerous","A salt exists"],answer:1,explanationEn:"An observation states what is directly seen. 'Bubbles are produced' is observable.",explanationZh:"观察只写直接看到的现象。“产生气泡”才是观察。",trick:"Observation = What you see."},
+{id:14,level:"Hard",topic:"Observation and inference",type:"mcq",question:"The gas produced gives a pop sound. Which is the correct inference?",options:["The gas is oxygen","The gas is hydrogen","The gas is chlorine","The solution is neutral"],answer:1,explanationEn:"A pop sound confirms that the gas is hydrogen.",explanationZh:"啪声证实该气体是氢气。",trick:"Pop = Hydrogen."},
+{id:15,level:"Hard",topic:"Safety",type:"mcq",question:"Why should students not taste acids or alkalis in the laboratory?",options:["They may be corrosive or harmful","They are always sweet","They contain no water","They cannot react"],answer:0,explanationEn:"Laboratory acids and alkalis may be corrosive, toxic or otherwise harmful.",explanationZh:"实验室中的酸和碱可能具有腐蚀性、有毒或有害。",trick:"Lab chemical = Never taste."},
+{id:16,level:"Hard",topic:"Vocabulary",type:"text",question:"Complete: Acid turns ______ litmus paper red.",answerText:["blue"],explanationEn:"Acid turns blue litmus paper red.",explanationZh:"酸使蓝色石蕊试纸变红。",trick:"Acid: Blue → Red."},
+{id:17,level:"Hard",topic:"Vocabulary",type:"text",question:"Complete: Alkali turns ______ litmus paper blue.",answerText:["red"],explanationEn:"Alkali turns red litmus paper blue.",explanationZh:"碱使红色石蕊试纸变蓝。",trick:"Alkali: Red → Blue."},
+{id:18,level:"KBAT",topic:"Role of water",type:"mcq",question:"Dry hydrogen chloride gas does not change dry blue litmus paper. What is the best explanation?",options:["Hydrogen chloride is neutral","Water is needed for acidic properties to be shown","Blue litmus cannot detect acids","The gas is an alkali"],answer:1,explanationEn:"Without water, hydrogen chloride does not produce the ions needed to show acidic properties.",explanationZh:"没有水时，氯化氢不能产生表现酸性所需的离子，因此干燥蓝色石蕊试纸不会变色。",trick:"No water = No acid property shown."}
+];
+
+let activeQuestions=[...questions];
+let lastWrong=[];
+
+function renderQuiz(){
+  const container=document.getElementById("quizContainer");
+  container.innerHTML="";
+  activeQuestions.forEach((q,index)=>{
+    const card=document.createElement("div");
+    card.className="quiz-question";
+    card.id="question-"+q.id;
+    let inputHtml="";
+    if(q.type==="mcq"){
+      inputHtml=q.options.map((opt,i)=>`
+        <label class="option"><input type="radio" name="q${q.id}" value="${i}" onchange="updateProgress()"> ${opt}</label>
+      `).join("");
+    }else{
+      inputHtml=`<input class="quiz-input" id="input-${q.id}" type="text" placeholder="Type your answer in English" oninput="updateProgress()">`;
+    }
+    card.innerHTML=`
+      <div class="q-label"><span class="q-number">Question ${index+1}</span><span class="q-level">${q.level}</span></div>
+      <div class="q-text">${q.question}</div>
+      ${inputHtml}
+      <div id="feedback-${q.id}"></div>`;
+    container.appendChild(card);
+  });
+  updateProgress();
+}
+
+function getAnswer(q){
+  if(q.type==="mcq"){
+    const selected=document.querySelector(`input[name="q${q.id}"]:checked`);
+    return selected?Number(selected.value):null;
+  }
+  const input=document.getElementById("input-"+q.id);
+  return input?input.value.trim().toLowerCase():"";
+}
+
+function isCorrect(q,a){
+  return q.type==="mcq"?a===q.answer:q.answerText.includes(a);
+}
+
+function updateProgress(){
+  let answered=0;
+  activeQuestions.forEach(q=>{
+    const a=getAnswer(q);
+    if((q.type==="mcq"&&a!==null)||(q.type==="text"&&a!=="")) answered++;
+  });
+  document.getElementById("progressText").textContent=`${answered} / ${activeQuestions.length}`;
+}
+
+function submitQuiz(){
+  let correct=0;
+  lastWrong=[];
+  const topics={};
+
+  activeQuestions.forEach(q=>{
+    const a=getAnswer(q);
+    const ok=isCorrect(q,a);
+    const card=document.getElementById("question-"+q.id);
+    const feedback=document.getElementById("feedback-"+q.id);
+
+    if(!topics[q.topic]) topics[q.topic]={correct:0,total:0};
+    topics[q.topic].total++;
+
+    if(ok){
+      correct++;
+      topics[q.topic].correct++;
+      card.className="quiz-question correct";
+      feedback.innerHTML=`
+        <div class="feedback correct-box">
+          <h4>Correct</h4>
+          <strong>English:</strong> ${q.explanationEn}<br>
+          <strong>华语：</strong>${q.explanationZh}
+          <div class="memory-trick">Memory Trick 口诀：${q.trick}</div>
+        </div>`;
+    }else{
+      lastWrong.push(q.id);
+      card.className="quiz-question wrong";
+      feedback.innerHTML=`
+        <div class="feedback wrong-box">
+          <h4>Incorrect — Learn This Again</h4>
+          <strong>Why? 原因：</strong><br>
+          <strong>English:</strong> ${q.explanationEn}<br>
+          <strong>华语：</strong>${q.explanationZh}
+          <div class="memory-trick">Memory Trick 口诀：${q.trick}</div>
+        </div>`;
+    }
+  });
+
+  const percent=Math.round(correct/activeQuestions.length*100);
+  document.getElementById("scoreText").textContent=percent+"%";
+  let mastery="Needs Support";
+  if(percent>=90) mastery="Mastered";
+  else if(percent>=75) mastery="Almost Mastered";
+  else if(percent>=60) mastery="Developing";
+  document.getElementById("masteryText").textContent=mastery;
+
+  const result=document.getElementById("overallResult");
+  result.hidden=false;
+  const topicHtml=Object.entries(topics).map(([topic,data])=>{
+    const p=Math.round(data.correct/data.total*100);
+    return `<div class="mastery-item"><strong>${topic}</strong><br>${data.correct}/${data.total} correct (${p}%)</div>`;
+  }).join("");
+
+  let advice=percent>=90
+    ?"Excellent. The student has mastered Part 1 and may continue."
+    :percent>=75
+    ?"Good progress. Retry all wrong questions before continuing."
+    :"Review acid/alkali properties, litmus changes and the role of water before retrying.";
+
+  result.innerHTML=`
+    <h3>Part 1 Result: ${correct} / ${activeQuestions.length} (${percent}%)</h3>
+    <p><strong>Teacher's Advice:</strong> ${advice}</p>
+    <div class="mastery-grid">${topicHtml}</div>`;
+  result.scrollIntoView({behavior:"smooth",block:"center"});
+}
+
+function retryWrong(){
+  if(lastWrong.length===0){
+    alert("Please check all answers first, or there are no wrong questions.");
+    return;
+  }
+  activeQuestions=questions.filter(q=>lastWrong.includes(q.id));
+  lastWrong=[];
+  document.getElementById("overallResult").hidden=true;
+  document.getElementById("scoreText").textContent="0%";
+  document.getElementById("masteryText").textContent="Retry mode";
+  renderQuiz();
+  document.getElementById("smart-revision").scrollIntoView({behavior:"smooth"});
+}
+
+function resetQuiz(){
+  activeQuestions=[...questions];
+  lastWrong=[];
+  document.getElementById("overallResult").hidden=true;
+  document.getElementById("scoreText").textContent="0%";
+  document.getElementById("masteryText").textContent="Not assessed";
+  renderQuiz();
+}
+
+document.addEventListener("DOMContentLoaded",renderQuiz);
+</script>
+</body>
+</html>
